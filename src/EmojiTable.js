@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import Sketch from "react-p5";
-import tableData from "./table.csv";
+import tableData from "./weeks_with_emojis.csv";
+import emojiCountsData from "./emoji_counts.json";
 
 export default ({ weeks }) => {
   let table;
+  let emojiCounts = {};
 
   // general
   let regularEmojiSpeed = 0.02;
@@ -31,6 +33,7 @@ export default ({ weeks }) => {
       this.next_coords = new EmojiCoords(x, y);
       this.speed = s;
       this.color = curColor;
+      this.isClicked = false;
     }
 
     updateCurCoords(newCoords) {
@@ -39,6 +42,10 @@ export default ({ weeks }) => {
 
     updateColor(p5, opacity) {
       this.color.setAlpha(opacity);
+    }
+
+    updateIsClicked(p5) {
+      this.isClicked = !this.isClicked;
     }
 
     drawThisEmoji(p5) {
@@ -51,6 +58,10 @@ export default ({ weeks }) => {
 
   const preload = (p5) => {
     table = p5.loadTable(tableData, "csv");
+    // p5.loadJSON(emojiCountsData, (data) => {
+    //   emojiCounts = data;
+    // });
+    // console.log(emojiCountsData);
   };
 
   const setup = (p5, canvasParentRef) => {
@@ -145,11 +156,18 @@ export default ({ weeks }) => {
 
     for (let i = 0; i < allEmojis.length; i++) {
       let curEmoji = allEmojis[i];
-      if (curEmoji.value !== " ") {
+      if (curEmoji.value !== "") {
         if (
           Math.abs(curEmoji.cur_coords.x - cursorX) <= 10 &&
           Math.abs(curEmoji.cur_coords.y - cursorY) <= 10
         ) {
+          let weekIndex = Math.floor(
+            (emojiEnd - curEmoji.cur_coords.x) / emojiSpacing
+          );
+          weekIndex = p5.constrain(weekIndex, 0, weeks.length - 1);
+          let weekText = weeks[weekIndex].text;
+          let count = emojiCountsData[weekText][curEmoji.value] || 0;
+
           //Background purple rectangle
           p5.fill(lightPurple);
           p5.stroke(lightPurple);
@@ -178,14 +196,14 @@ export default ({ weeks }) => {
           p5.textSize(16);
           p5.textFont("Greta-Medium");
           p5.text(
-            "פרצוף קורץ",
+            "פרצוף קורץ", // Replace with appropriate text if needed
             curEmoji.cur_coords.x - 46, // Adjusted to the left side
             curEmoji.cur_coords.y + 26
           );
           p5.textFont("Narkis-ExtraLight");
           p5.textSize(12);
           p5.text(
-            "34 מופעים",
+            `${count} מופעים`,
             curEmoji.cur_coords.x - 27, // Adjusted to the left side
             curEmoji.cur_coords.y + 42
           );
@@ -204,6 +222,14 @@ export default ({ weeks }) => {
     }
   }
 
+  function turnOnEmojis(p5, emoji) {
+    for (let i = 0; i < allEmojis.length; i++) {
+      let curEmoji = allEmojis[i];
+      curEmoji.updateColor(p5, 100);
+      curEmoji.drawThisEmoji(p5);
+    }
+  }
+
   const mouseClicked = (p5) => {
     let cursorX = p5.mouseX;
     let cursorY = p5.mouseY;
@@ -215,8 +241,10 @@ export default ({ weeks }) => {
           Math.abs(curEmoji.cur_coords.x - cursorX) <= 10 &&
           Math.abs(curEmoji.cur_coords.y - cursorY) <= 10
         ) {
-          turnOffEmojis(p5, curEmoji);
-          console.log(curEmoji.value);
+          curEmoji.isClicked
+            ? turnOnEmojis(p5, curEmoji)
+            : turnOffEmojis(p5, curEmoji);
+          curEmoji.updateIsClicked();
         }
       }
     }
@@ -242,8 +270,8 @@ export default ({ weeks }) => {
     }
     p5.background(bgColor);
     p5.color(lightPurple);
-    showWeekCursor(p5);
     drawEmojis(p5);
+    showWeekCursor(p5);
     showEmojiDetails(p5);
   };
   return (
