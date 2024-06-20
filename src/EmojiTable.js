@@ -18,19 +18,9 @@ export default ({ weeks }) => {
     height: window.innerHeight,
   });
 
-  // Update canvas size on window resize
-  useEffect(() => {
-    const handleResize = () => {
-      setCanvasSize({
-        width: window.innerWidth,
-        height: window.innerHeight,
-      });
-    };
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   let emojiSpacing, emojiStartX, emojiStartY, emojiEnd;
+  let first = true;
+  let allEmojis = [];
 
   // Function to calculate dimensions based on canvas size
   const calculateDimensions = () => {
@@ -42,8 +32,16 @@ export default ({ weeks }) => {
 
   calculateDimensions();
 
-  let first = true;
-  let allEmojis = [];
+  useEffect(() => {
+    const handleResize = () => {
+      setCanvasSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   class EmojiCoords {
     constructor(x, y) {
@@ -84,11 +82,7 @@ export default ({ weeks }) => {
   }
 
   const preload = (p5) => {
-    table = p5.loadTable(tableData, "csv");
-    // p5.loadJSON(emojiCountsData, (data) => {
-    //   emojiCounts = data;
-    // });
-    // console.log(emojiCountsData);
+    table = p5.loadTable(tableData, "csv", "header");
   };
 
   const setup = (p5, canvasParentRef) => {
@@ -98,8 +92,8 @@ export default ({ weeks }) => {
     p5.background(bgColor);
     p5.textSize(21);
 
-    // Initialize emojis from table data
-    if (table.getRowCount() > 0) {
+    // Initialize emojis from table data if loaded
+    if (table && table.getRowCount() > 0) {
       for (let r = 0; r < table.getRowCount(); r++) {
         let row = table.getRow(r);
         for (let c = 0; c < table.getColumnCount(); c++) {
@@ -112,6 +106,18 @@ export default ({ weeks }) => {
           );
         }
       }
+    }
+  };
+
+  const drawEmojis = (p5) => {
+    for (let i = 0; i < allEmojis.length; i++) {
+      let emoji = allEmojis[i];
+      // Move the point towards point B
+      let deltaX = emoji.next_coords.x - emoji.cur_coords.x;
+      let deltaY = emoji.next_coords.y - emoji.cur_coords.y;
+      emoji.cur_coords.x += deltaX * emoji.speed;
+      emoji.cur_coords.y += deltaY * emoji.speed;
+      emoji.drawThisEmoji(p5);
     }
   };
 
@@ -130,24 +136,24 @@ export default ({ weeks }) => {
     }
   }
 
-  function showWeekCursor(p5) {
+  const showWeekCursor = (p5) => {
     let cursorX = p5.mouseX;
     p5.stroke(lightPurple);
     // Time line
     p5.strokeWeight(5);
     p5.line(
       emojiStartX + 10,
-      canvasSize.height * 0.95,
+      canvasSize.height * 0.85,
       emojiEnd - 10,
-      canvasSize.height * 0.95
+      canvasSize.height * 0.85
     );
     p5.fill(lightPurple);
     p5.strokeWeight(0);
     p5.textSize(14);
     p5.textFont("Narkis-ExtraLight");
     p5.textAlign("left");
-    p5.text("מאי 2024", emojiStartX - 15, canvasSize.height * 0.97);
-    p5.text("ינואר 2023", emojiEnd - 30, canvasSize.height * 0.97);
+    p5.text("מאי 2024", emojiStartX - 15, canvasSize.height * 0.87);
+    p5.text("ינואר 2023", emojiEnd - 30, canvasSize.height * 0.87);
     if (cursorX >= emojiStartX && cursorX <= emojiEnd) {
       // Calculate the nearest x-coordinate that is a multiple of emojiSpacing
       let nearestX =
@@ -159,13 +165,15 @@ export default ({ weeks }) => {
       let weekIndex = Math.floor((emojiEnd - lineX) / emojiSpacing);
       weekIndex = p5.constrain(weekIndex, 0, weeks.length - 1);
       let weekText = weeks[weekIndex].text.split("-");
+      let firstDay = weekText[0];
+      let lastDay = weekText[1];
 
       // Week line
       p5.strokeWeight(1);
-      p5.line(lineX - 2, 0, lineX, p5.height - 50);
+      p5.line(lineX - 2, 0, lineX, p5.height - 70);
       // Circle timeline
       p5.fill(bgColor);
-      p5.circle(lineX, canvasSize.height * 0.95, 16);
+      p5.circle(lineX, canvasSize.height * 0.85, 16);
 
       // Week info
       p5.fill(lightPurple);
@@ -178,9 +186,9 @@ export default ({ weeks }) => {
       p5.text(weekText[1], lineX - 7, canvasSize.height * 0.129);
       p5.textAlign("left");
     }
-  }
+  };
 
-  function showEmojiDetails(p5) {
+  const showEmojiDetails = (p5) => {
     let cursorX = p5.mouseX;
     let cursorY = p5.mouseY;
 
@@ -240,25 +248,25 @@ export default ({ weeks }) => {
         }
       }
     }
-  }
+  };
 
-  function turnOffEmojis(p5, emoji) {
+  const turnOffEmojis = (p5, emoji) => {
     for (let i = 0; i < allEmojis.length; i++) {
       let curEmoji = allEmojis[i];
-      if (curEmoji.value != emoji.value) {
+      if (curEmoji.value !== emoji.value) {
         curEmoji.updateColor(p5, 25);
         emoji.drawThisEmoji(p5);
       }
     }
-  }
+  };
 
-  function turnOnEmojis(p5, emoji) {
+  const turnOnEmojis = (p5, emoji) => {
     for (let i = 0; i < allEmojis.length; i++) {
       let curEmoji = allEmojis[i];
       curEmoji.updateColor(p5, 100);
       curEmoji.drawThisEmoji(p5);
     }
-  }
+  };
 
   const mouseClicked = (p5) => {
     let cursorX = p5.mouseX;
@@ -279,18 +287,6 @@ export default ({ weeks }) => {
       }
     }
   };
-
-  function drawEmojis(p5) {
-    for (let i = 0; i < allEmojis.length; i++) {
-      let emoji = allEmojis[i];
-      // Move the point towards point B
-      let deltaX = emoji.next_coords.x - emoji.cur_coords.x;
-      let deltaY = emoji.next_coords.y - emoji.cur_coords.y;
-      emoji.cur_coords.x += deltaX * emoji.speed;
-      emoji.cur_coords.y += deltaY * emoji.speed;
-      emoji.drawThisEmoji(p5);
-    }
-  }
 
   const draw = (p5) => {
     p5.stroke(bgColor);
