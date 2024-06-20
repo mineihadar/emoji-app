@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Sketch from "react-p5";
 import tableData from "./weeks_with_emojis.csv";
 import emojiCountsData from "./emoji_counts.json";
@@ -7,25 +7,52 @@ export default ({ weeks }) => {
   let table;
   let emojiCounts = {};
 
-  // general
+  // General settings
   let regularEmojiSpeed = 0.02;
   let bgColor = "#001139";
   let lightPurple = "#C7CBEE";
 
-  const emojiSpacing = 25; // Spacing between emojis
-  const emojiStartX = 60; // Starting position
-  const emojiStartY = 30; // Starting position
-  const emojiEnd = 1680;
+  // State to track canvas size
+  const [canvasSize, setCanvasSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  // Update canvas size on window resize
+  useEffect(() => {
+    const handleResize = () => {
+      setCanvasSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  let emojiSpacing, emojiStartX, emojiStartY, emojiEnd;
+
+  // Function to calculate dimensions based on canvas size
+  const calculateDimensions = () => {
+    emojiSpacing = canvasSize.width * 0.014; // Example calculation based on canvas size
+    emojiStartX = canvasSize.width * 0.034;
+    emojiStartY = canvasSize.height * 0.171;
+    emojiEnd = canvasSize.width * 0.96;
+  };
+
+  calculateDimensions();
 
   let first = true;
   let allEmojis = [];
+
   class EmojiCoords {
     constructor(x, y) {
       this.x = x;
       this.y = y;
     }
   }
-  // our circle object
+
+  // Emoji object class
   class EmojiObject {
     constructor(value, x, y, s, curColor) {
       this.value = value;
@@ -44,7 +71,7 @@ export default ({ weeks }) => {
       this.color.setAlpha(opacity);
     }
 
-    updateIsClicked(p5) {
+    updateIsClicked() {
       this.isClicked = !this.isClicked;
     }
 
@@ -65,16 +92,19 @@ export default ({ weeks }) => {
   };
 
   const setup = (p5, canvasParentRef) => {
-    p5.createCanvas(1750, 850).parent(canvasParentRef);
+    p5.createCanvas(canvasSize.width, canvasSize.height).parent(
+      canvasParentRef
+    );
     p5.background(bgColor);
     p5.textSize(21);
 
+    // Initialize emojis from table data
     if (table.getRowCount() > 0) {
       for (let r = 0; r < table.getRowCount(); r++) {
         let row = table.getRow(r);
         for (let c = 0; c < table.getColumnCount(); c++) {
-          let x = c * 25 + emojiStartX;
-          let y = r * 25 + emojiStartY;
+          let x = c * emojiSpacing + emojiStartX;
+          let y = r * emojiSpacing + emojiStartY;
           let value = row.getString(c);
           let color = p5.color(255, 255, 255);
           allEmojis.push(
@@ -103,49 +133,49 @@ export default ({ weeks }) => {
   function showWeekCursor(p5) {
     let cursorX = p5.mouseX;
     p5.stroke(lightPurple);
-    // time line
+    // Time line
     p5.strokeWeight(5);
-    p5.line(emojiStartX + 10, 780, emojiEnd - 10, 780);
+    p5.line(
+      emojiStartX + 10,
+      canvasSize.height * 0.95,
+      emojiEnd - 10,
+      canvasSize.height * 0.95
+    );
     p5.fill(lightPurple);
     p5.strokeWeight(0);
     p5.textSize(14);
     p5.textFont("Narkis-ExtraLight");
     p5.textAlign("left");
-    p5.text("מאי 2024", emojiStartX - 15, 804);
-    p5.text("ינואר 2023", emojiEnd - 30, 804);
+    p5.text("מאי 2024", emojiStartX - 15, canvasSize.height * 0.97);
+    p5.text("ינואר 2023", emojiEnd - 30, canvasSize.height * 0.97);
     if (cursorX >= emojiStartX && cursorX <= emojiEnd) {
       // Calculate the nearest x-coordinate that is a multiple of emojiSpacing
       let nearestX =
         Math.floor((cursorX - emojiStartX) / emojiSpacing) * emojiSpacing +
         emojiStartX;
-
       // Calculate the middle x-coordinate of the emoji range
       let lineX = nearestX + emojiSpacing / 2;
-
       // Determine which week corresponds to the current position
       let weekIndex = Math.floor((emojiEnd - lineX) / emojiSpacing);
       weekIndex = p5.constrain(weekIndex, 0, weeks.length - 1);
       let weekText = weeks[weekIndex].text.split("-");
-      let firstDay = weekText[0];
-      let lastDay = weekText[1];
 
-      // week line
+      // Week line
       p5.strokeWeight(1);
-      p5.line(lineX - 2, 0, lineX, p5.height - 70);
-      // circle timeline
+      p5.line(lineX - 2, 0, lineX, p5.height - 50);
+      // Circle timeline
       p5.fill(bgColor);
-      p5.circle(lineX, 780, 16);
-      // week info
+      p5.circle(lineX, canvasSize.height * 0.95, 16);
+
+      // Week info
       p5.fill(lightPurple);
-      p5.rect(lineX - 75, 700, 75, 45);
-      p5.fill(bgColor);
       p5.noStroke();
       p5.textSize(12.5);
       p5.textAlign("right");
 
-      // print the firstDay - lastDay of the week
-      p5.text(`-${weekText[0]}`, lineX - 4, 720); // Adjusted position
-      p5.text(weekText[1], lineX - 7, 735); // Adjusted position
+      // Print the firstDay - lastDay of the week
+      p5.text(`-${weekText[0]}`, lineX - 4, canvasSize.height * 0.114);
+      p5.text(weekText[1], lineX - 7, canvasSize.height * 0.129);
       p5.textAlign("left");
     }
   }
@@ -168,43 +198,43 @@ export default ({ weeks }) => {
           let weekText = weeks[weekIndex].text;
           let count = emojiCountsData[weekText][curEmoji.value] || 0;
 
-          //Background purple rectangle
+          // Background purple rectangle
           p5.fill(lightPurple);
           p5.stroke(lightPurple);
           p5.rect(
-            curEmoji.cur_coords.x - 60, // Adjusted to the left side
+            curEmoji.cur_coords.x - 60,
             curEmoji.cur_coords.y + 5,
             150,
             55
           );
-          //Background emjoi rectangle
+          // Background emoji rectangle
           p5.fill(bgColor);
           p5.rect(
-            curEmoji.cur_coords.x + 35, // Adjusted to the left side
+            curEmoji.cur_coords.x + 35,
             curEmoji.cur_coords.y + 5,
             55,
             55
           );
-          //Emjoi details
+          // Emoji details
           p5.textSize(32);
           p5.noStroke();
           p5.text(
             curEmoji.value,
-            curEmoji.cur_coords.x + 47, // Adjusted to the left side
+            curEmoji.cur_coords.x + 47,
             curEmoji.cur_coords.y + 45
           );
           p5.textSize(16);
           p5.textFont("Greta-Medium");
           p5.text(
-            "פרצוף קורץ", // Replace with appropriate text if needed
-            curEmoji.cur_coords.x - 46, // Adjusted to the left side
+            "פרצוף קורץ",
+            curEmoji.cur_coords.x - 46,
             curEmoji.cur_coords.y + 26
           );
           p5.textFont("Narkis-ExtraLight");
           p5.textSize(12);
           p5.text(
             `${count} מופעים`,
-            curEmoji.cur_coords.x - 27, // Adjusted to the left side
+            curEmoji.cur_coords.x - 27,
             curEmoji.cur_coords.y + 42
           );
         }
@@ -274,9 +304,9 @@ export default ({ weeks }) => {
     showWeekCursor(p5);
     showEmojiDetails(p5);
   };
+
   return (
-    <div
-      style={{ display: "flex", justifyContent: "flex-start", width: "900px" }}>
+    <div style={{ display: "flex", justifyContent: "flex-start" }}>
       <Sketch
         preload={preload}
         setup={setup}

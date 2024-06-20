@@ -383,6 +383,8 @@ function App() {
           textAlign: "right",
           padding: "40px",
           margin: "0",
+          position: "absolute",
+          right: "0",
         }}>
         אימוגי
       </h1>
