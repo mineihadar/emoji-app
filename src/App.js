@@ -1,10 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import EmojiTable from "./EmojiTable";
-import DonutChart from "./Donut";
-import BarChart from "./BarChart";
-import CurveGraph from "./Graphs";
-import MarimekkoChart from "./Marimekko";
+
 function App() {
   let weeks = [
     {
@@ -340,28 +337,7 @@ function App() {
   ];
   return (
     <div className='App'>
-      {/* <img
-        src='noise.jpg'
-        alt='Noise background'
-        className='background-image'
-      /> */}
-      {/* <h1
-        style={{
-          color: "#C7CBEE",
-          textAlign: "right",
-          padding: "40px",
-          margin: "0",
-          position: "absolute",
-          right: "0",
-        }}>
-        אימוגי
-      </h1> */}
-      {/* <DonutChart /> */}
-      {/* <BarChart width={500} height={400} />
-      <DonutChart />
-      <CurveGraph /> */}
       <EmojiTable weeks={weeks} />
-      {/* <MarimekkoChart width={800} height={400} /> */}
     </div>
   );
 }
