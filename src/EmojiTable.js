@@ -9,7 +9,7 @@ export default ({ weeks }) => {
 
   // General settings
   let regularEmojiSpeed = 0.02;
-  let bgColor = "#001139";
+  let bgColor = "#151515";
   let lightPurple = "#C7CBEE";
 
   // State to track canvas size
@@ -18,7 +18,7 @@ export default ({ weeks }) => {
     height: window.innerHeight,
   });
 
-  let emojiSpacing, emojiStartX, emojiStartY, emojiEnd;
+  let emojiSpacing, emojiStartX, emojiEnd;
   let first = true;
   let allEmojis = [];
 
@@ -26,7 +26,6 @@ export default ({ weeks }) => {
   const calculateDimensions = () => {
     emojiSpacing = canvasSize.width * 0.014; // Example calculation based on canvas size
     emojiStartX = canvasSize.width * 0.034;
-    emojiStartY = canvasSize.height * 0.171;
     emojiEnd = canvasSize.width * 0.96;
   };
 
@@ -94,12 +93,20 @@ export default ({ weeks }) => {
 
     // Initialize emojis from table data if loaded
     if (table && table.getRowCount() > 0) {
-      for (let r = 0; r < table.getRowCount(); r++) {
-        let row = table.getRow(r);
-        for (let c = 0; c < table.getColumnCount(); c++) {
+      for (let c = 0; c < table.getColumnCount(); c++) {
+        let emojisInColumn = [];
+        for (let r = 0; r < table.getRowCount(); r++) {
+          let value = table.getString(r, c);
+          if (value) {
+            emojisInColumn.push(value);
+          }
+        }
+
+        let numEmojis = emojisInColumn.length;
+        for (let r = 0; r < numEmojis; r++) {
+          let value = emojisInColumn[r];
           let x = c * emojiSpacing + emojiStartX;
-          let y = r * emojiSpacing + emojiStartY;
-          let value = row.getString(c);
+          let y = canvasSize.height * 0.85 - r * 20; // Align to bottom and stack upwards
           let color = p5.color(255, 255, 255);
           allEmojis.push(
             new EmojiObject(value, x, y, regularEmojiSpeed, color)
@@ -127,7 +134,6 @@ export default ({ weeks }) => {
         let row = table.getRow(r);
         for (let c = 0; c < table.getColumnCount(); c++) {
           let value = row.getString(c);
-
           p5.text(value, 0, 0);
         }
       }
@@ -143,17 +149,17 @@ export default ({ weeks }) => {
     p5.strokeWeight(5);
     p5.line(
       emojiStartX + 10,
-      canvasSize.height * 0.85,
+      canvasSize.height * 0.88,
       emojiEnd - 10,
-      canvasSize.height * 0.85
+      canvasSize.height * 0.88
     );
     p5.fill(lightPurple);
     p5.strokeWeight(0);
     p5.textSize(14);
     p5.textFont("Narkis-ExtraLight");
     p5.textAlign("left");
-    p5.text("מאי 2024", emojiStartX - 15, canvasSize.height * 0.87);
-    p5.text("ינואר 2023", emojiEnd - 30, canvasSize.height * 0.87);
+    p5.text("מאי 2024", emojiStartX - 15, canvasSize.height * 0.9);
+    p5.text("ינואר 2023", emojiEnd - 30, canvasSize.height * 0.9);
     if (cursorX >= emojiStartX && cursorX <= emojiEnd) {
       // Calculate the nearest x-coordinate that is a multiple of emojiSpacing
       let nearestX =
@@ -173,7 +179,7 @@ export default ({ weeks }) => {
       p5.line(lineX - 2, 0, lineX, p5.height - 70);
       // Circle timeline
       p5.fill(bgColor);
-      p5.circle(lineX, canvasSize.height * 0.85, 16);
+      p5.circle(lineX, canvasSize.height * 0.88, 16);
 
       // Week info
       p5.fill(lightPurple);
