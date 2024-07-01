@@ -1,24 +1,25 @@
 /* CodedText.css */
-html, body {
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Arial', 'Segoe UI Emoji', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* font-family: 'Arial', 'Segoe UI Emoji', sans-serif; */
 }
 
 .codedText {
-    margin: 15px;
-    font-size: 24px;
-    color: #fff;
-    text-align: right;
-    white-space: nowrap;
-    cursor: pointer;
+  margin: 15px;
+  font-size: 24px;
+  color: #fff;
+  text-align: right;
+  white-space: nowrap;
+  cursor: pointer;
 }
