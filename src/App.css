@@ -1,33 +1,25 @@
 @font-face {
   font-family: "Greta-Medium";
   src: url("./fonts/GretaTextH+L-Medium.woff") format("woff");
-  /* other formats include: 'woff2', 'truetype, 'opentype',
-                            'embedded-opentype', and 'svg' */
 }
 
 @font-face {
   font-family: "Greta-Regular";
   src: url("./fonts/GretaTextH+L-Regular.woff") format("woff");
-  /* other formats include: 'woff2', 'truetype, 'opentype',
-                            'embedded-opentype', and 'svg' */
 }
 
 @font-face {
   font-family: "Narkis-Regular";
   src: url("./fonts/NarkissBlock-Regular.woff") format("woff");
-  /* other formats include: 'woff2', 'truetype, 'opentype',
-                            'embedded-opentype', and 'svg' */
 }
 
 @font-face {
   font-family: "Narkis-ExtraLight";
   src: url("./fonts/NarkissBlock-Extralight.woff") format("woff");
-  /* other formats include: 'woff2', 'truetype, 'opentype',
-                            'embedded-opentype', and 'svg' */
 }
 
 body {
-  background-color: #151515;
+  background-color: red;
   margin: 0;
   font-family: "Narkis-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
@@ -41,6 +33,7 @@ body {
 .App {
   text-align: center;
   position: relative;
+  z-index: 200; /* Ensure this is higher than the canvas */
 }
 
 .header {
@@ -69,4 +62,23 @@ body {
   z-index: 100;
 }
 
+.rect {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(21, 21, 21, 0.5); /* Default background color */
+  pointer-events: none; /* Allow pointer events to pass through */
+}
 
+.top {
+  top: 0;
+  height: 42vh;
+}
+
+.bottom {
+  bottom: 0;
+  height: 52.2vh;
+}
+
+#p5-canvas {
+  z-index: 1; /* Ensure the canvas is behind the other elements */
+}

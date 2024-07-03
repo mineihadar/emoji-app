@@ -339,28 +339,12 @@ function App() {
   ];
   return (
     <div className='App'>
-
-      {/* <img
-        src='noise.jpg'
-        alt='Noise background'
-        className='background-image'
-      /> */}
-      {/* <h1
-        style={{
-          color: "#C7CBEE",
-          textAlign: "right",
-          padding: "40px",
-          margin: "0",
-          position: "absolute",
-          right: "0",
-        }}>
-        אימוגי
-      </h1> */}
-      {/* <DonutChart /> */}
-      {/* <BarChart width={500} height={400} />
-      <DonutChart />
-      <CurveGraph /> */}
+      <div className='header'></div>
+      <div className='rect top'></div>
       <EmojiTable weeks={weeks} />
+      {/* <div className='rect bottom'></div> */}
+      <div className='rect bottom'></div>
+      <div></div>
     </div>
   );
 }
