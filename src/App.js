@@ -1,7 +1,7 @@
-
 import "./App.css";
 import EmojiTable from "./EmojiTable";
-import CodedText from './Logo';
+import CodedText from "./Logo";
+import logo from "./images/emoji_logo.gif";
 
 function App() {
   let weeks = [
@@ -338,8 +338,13 @@ function App() {
   ];
   return (
     <div className='App'>
-      <CodedText/>
-      {/*<EmojiTable weeks={weeks} />*/}
+      <div className='header'>
+        <div className='logo-div'>
+          <img src={logo}></img>
+        </div>
+      </div>
+      {/* <CodedText /> */}
+      <EmojiTable weeks={weeks} />
     </div>
   );
 }
