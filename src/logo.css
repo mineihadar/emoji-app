@@ -1,0 +1,8 @@
+.codedText {
+  margin: 15px;
+  font-size: 24px;
+  color: #fff;
+  text-align: right;
+  white-space: nowrap;
+  cursor: pointer;
+}

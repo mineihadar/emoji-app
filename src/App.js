@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import EmojiTable from "./EmojiTable";
 import DonutChart from "./Donut";
@@ -362,7 +361,6 @@ function App() {
       <DonutChart />
       <CurveGraph /> */}
       <EmojiTable weeks={weeks} />
-      {/* <MarimekkoChart width={800} height={400} /> */}
     </div>
   );
 }
