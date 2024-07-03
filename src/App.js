@@ -340,6 +340,7 @@ function App() {
   ];
   return (
     <div className='App'>
+
       {/* <img
         src='noise.jpg'
         alt='Noise background'
