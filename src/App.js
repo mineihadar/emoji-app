@@ -1,10 +1,9 @@
+import React from "react";
 import "./App.css";
 import EmojiTable from "./EmojiTable";
-import DonutChart from "./Donut";
-import BarChart from "./BarChart";
-import CurveGraph from "./Graphs";
-import MarimekkoChart from "./Marimekko";
 import logo from "./images/emoji_logo.gif";
+import bezalelLogo from "./images/bezalel_logo.svg";
+import EmojiInfo from "./EmojiInfo";
 
 function App() {
   let weeks = [
@@ -339,8 +338,48 @@ function App() {
       text: "31 מרץ - 6 אפריל",
     },
   ];
+
+  let emojiInfo = {
+    emoji: "🇮🇱",
+    name: {
+      text: "שם",
+      value: "דגל ישראל",
+    },
+    year: {
+      text: "שנת יצירה",
+      value: 2015,
+    },
+    colors: {
+      text: "צבעים",
+      value: ["#1A4CB1", "#1A4CB1"],
+    },
+    category: {
+      text: "קטגוריה",
+      value: "דגלי מדינות",
+    },
+    twinEmojis: {
+      text: "אחוזי הופעה בפוסטים לפי הקשר רגשי (חולץ על סמך מודל שפה)",
+      value: ["💙", "💪", "✊", "🙏", "❤️"],
+    },
+    sentiment: {
+      text: "אחוזי הופעה בפוסטים לפי הקשר רגשי (חולץ על סמך מודל שפה)",
+      value: [{ חיובי: 79 }, { ניטרלי: 20 }, { שלילי: 11 }],
+    },
+    popular: {
+      text: "מדד פופולריות",
+      value: 1,
+    },
+    occurences: {
+      text: "ממוצע הופעות בפוסט בודד (כמה פעמים מקלידים אותו בפוסט)",
+      value: 1.83,
+    },
+  };
+
   return (
     <div className='App'>
+      {/* <div className='modal'>
+        <EmojiInfo emojiDetails={emojiInfo} />
+      </div> */}
       <div className='header'>
         <img src={logo}></img>
         <div className='menu-options'>
@@ -350,15 +389,16 @@ function App() {
           <p>על הפרויקט</p>
         </div>
       </div>
-
       <div className='rect top'></div>
       <EmojiTable weeks={weeks} />
-      {/* <div className='rect bottom'></div> */}
       <div className='rect bottom'></div>
       <div className='footer'>
-        <p>ישראמוג׳י | פרויקט גמר בהנחיית רותם פיש</p>
+        <div className='project'>
+          <img src={bezalelLogo}></img>
+          <p>ישראמוג׳י | פרויקט גמר </p>
+        </div>
         <div className='names'>
-          <p>דניאלה פרידמן והדר מיניי</p>
+          <p>הדר מיניי ודניאלה פרידמן | בהנחיית רותם פיש </p>
         </div>
       </div>
       <div></div>
