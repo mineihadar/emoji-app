@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Greta-Medium";
+  src: url("./fonts/GretaTextH+L-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Greta-Regular";
+  src: url("./fonts/GretaTextH+L-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Narkis-Regular";
+  src: url("./fonts/NarkissBlock-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Narkis-ExtraLight";
+  src: url("./fonts/NarkissBlock-Extralight.woff") format("woff");
+}
+
+.info-frame {
+  padding: 25px 20px 0px 0px;
+  background-color: #2d2d2d;
+  width: 15%;
+  color: #e7e7e7;
+  text-align: right;
+}
+
+.icon-frame {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 1vw;
+}
+.emoji-title {
+  font-size: 70px;
+  height: 8vh;
+}
+
+.emoji-title h3 {
+  margin: 0;
+}
+
+.emoji-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 85%;
+  padding-top: 35px;
+}
+
+p {
+  text-align: right;
+  margin: 0;
+}
+
+.info-category {
+  font-size: 14px;
+  font-family: "Narkis-ExtraLight";
+}
+
+.info-value {
+  font-family: "Greta-Regular";
+  font-size: 18px;
+}
