@@ -5,6 +5,7 @@ import BarChart from "./BarChart";
 import CurveGraph from "./Graphs";
 import MarimekkoChart from "./Marimekko";
 import logo from "./images/emoji_logo.gif";
+import EmojiGrid from "./EmojiGrid";
 
 function App() {
   let weeks = [
@@ -341,7 +342,7 @@ function App() {
   ];
   return (
     <div className='App'>
-      <div className='header'>
+      {/* <div className='header'>
         <img src={logo}></img>
         <div className='menu-options'>
           <p>ציר זמן</p>
@@ -351,17 +352,18 @@ function App() {
         </div>
       </div>
 
-      <div className='rect top'></div>
-      <EmojiTable weeks={weeks} />
+      <div className='rect top'></div> */}
+      <EmojiGrid />
+      {/* <EmojiTable weeks={weeks} /> */}
       {/* <div className='rect bottom'></div> */}
-      <div className='rect bottom'></div>
+      {/* <div className='rect bottom'></div>
       <div className='footer'>
         <p>ישראמוג׳י | פרויקט גמר בהנחיית רותם פיש</p>
         <div className='names'>
           <p>דניאלה פרידמן והדר מיניי</p>
         </div>
       </div>
-      <div></div>
+      <div></div> */}
     </div>
   );
 }
