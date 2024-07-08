@@ -1,17 +1,18 @@
 .scrollable-emojis {
   display: flex;
   align-items: flex-start; /* Align to the top of the container */
+  justify-content: center;
   height: 100vh;
 }
 
 .week-info {
-  position: fixed; /* Fix position to stay in place while scrolling */
-  top: 50vh; /* Start in the middle of the screen */
-  width: auto;
-  text-align: right;
-  display: flex;
+  text-align: right; /* Align text to the right */
+  margin-right: 10px; /* Add spacing between week info and emoji row */
+  display: none; /* Initially hide the week info */
   flex-direction: column;
-  margin-right: 3vw;
+  width: 20vw;
+  opacity: 0; /* Initially hide the text */
+  transition: opacity 0.5s, transform 0.5s; /* Add transition for opacity and transform */
 }
 
 .week-info p {
@@ -20,19 +21,13 @@
   line-height: 1.19rem;
 }
 
-.year {
-  font-family: "Narkis-Extralight";
-  font-size: 14px;
-}
-
 .week {
+  font-family: "Narkis-Extralight";
   font-size: 18px;
 }
 
 .emoji-grid-container {
-  position: relative;
-  top: 0; /* Start from the top */
-  width: 65vw;
+  width: 100%; /* Use full width */
   display: flex;
   flex-direction: column;
   overflow-y: auto;
@@ -41,13 +36,54 @@
   box-sizing: border-box; /* Include padding in the element's total width and height */
 }
 
+.emoji-grid-container::-webkit-scrollbar {
+  display: none;
+}
+
 .week-column {
   display: flex;
+  flex-direction: column; /* Ensure column direction */
   margin-bottom: 10px;
+  opacity: 0.2; /* Default opacity for hidden columns */
+  transition: opacity 0.5s;
+}
+
+.week-column.visible {
+  opacity: 1; /* Full opacity for visible column */
+}
+
+.week-column.visible .week-info {
+  display: flex; /* Show week info only when the column is visible */
+  opacity: 1; /* Show the text */
+  transform: translateY(0); /* Reset the position */
+  animation: fadeInUp 0.5s ease-out; /* Add the animation */
+}
+
+.week-emoji-container {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.emoji-row {
+  display: flex; /* Ensure emojis are in a row */
+  width: 60vw;
   justify-content: flex-end;
 }
 
 .emoji {
-  font-size: 28px;
+  font-size: 32px;
   margin-right: 2px;
+}
+
+/* Define keyframes for the fadeInUp animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

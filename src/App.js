@@ -353,7 +353,7 @@ function App() {
       </div>
 
       <div className='rect top'></div> */}
-      <EmojiGrid />
+      <EmojiGrid weeks={weeks} />
       {/* <EmojiTable weeks={weeks} /> */}
       {/* <div className='rect bottom'></div> */}
       {/* <div className='rect bottom'></div>

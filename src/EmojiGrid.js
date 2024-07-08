@@ -2,47 +2,65 @@ import React, { useEffect, useRef, useState } from "react";
 import "./EmojiGrid.css";
 import emojiData from "./emoji_data_clean.json";
 
-const EmojiGrid = () => {
-  const [scrolled, setScrolled] = useState(false);
+const EmojiGrid = ({ weeks }) => {
   const gridRef = useRef(null);
+  const [visibleColumnIndex, setVisibleColumnIndex] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (gridRef.current) {
-        if (window.scrollY > 0) {
-          setScrolled(true);
-        } else {
-          setScrolled(false);
-        }
-      }
+    const options = {
+      root: null,
+      rootMargin: "0px 0px -45% 0px", // Adjust rootMargin to trigger in the middle of the screen
+      threshold: 0.5,
     };
 
-    window.addEventListener("scroll", handleScroll);
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setVisibleColumnIndex(parseInt(entry.target.dataset.index));
+        }
+      });
+    }, options);
+
+    const columns = document.querySelectorAll(".week-column");
+    columns.forEach((column, index) => {
+      column.dataset.index = index;
+      observer.observe(column);
+    });
+
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      columns.forEach((column) => {
+        observer.unobserve(column);
+      });
     };
   }, []);
 
-  const renderColumn = (weekData, index) => (
-    <div className='week-column' key={index}>
-      {weekData.map((emoji, idx) => (
-        <div className='emoji' key={idx}>
-          {emoji}
+  const renderColumn = (weekData, week, index) => (
+    <div
+      className={`week-column ${index === visibleColumnIndex ? "visible" : ""}`}
+      key={index}>
+      <div className='week-emoji-container'>
+        <div className='emoji-row'>
+          {weekData.map((emoji, idx) => (
+            <div className='emoji' key={idx}>
+              {emoji}
+            </div>
+          ))}
         </div>
-      ))}
+        {week && (
+          <div className='week-info'>
+            <p className='week'>{week.text}</p>
+          </div>
+        )}
+      </div>
     </div>
   );
 
   return (
-    <div className='scrollable-emojis'>
-      <div
-        ref={gridRef}
-        className={`emoji-grid-container ${scrolled ? "scrolled" : ""}`}>
-        {emojiData.map((week, index) => renderColumn(week, index))}
-      </div>
-      <div className='week-info'>
-        <p className='year'>2023</p>
-        <p className='week'>3 באפריל - 8 באפריל</p>
+    <div className='scrollable-emojis' ref={gridRef}>
+      <div className='emoji-grid-container'>
+        {emojiData.map((weekData, index) =>
+          renderColumn(weekData, weeks[index], index)
+        )}
       </div>
     </div>
   );
