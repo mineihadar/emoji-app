@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Sketch from "react-p5";
 import tableData from "./weeks_with_emojis.csv";
 import emojiCountsData from "./emoji_counts.json";
@@ -18,18 +18,19 @@ const EmojiTable = ({ weeks }) => {
   // State to track canvas size
   const [canvasSize, setCanvasSize] = useState({
     width: window.innerWidth,
-    height:
-      (window.innerHeight / 2 - EMOJI_SIZE) * 2 + NUM_WEEKS * EMOJI_SIZE * 2, // fix this to fit all screen sizes
+    height: (window.innerHeight / 2 - EMOJI_SIZE) * 2 + NUM_WEEKS * EMOJI_SIZE * 2,
   });
 
   const [allEmojis, setAllEmojis] = useState([]);
 
+  const canvasRef = useRef(); // Ref for the canvas
+  const markerRef = useRef(); // Ref for the canvas marker
+
   let emojiSpacing, weekSpacing, emojiStartY, emojiEnd;
-  let first = true;
 
   // Function to calculate dimensions based on canvas size
   const calculateDimensions = () => {
-    emojiSpacing = canvasSize.width * 0.023; // Example calculation based on canvas size
+    emojiSpacing = canvasSize.width * 0.023;
     weekSpacing = EMOJI_SIZE * 2;
     emojiStartY = window.innerHeight / 2 - EMOJI_SIZE * 3.4;
     emojiEnd = canvasSize.height * 0.9;
@@ -100,7 +101,7 @@ const EmojiTable = ({ weeks }) => {
           let y = window.innerWidth / 3 + r * emojiSpacing; // Stack emojis horizontally
           let color = p5.color(255, 255, 255);
           newEmojis.push(
-            new EmojiObject(value, y, x, regularEmojiSpeed, color, r, c)
+              new EmojiObject(value, y, x, regularEmojiSpeed, color, r, c)
           );
         }
       }
@@ -110,20 +111,16 @@ const EmojiTable = ({ weeks }) => {
 
   const calculateNewEmojiPosition = (p5) => {
     for (const emoji of allEmojis) {
-      //console.log(`${emoji.r}`);
       let x = emoji.column * weekSpacing + emojiStartY;
-      let y = window.innerWidth / 3 + emoji.row * emojiSpacing; // Stack emojis horizontally
-      //let color = p5.color(255, 255, 255);
-      console.log(emoji.c);
-
+      let y = window.innerWidth / 3 + emoji.row * emojiSpacing;
       emoji.updateCurCoords(new EmojiCoords(y, x));
     }
   };
 
   const setup = (p5, canvasParentRef) => {
     const canvas = p5
-      .createCanvas(canvasSize.width, canvasSize.height)
-      .parent(canvasParentRef);
+        .createCanvas(canvasSize.width, canvasSize.height)
+        .parent(canvasParentRef);
     canvas.id("p5-canvas");
     p5.background(bgColor);
     p5.textSize(21);
@@ -136,55 +133,70 @@ const EmojiTable = ({ weeks }) => {
     for (let i = 0; i < allEmojis.length; i++) {
       let emoji = allEmojis[i];
       emoji.drawThisEmoji(p5);
-
-      // // Move the point towards point B
-      // let deltaX = emoji.next_coords.x - emoji.cur_coords.x;
-      // let deltaY = emoji.next_coords.y - emoji.cur_coords.y;
-      // emoji.cur_coords.x += deltaX * emoji.speed;
-      // emoji.cur_coords.y += deltaY * emoji.speed;
     }
   };
-
-  function initEmojis(p5) {
-    if (table.getRowCount() > 0) {
-      for (let r = 0; r < table.getRowCount(); r++) {
-        let row = table.getRow(r);
-        for (let c = 0; c < table.getColumnCount(); c++) {
-          let value = row.getString(c);
-          p5.text(value, 0, 0);
-        }
-      }
-    } else {
-      p5.text("No data found", 50, 50);
-    }
-  }
 
   const draw = (p5) => {
     p5.background(bgColor);
     drawEmojis(p5);
-    // showEmojiDetails(p5);
   };
 
   const windowResized = (p5) => {
     calculateDimensions();
     p5.resizeCanvas(window.innerWidth, window.innerHeight * 5);
     calculateNewEmojiPosition(p5);
-    // setCanvasSize({
-    //   width: window.innerWidth,
-    //   height: window.innerHeight,
-    // });
-    //calculateEmojiPosition();
   };
 
+  useEffect(() => {
+    const checkIntersection = () => {
+      const viewportCenter = {
+        x: window.innerWidth / 2,
+        y: window.innerHeight / 2,
+      };
+
+      if (markerRef.current) {
+        const markerRect = markerRef.current.getBoundingClientRect();
+
+        const isIntersecting = (
+            markerRect.top <= viewportCenter.y &&
+            markerRect.bottom >= viewportCenter.y &&
+            markerRect.left <= viewportCenter.x &&
+            markerRect.right >= viewportCenter.x
+        );
+
+        if (isIntersecting) {
+          console.log("Marker intersecting with center");
+          // Perform your action here
+        }
+      }
+    };
+
+    const intervalId = setInterval(checkIntersection, 100); // Check every 100ms
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
-    <div className='canvas-container'>
-      <Sketch
-        setup={setup}
-        draw={draw}
-        preload={preload}
-        windowResized={windowResized}
-      />
-    </div>
+      <div className="canvas-container" ref={canvasRef} style={{ position: 'relative' }}>
+        <Sketch
+            setup={setup}
+            draw={draw}
+            preload={preload}
+            windowResized={windowResized}
+        />
+        {/* Marker element within the canvas */}
+        <div
+            ref={markerRef}
+            style={{
+              position: "absolute",
+              top: "50%", // Adjust position as needed
+              left: "0px", // Adjust position as needed
+              width: "100vw",
+              height: "42px",
+              backgroundColor: "aqua",
+            }}
+        ></div>
+      </div>
   );
 };
 
