@@ -3,7 +3,7 @@ import "./EmojiGrid.css";
 import emojiData from "./weekly_emojis.json";
 import trends from "./trending_data.json";
 
-const EmojiGrid = ({ weeks }) => {
+const EmojiGrid = ({ weeks, onClickEmoji }) => {
   const gridRef = useRef(null);
   const [visibleColumnIndex, setVisibleColumnIndex] = useState(0);
 
@@ -53,7 +53,14 @@ const EmojiGrid = ({ weeks }) => {
       <div className='week-emoji-container'>
         <div className='emoji-row'>
           {weekData.map((emoji, idx) => (
-            <div className='emoji' key={idx}>
+            <div
+              className={`emoji ${
+                index === visibleColumnIndex ? "clickable" : ""
+              }`}
+              key={idx}
+              onClick={() =>
+                index === visibleColumnIndex && onClickEmoji(emoji)
+              }>
               {emoji}
             </div>
           ))}

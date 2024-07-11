@@ -1,0 +1,90 @@
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -38.3vw; /* Initially off-screen */
+  width: 30.3vw;
+  height: 100%;
+  color: #e7e7e7;
+  transition: right 0.3s ease;
+  z-index: 1300; /* Ensure it appears on top */
+  padding: 80px 60px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  background-color: rgb(45, 45, 45, 0.5);
+  backdrop-filter: blur(1px);
+}
+
+.drawer.open {
+  right: 0; /* Slide in */
+}
+
+.info-frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.icon-frame {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.close-icon {
+  font-size: 34px;
+  font-weight: normal;
+}
+
+.emoji-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.emoji-title h3 {
+  font-size: 100px;
+  line-height: 0.5em;
+  margin-left: 15px;
+}
+
+.emoji-id {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.emoji-id h5 {
+  font-size: 25px;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  border-top: #e7e7e7 1px solid;
+  padding-top: 8px;
+}
+
+.emoji-info {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.explain-category {
+  opacity: 0.6;
+}
+
+.info-value {
+  margin: 0px 0px 10px 10px;
+}
+
+.info-value-number {
+  font-family: "Narkis-ExtraLight";
+  font-size: 72px;
+  line-height: 0.7em; /* Same as height  */
+  margin-left: 3px;
+  margin-bottom: 10px;
+}
+
+.info-value-emoji {
+  font-size: 42px;
+}
