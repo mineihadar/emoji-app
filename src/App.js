@@ -339,7 +339,43 @@ function App() {
       lastDay: "2024-04-05",
       text: "31 מרץ - 6 אפריל",
     },
+    {
+      firstDay: "2024-04-06",
+      lastDay: "2024-04-13",
+      text: "7 אפריל - 13 אפריל",
+    },
+    {
+      firstDay: "2024-04-14",
+      lastDay: "2024-04-20",
+      text: "14 אפריל - 20 אפריל",
+    },
+    {
+      firstDay: "2024-04-21",
+      lastDay: "2024-04-27",
+      text: "21 אפריל - 27 אפריל",
+    },
+    {
+      firstDay: "2024-04-28",
+      lastDay: "2024-05-04",
+      text: "28 אפריל - 4 מאי",
+    },
+    {
+      firstDay: "2024-05-05",
+      lastDay: "2024-05-11",
+      text: "5 מאי - 11 מאי",
+    },
+    {
+      firstDay: "2024-05-12",
+      lastDay: "2024-05-18",
+      text: "12 מאי - 18 מאי",
+    },
+    {
+      firstDay: "2024-05-19",
+      lastDay: "2024-05-25",
+      text: "19 מאי - 25 מאי",
+    },
   ];
+
   return (
     <div className='App'>
       {/* <div className='header'>

@@ -1,16 +1,18 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./EmojiGrid.css";
-import emojiData from "./emoji_data_clean.json";
+import emojiData from "./weekly_emojis.json";
+import trends from "./trending_data.json";
 
 const EmojiGrid = ({ weeks }) => {
   const gridRef = useRef(null);
   const [visibleColumnIndex, setVisibleColumnIndex] = useState(0);
 
   useEffect(() => {
+    const rootMargin = "-50% 0px -50% 0px"; // Symmetrical root margin
     const options = {
       root: null,
-      rootMargin: "0px 0px -45% 0px", // Adjust rootMargin to trigger in the middle of the screen
-      threshold: 0.5,
+      rootMargin,
+      threshold: [0, 0.5, 1], // More lenient threshold
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -34,6 +36,16 @@ const EmojiGrid = ({ weeks }) => {
     };
   }, []);
 
+  const returnWeekTrend = (week) => {
+    const weekData = trends.find((weekData) => weekData.week === week);
+    if (weekData) {
+      return weekData.trending_words.map((trend, index) => (
+        <p key={index}>{trend.includes("#") ? trend : `#${trend}`}</p>
+      ));
+    }
+    return [];
+  };
+
   const renderColumn = (weekData, week, index) => (
     <div
       className={`week-column ${index === visibleColumnIndex ? "visible" : ""}`}
@@ -48,7 +60,20 @@ const EmojiGrid = ({ weeks }) => {
         </div>
         {week && (
           <div className='week-info'>
+            <div className='additional-text top'>
+              <p className='year'>2023</p>
+            </div>
             <p className='week'>{week.text}</p>
+            <div className='additional-text bottom'>
+              <div className='events-window'>
+                <p className='title'>אירועים שקרו בשבוע</p>
+                <div className='events'>אירוויזיון</div>
+              </div>
+              <div className='trends-window'>
+                <p className='title'>מילים שחזרו בשבוע</p>
+                <div className='trends'>{returnWeekTrend(week.text)}</div>
+              </div>
+            </div>
           </div>
         )}
       </div>
