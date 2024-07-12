@@ -62,11 +62,13 @@ h5 {
   display: flex;
   position: absolute;
   width: 100%;
-  height: 6vh;
+  height: 8vh;
   z-index: 2;
   top: 0;
   justify-content: space-between;
-  margin: 20px 20px;
+  padding: 20px 0px 0px 0px;
+  background-color: #2d2d2d;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .header h1 {
@@ -108,7 +110,7 @@ h5 {
 }
 
 .menu-options p {
-  font-size: 16px;
+  font-size: 16.8px;
   color: #e7e7e7;
   margin-left: 20px;
   cursor: pointer;

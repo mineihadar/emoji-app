@@ -1,11 +1,15 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import "./EmojiGrid.css";
 import emojiData from "./weekly_emojis.json";
 import trends from "./trending_data.json";
 
-const EmojiGrid = ({ weeks, onClickEmoji }) => {
+const EmojiGrid = ({
+  weeks,
+  onClickEmoji,
+  visibleColumnIndex,
+  setVisibleColumnIndex,
+}) => {
   const gridRef = useRef(null);
-  const [visibleColumnIndex, setVisibleColumnIndex] = useState(0);
 
   useEffect(() => {
     const rootMargin = "-50% 0px -50% 0px"; // Symmetrical root margin
