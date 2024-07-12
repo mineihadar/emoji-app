@@ -12,6 +12,7 @@ function App() {
   const [selectedEmojiDetails, setSelectedEmojiDetails] = useState(null);
   const [visibleColumnIndex, setVisibleColumnIndex] = useState(0);
   const gridRef = useRef(null);
+  const isScrolling = useRef(false);
 
   const handleClickEmoji = () => {
     !drawerOpen ? handleOpenDrawer() : handleCloseDrawer();
@@ -59,17 +60,47 @@ function App() {
   };
 
   const handleScrollToWeek = (index) => {
-    setVisibleColumnIndex(index);
     const columns = document.querySelectorAll(".week-column");
     if (columns[index]) {
-      columns[index].scrollIntoView({ behavior: "smooth" });
+      isScrolling.current = true; // Prevent manual scroll handler from interfering
+      columns[index].scrollIntoView({ behavior: "smooth", block: "center" });
+      setVisibleColumnIndex(index);
+      setTimeout(() => {
+        isScrolling.current = false;
+      }, 500); // Give some time for the scroll to complete
     }
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (isScrolling.current) return; // Skip if scroll is programmatic
+
+      const columns = document.querySelectorAll(".week-column");
+      let closestIndex = 0;
+      let closestDistance = Infinity;
+
+      columns.forEach((column, index) => {
+        const rect = column.getBoundingClientRect();
+        const distance = Math.abs(rect.top - window.innerHeight / 2);
+
+        if (distance < closestDistance) {
+          closestIndex = index;
+          closestDistance = distance;
+        }
+      });
+
+      setVisibleColumnIndex(closestIndex);
+    };
+
+    const container = gridRef.current;
+    container.addEventListener("scroll", handleScroll);
+    return () => container.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div className='App'>
       <div className='header'>
-        <img src={logo}></img>
+        <img src={logo} alt='Logo' />
         <div className='menu-options'>
           <p>ציר זמן</p>
           <p>אירועים</p>
@@ -87,6 +118,7 @@ function App() {
         onClickEmoji={handleClickEmoji}
         visibleColumnIndex={visibleColumnIndex}
         setVisibleColumnIndex={setVisibleColumnIndex}
+        ref={gridRef}
       />
       {selectedEmojiDetails && (
         <EmojiDrawer
