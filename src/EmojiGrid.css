@@ -3,20 +3,26 @@
   align-items: flex-start;
   justify-content: center;
   height: 100vh;
-  width: 95vw;
+  width: 90vw;
+  margin: 0 auto;
 }
 
 .week-info {
   text-align: right;
   margin: 0px 10px 0px 0px;
   padding-top: 12px;
-  display: none;
   flex-direction: column;
-  width: 25vw;
+  width: 40vw;
   opacity: 0;
   transition: opacity 0.5s, transform 0.5s;
+  visibility: hidden; /* Reserve space while hiding */
   position: relative;
   flex-grow: 1; /* Allow week-info to grow */
+}
+
+.week-info.visible {
+  opacity: 1;
+  visibility: visible; /* Make it visible when needed */
 }
 
 .title {
@@ -92,10 +98,6 @@
   transition: opacity 0.5s;
 }
 
-/* .week-column:hover {
-  opacity: 1;
-} */
-
 .week-column.visible {
   opacity: 1;
 }
@@ -103,6 +105,7 @@
 .week-column.visible .week-info {
   display: flex;
   opacity: 1;
+  visibility: visible; /* Ensure it's visible */
   transform: translateY(0);
   animation: fadeInUp 0.5s ease-out;
 }
@@ -110,8 +113,9 @@
 .week-emoji-container {
   display: flex;
   align-items: center;
-  gap: 2vw;
+  justify-content: space-between; /* Ensures equal spacing */
   width: 100%;
+  gap: 2vw;
 }
 
 .additional-text {
@@ -134,7 +138,7 @@
 
 .emoji-row {
   display: flex;
-  width: 65vw;
+  width: 75vw;
   justify-content: flex-end;
 }
 
@@ -149,10 +153,6 @@
   transition: opacity 0.5s;
   transition: font-size 0.02s;
 }
-
-/* .emoji.clickable:hover {
-    
-} */
 
 .emoji:not(.clickable) {
   pointer-events: none;

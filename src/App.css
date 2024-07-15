@@ -110,14 +110,25 @@ h5 {
 }
 
 .menu-options p {
+}
+
+.menu-options p:hover {
+  color: #ffd600;
+}
+
+.menu-options a {
+  text-decoration: none;
   font-size: 16.8px;
   color: #e7e7e7;
   margin-left: 20px;
   cursor: pointer;
-  transition: color 0.5s;
+  /* transition: color 0.5s; */
 }
 
-.menu-options p:hover {
+.menu-options a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 8px;
   color: #ffd600;
 }
 
