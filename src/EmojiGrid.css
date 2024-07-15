@@ -4,7 +4,6 @@
   justify-content: center;
   height: 100vh;
   width: 90vw;
-  margin: 0 auto;
 }
 
 .week-info {
@@ -37,12 +36,16 @@
   color: #e7e7e7;
   line-height: 1.19rem;
   margin: 2px 0px 20px 0px;
+  opacity: 1;
+  transition: opacity 0.5s;
 }
 
 .year {
   color: #e7e7e7;
   font-size: 16.8px;
   margin: 0;
+  opacity: 1;
+  transition: opacity 0.5s;
 }
 
 .trends-window {
@@ -94,12 +97,30 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+}
+
+.emoji-row {
   opacity: 0.2;
   transition: opacity 0.5s;
 }
 
-.week-column.visible {
+.emoji-row:hover {
+  opacity: 1; /* Slightly increase opacity on hover */
+  cursor: pointer;
+}
+
+.emoji-row:hover .year,
+.emoji-row:hover .week {
+  opacity: 1; /* Show year and week on hover */
+}
+
+.week-column.visible .emoji-row {
   opacity: 1;
+}
+
+.week-column.visible .week,
+.week-column.visible .year {
+  opacity: 1; /* Ensure the year and week are visible for the highlighted row */
 }
 
 .week-column.visible .week-info {
@@ -153,6 +174,10 @@
   transition: opacity 0.5s;
   transition: font-size 0.02s;
 }
+
+/* .emoji.clickable:hover {
+    padding-bottom: 5px;
+  } */
 
 .emoji:not(.clickable) {
   pointer-events: none;

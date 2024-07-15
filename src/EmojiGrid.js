@@ -4,7 +4,6 @@ import emojiData from "./weekly_emojis.json";
 import trends from "./trending_data.json";
 import EmojiDrawer from "./EmojiDrawer";
 import ScrollableSidebar from "./ScrollableSidebar";
-import emojiDetails from "./emojiDetails.json";
 
 const EmojiGrid = forwardRef(({ weeks }, ref) => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -14,11 +13,11 @@ const EmojiGrid = forwardRef(({ weeks }, ref) => {
   const gridRef = ref || internalRef;
   const isScrolling = useRef(false);
 
-  const handleClickEmoji = () => {
+  const handleClickEmoji = (emojiDetails) => {
     !drawerOpen ? handleOpenDrawer(emojiDetails) : handleCloseDrawer();
   };
 
-  const handleOpenDrawer = () => {
+  const handleOpenDrawer = (emojiDetails) => {
     setSelectedEmojiDetails(emojiDetails);
     setDrawerOpen(true);
   };
@@ -37,6 +36,10 @@ const EmojiGrid = forwardRef(({ weeks }, ref) => {
         isScrolling.current = false;
       }, 500); // Give some time for the scroll to complete
     }
+  };
+
+  const handleRowClick = (index) => {
+    handleScrollToWeek(index);
   };
 
   useEffect(() => {
@@ -110,32 +113,36 @@ const EmojiGrid = forwardRef(({ weeks }, ref) => {
     <div
       className={`week-column ${index === visibleColumnIndex ? "visible" : ""}`}
       key={index}>
-      <div className='week-emoji-container'>
-        <div className='emoji-row'>
+      <div
+        className={`week-emoji-container ${
+          index === visibleColumnIndex ? "highlighted" : ""
+        }`}>
+        <div className='emoji-row' onClick={() => handleRowClick(index)}>
           {weekData.map((emoji, idx) => (
             <div
               className={`emoji ${
                 index === visibleColumnIndex ? "clickable" : ""
               }`}
               key={idx}
-              onClick={() =>
+              onClick={(e) => {
+                e.stopPropagation(); // Prevent row click from triggering
                 index === visibleColumnIndex &&
-                handleClickEmoji({
-                  emoji,
-                  id: {
-                    value: `Example Value ${idx}`,
-                    category: `Example Category ${idx}`,
-                  },
-                  details: [
-                    {
-                      category: "Example Category",
-                      text: "Example Text",
-                      value: "Example Value",
-                      additionalText: "Additional Text",
+                  handleClickEmoji({
+                    emoji,
+                    id: {
+                      value: `Example Value ${idx}`,
+                      category: `Example Category ${idx}`,
                     },
-                  ],
-                })
-              }>
+                    details: [
+                      {
+                        category: "Example Category",
+                        text: "Example Text",
+                        value: "Example Value",
+                        additionalText: "Additional Text",
+                      },
+                    ],
+                  });
+              }}>
               {emoji}
             </div>
           ))}

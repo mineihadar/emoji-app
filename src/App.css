@@ -49,24 +49,26 @@ h5 {
   z-index: 200; /* Ensure this is higher than the canvas */
 }
 
-.logo-div {
+/* .logo-div {
   left: auto;
-}
+} */
 
-.logo-div img {
+.logo-div {
   height: 100%;
   width: auto;
+  margin-top: 10px;
 }
 
 .header {
   display: flex;
   position: absolute;
   width: 100%;
-  height: 8vh;
+  height: 7vh;
   z-index: 2;
   top: 0;
   justify-content: space-between;
-  padding: 20px 0px 0px 0px;
+  align-items: center;
+  padding: 0px 0px 0px 0px;
   background-color: #2d2d2d;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
 }
@@ -104,9 +106,9 @@ h5 {
 
 .menu-options {
   display: flex;
-  margin-left: 40px;
+  margin-left: 20px;
   align-items: flex-end;
-  padding-bottom: 18px;
+  padding: 18px 0px 0px 0px;
 }
 
 .menu-options p {

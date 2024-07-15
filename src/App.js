@@ -13,7 +13,7 @@ function App() {
     <Router>
       <div className='App'>
         <div className='header'>
-          <img src={logo} alt='Logo' />
+          <img className='logo-div' src={logo} alt='Logo' />
           <div className='menu-options'>
             <Link to='/timeline'>ציר זמן</Link>
             <Link to='/events'>אירועים</Link>
