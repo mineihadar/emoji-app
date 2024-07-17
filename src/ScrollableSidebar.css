@@ -15,7 +15,7 @@
 .week-line {
   width: 2px;
   height: 2px;
-  background-color: #e7e7e7;
+  background-color: rgba(231, 231, 231, 0.6);
   position: relative;
   cursor: pointer;
   display: flex;
@@ -44,7 +44,7 @@
 
 .month-label {
   margin-right: 20px;
-  font-size: 14px;
-  color: #e7e7e7;
+  font-size: 15.3px;
+  color: rgba(231, 231, 231, 0.6);
   white-space: nowrap; /* Ensure the text doesn't wrap */
 }

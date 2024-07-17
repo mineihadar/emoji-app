@@ -27,11 +27,11 @@
 .title {
   color: #e7e7e7;
   opacity: 0.6;
-  font-size: 16.8px;
+  font-size: 17.2px;
 }
 
 .week {
-  font-size: 16.8px;
+  font-size: 17.2px;
   margin: 0;
   color: #e7e7e7;
   line-height: 1.19rem;
@@ -42,7 +42,7 @@
 
 .year {
   color: #e7e7e7;
-  font-size: 16.8px;
+  font-size: 17.2px;
   margin: 0;
   opacity: 1;
   transition: opacity 0.5s;
@@ -55,7 +55,7 @@
 
 .events-window {
   margin: 20px 0px 0px 20px;
-  width: 32%;
+  width: 40%;
 }
 
 .trends {
@@ -64,13 +64,13 @@
   width: 100%; /* Make trends div take up full width of its container */
   margin: 0 auto;
   color: #e7e7e7;
-  font-size: 16.8px;
+  font-size: 17.2px;
 }
 
 .trends p {
   padding-left: 5px;
   color: #e7e7e7;
-  font-size: 16.8px;
+  font-size: 17.2px;
 }
 
 .events {

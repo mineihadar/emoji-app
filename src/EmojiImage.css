@@ -10,7 +10,7 @@
   align-items: center; /* Center align the rows */
 }
 
-.emoji-row {
+.emoji-image-row {
   width: 100%; /* Ensure each row takes full width */
   text-align: center; /* Center text within each row */
 }

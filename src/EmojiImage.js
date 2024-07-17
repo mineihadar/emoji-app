@@ -59,7 +59,7 @@ const EmojiImage = () => {
   return (
     <div id='emoji-container'>
       {loadedRows.map((row, index) => (
-        <div key={index} className='emoji-row'>
+        <div key={index} className='emoji-image-row'>
           {row}
         </div>
       ))}

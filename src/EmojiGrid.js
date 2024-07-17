@@ -1,9 +1,10 @@
 import React, { useEffect, useState, useRef, forwardRef } from "react";
 import "./EmojiGrid.css";
-import emojiData from "./weekly_emojis.json";
-import trends from "./trending_data.json";
+import emojiData from "./data/weekly_emojis.json";
+import trends from "./data/modified_trending_data_with_corrected_years.json";
 import EmojiDrawer from "./EmojiDrawer";
 import ScrollableSidebar from "./ScrollableSidebar";
+import { findEmojiInData } from "./helpers/findEmojisData";
 
 const EmojiGrid = forwardRef(({ weeks }, ref) => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -13,8 +14,18 @@ const EmojiGrid = forwardRef(({ weeks }, ref) => {
   const gridRef = ref || internalRef;
   const isScrolling = useRef(false);
 
-  const handleClickEmoji = (emojiDetails) => {
-    !drawerOpen ? handleOpenDrawer(emojiDetails) : handleCloseDrawer();
+  const handleClickEmoji = (emoji) => {
+    let emojiDetails1 = findEmojiInData(emoji);
+    console.log(emojiDetails1);
+    if (drawerOpen) {
+      handleCloseDrawer();
+      setTimeout(() => {
+        handleOpenDrawer(emojiDetails1);
+      }, 300); // Adjust this delay if necessary
+    } else {
+      console.log("here");
+      handleOpenDrawer(emojiDetails1);
+    }
   };
 
   const handleOpenDrawer = (emojiDetails) => {
@@ -109,6 +120,15 @@ const EmojiGrid = forwardRef(({ weeks }, ref) => {
     return [];
   };
 
+  const returnWeekEvents = (week) => {
+    const weekData = trends.find((weekData) => weekData.week === week);
+    if (weekData) {
+      console.log(weekData.events);
+      return weekData.events.map((event, index) => <p key={index}>{event}</p>);
+    }
+    return [];
+  };
+
   const renderColumn = (weekData, week, index) => (
     <div
       className={`week-column ${index === visibleColumnIndex ? "visible" : ""}`}
@@ -126,22 +146,7 @@ const EmojiGrid = forwardRef(({ weeks }, ref) => {
               key={idx}
               onClick={(e) => {
                 e.stopPropagation(); // Prevent row click from triggering
-                index === visibleColumnIndex &&
-                  handleClickEmoji({
-                    emoji,
-                    id: {
-                      value: `Example Value ${idx}`,
-                      category: `Example Category ${idx}`,
-                    },
-                    details: [
-                      {
-                        category: "Example Category",
-                        text: "Example Text",
-                        value: "Example Value",
-                        additionalText: "Additional Text",
-                      },
-                    ],
-                  });
+                index === visibleColumnIndex && handleClickEmoji(emoji);
               }}>
               {emoji}
             </div>
@@ -159,7 +164,7 @@ const EmojiGrid = forwardRef(({ weeks }, ref) => {
             <div className='additional-text bottom'>
               <div className='events-window'>
                 <p className='title'>אירועים שקרו בשבוע</p>
-                <div className='events'>אירוויזיון</div>
+                <div className='events'>{returnWeekEvents(week.text)}</div>
               </div>
               <div className='trends-window'>
                 <p className='title'>מילים שחזרו בשבוע</p>

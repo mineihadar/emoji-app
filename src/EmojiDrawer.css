@@ -7,7 +7,7 @@
   color: #e7e7e7;
   transition: right 0.3s ease;
   z-index: 1300; /* Ensure it appears on top */
-  padding: 60px 60px;
+  padding: 20px 60px;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
   background-color: rgb(45, 45, 45, 0.8);
   backdrop-filter: blur(1px);
@@ -37,11 +37,11 @@
 .emoji-title {
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  margin: 50px 0px;
 }
 
 .emoji-title h3 {
-  font-size: 100px;
+  font-size: 72px;
   line-height: 0.5em;
   margin-left: 15px;
 }
@@ -58,9 +58,9 @@
 
 .category {
   display: flex;
-  justify-content: space-between;
-  border-top: rgba(231, 231, 231, 0.6) 1px solid;
-  padding-top: 8px;
+  /* justify-content: space-between; */
+  /* border-top: rgba(231, 231, 231, 0.6) 1px solid; */
+  padding-top: 0px;
 }
 
 .emoji-info {
@@ -71,26 +71,27 @@
 
 .explain-category {
   opacity: 0.6;
-  font-size: 16.8px;
+  font-size: 17.2px;
 }
 
 .info-category {
-  font-size: 16.8px;
+  font-size: 17.2px;
+  margin-left: 10px;
 }
 
 .info-value {
-  font-size: 16.8px;
-  margin: 0px 0px 10px 10px;
+  font-size: 17.2px;
+  margin: 0px 0px 2px 10px;
 }
 
 .info-value-number {
-  font-family: "Narkis-ExtraLight";
-  font-size: 62px;
+  font-family: "Narkis-Regular";
+  font-size: 52px;
   line-height: 0.7em; /* Same as height  */
   margin-left: 3px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .info-value-emoji {
-  font-size: 38px;
+  font-size: 37.1px;
 }
