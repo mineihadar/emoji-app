@@ -8,12 +8,14 @@
     "@testing-library/user-event": "^13.2.1",
     "@visx/visx": "^3.11.0",
     "d3-scale-chromatic": "^3.1.0",
+    "framer-motion": "^11.3.6",
     "gsap": "^3.12.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-p5": "^1.4.1",
     "react-router-dom": "^6.24.1",
     "react-scripts": "5.0.1",
+    "scrollmagic": "^2.0.8",
     "web-vitals": "^2.1.0"
   },
   "scripts": {

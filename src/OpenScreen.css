@@ -1,0 +1,30 @@
+.canvas-container {
+  height: 200px;
+}
+
+.logo {
+  position: fixed;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, -50%) scale(2); /* Centered and large */
+  transition: all 0.5s ease-in-out;
+  z-index: 1000;
+}
+
+.scrolled .logo {
+  top: 10px;
+  left: 10px;
+  transform: translate(0, 0) scale(1); /* Top left and normal size */
+}
+
+.text-container {
+  position: relative;
+  width: 40%;
+  right: 27%;
+}
+
+.about-text {
+  color: #e7e7e7;
+  font-size: 20.1px;
+  text-align: center;
+}
