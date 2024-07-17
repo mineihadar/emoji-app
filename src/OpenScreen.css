@@ -1,0 +1,28 @@
+.logo {
+  position: fixed;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%) scale(1); /* Centered and large */
+  transition: all 1s ease-in-out;
+  z-index: 1000;
+}
+
+.textContainer {
+  position: fixed;
+  width: 40%;
+  left: 32%;
+  top: 40%;
+}
+
+.openText {
+  color: #e7e7e7;
+  font-family: "Narkis-Regular";
+  font-size: 22.2px;
+  text-align: center;
+}
+
+.scrolled .logo {
+  top: 10px;
+  right: 0px;
+  transform: translate(0, 0) scale(0.2); /* Top left and normal size */
+}

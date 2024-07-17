@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Sketch from "react-p5";
 import tableData from "./weeks_with_emojis.csv";
-import emojiCountsData from "./emoji_counts.json";
 import "./EmojiTable.css";
 
 const EmojiTable = ({ weeks }) => {

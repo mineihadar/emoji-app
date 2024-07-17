@@ -6,7 +6,6 @@ import "./App.css";
 import logo from "./images/emoji_logo_static.png";
 import logoHover from "./images/emoji_logo.gif"; // Add your hover logo image here
 import weeks from "./data/weeks.json";
-import Events from "./Events";
 import About from "./About";
 import EmojiIndex from "./EmojiIndex";
 
