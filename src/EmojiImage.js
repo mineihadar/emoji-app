@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./EmojiImage.css";
-import emojiRows from "./images/nasralla.json";
+import emojiRows from "./images/north_img.json";
 import EmojiDrawer from "./EmojiDrawer"; // Import EmojiDrawer component
 
 const EmojiImage = () => {

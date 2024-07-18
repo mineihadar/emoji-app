@@ -125,9 +125,6 @@ const EmojiGrid = forwardRef(({ weeks }, ref) => {
       return weekData.events.map((event, index) => (
         <div className='event-container'>
           <p key={index}>{event}</p>
-          <div style={{ height: "30px" }}>
-            <img src={externalLinkIcon} />
-          </div>
         </div>
       ));
     }

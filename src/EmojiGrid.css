@@ -55,7 +55,7 @@
 
 .events-window {
   margin: 20px 0px 0px 20px;
-  width: 45%;
+  width: 48%;
 }
 
 .trends {
@@ -74,7 +74,9 @@
 }
 
 .events {
-  color: #ffd600;
+  display: flex;
+  flex-direction: column;
+  color: rgba(255, 214, 0, 1);
   font-family: "Narkis-Regular";
   font-size: 22.1px;
 }
@@ -84,15 +86,27 @@
 }
 
 .event-container {
-  display: flex;
-  align-items: flex-start; /* Centering items vertically */
+  display: inline-flex; /* Use inline-flex to size to content */
+  align-items: center; /* Center items vertically if necessary */
+  padding: 0; /* Remove any padding */
+  margin: 0; /* Remove any margin */
+  height: auto; /* Ensure height is auto */
+  background-color: #272727;
+  border: 0.5px solid rgba(255, 214, 0, 1);
+  border-radius: 15px;
+  margin-bottom: 10px;
+  padding: 0px 10px;
+  width: fit-content;
 }
 
-.event-container img {
-  margin-right: 10px;
-  width: 10px; /* Set the desired width */
-  height: auto; /* Maintain aspect ratio */
-}
+/* .event-container {
+  display: flex;
+  align-items: flex-start;
+  background-color: rgba(231, 231, 231, 0.6);
+  border-radius: 15px;
+  margin-bottom: 5px;
+  padding: 0px 10px;
+} */
 
 .emoji-grid-container {
   width: 100%;
