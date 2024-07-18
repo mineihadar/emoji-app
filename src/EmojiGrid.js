@@ -5,7 +5,7 @@ import trends from "./data/modified_trending_data_with_corrected_years.json";
 import EmojiDrawer from "./EmojiDrawer";
 import ScrollableSidebar from "./ScrollableSidebar";
 import { findEmojiInData } from "./helpers/findEmojisData";
-import externalLinkIcon from "./images/arrow.png";
+import arrow from "./images/arrow.png";
 
 const EmojiGrid = forwardRef(({ weeks }, ref) => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -113,7 +113,7 @@ const EmojiGrid = forwardRef(({ weeks }, ref) => {
     const weekData = trends.find((weekData) => weekData.week === week);
     if (weekData) {
       return weekData.trending_words.map((trend, index) => (
-        <p key={index}>{`${trend}, `}</p>
+        <p key={index}>{`${trend} \u00B7`}</p>
       ));
     }
     return [];
@@ -125,6 +125,7 @@ const EmojiGrid = forwardRef(({ weeks }, ref) => {
       return weekData.events.map((event, index) => (
         <div className='event-container'>
           <p key={index}>{event}</p>
+          <img className='arrow' src={arrow} />
         </div>
       ));
     }

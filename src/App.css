@@ -18,6 +18,11 @@
   src: url("./fonts/NarkissBlock-Extralight.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Narkis-Medium";
+  src: url("./fonts/NarkissBlockTRIAL-Medium.woff") format("woff");
+}
+
 body {
   background-color: #2d2d2d;
   margin: 0;
@@ -73,9 +78,9 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 0px 0px 0px 0px;
-  background-color: #2d2d2d;
+  /* background-color: #2d2d2d; */
   /* border-bottom: #7e7e7e 1px solid; */
-  box-shadow: 0px 0px 5px 0px #1d1d1d;
+  /* box-shadow: 0px 0px 5px 0px #1d1d1d; */
   /* backdrop-filter: blur(1px); */
 }
 
