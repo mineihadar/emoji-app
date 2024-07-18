@@ -44,11 +44,8 @@ function App() {
         <div style={{ height: "100%" }}>
           <Routes>
             <Route path='/timeline' element={<EmojiGrid weeks={weeks} />} />
-<<<<<<< HEAD
             <Route path='/events' element={<EventIndex />} />
-=======
             <Route path='/events/:eventName' element={<EmojiImage />} />
->>>>>>> e798246991b7a64e18f06aad177fa47c6d28d647
             <Route path='/emojis' element={<EmojiIndex />} />
             <Route path='/about' element={<About />} />
             <Route path='/' element={<Logo />} /> {/* Default route */}
