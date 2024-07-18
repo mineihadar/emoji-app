@@ -17,16 +17,15 @@
       "שבוע"
     ],
     "common_emojis": [
-      { "emoji": "🇮🇱", "percentage": 11.85, "count": 25 },
-      { "emoji": "️", "percentage": 7.58, "count": 16 },
-      { "emoji": "🌈🏳️", "percentage": 2.84, "count": 6 },
-      { "emoji": "✊", "percentage": 2.84, "count": 6 },
-      { "emoji": "😂", "percentage": 2.37, "count": 5 },
-      { "emoji": "❤️", "percentage": 2.37, "count": 5 },
-      { "emoji": "🚨", "percentage": 2.37, "count": 5 },
-      { "emoji": "💪", "percentage": 2.37, "count": 5 },
-      { "emoji": "👇", "percentage": 1.9, "count": 4 },
-      { "emoji": "💥", "percentage": 1.9, "count": 4 }
+      { "🇮🇱": 11.85 },
+      { "🌈🏳️": 2.84, "count": 6 },
+      { "✊": 2.84, "count": 6 },
+      { "😂": 2.37, "count": 5 },
+      { "❤️": 2.37, "count": 5 },
+      { "🚨": 2.37, "count": 5 },
+      { "💪": 2.37, "count": 5 },
+      { "👇": 1.9, "count": 4 },
+      { "💥": 1.9, "count": 4 }
     ],
     "common_hashtags": [
       "#דמוקרטיה",

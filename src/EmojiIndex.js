@@ -76,7 +76,7 @@ const EmojiIndex = () => {
         <EmojiDrawer
           open={drawerOpen}
           onClose={handleCloseDrawer}
-          emojiDetails={emojiDetails}
+          details={emojiDetails}
         />
       )}
     </div>

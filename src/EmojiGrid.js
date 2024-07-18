@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef, forwardRef } from "react";
+import { useNavigate } from "react-router-dom";
 import "./EmojiGrid.css";
 import emojiData from "./data/weekly_emojis.json";
 import trends from "./data/modified_trending_data_with_corrected_years.json";
@@ -14,14 +15,12 @@ const EmojiGrid = forwardRef(({ weeks }, ref) => {
   const internalRef = useRef(null);
   const gridRef = ref || internalRef;
   const isScrolling = useRef(false);
+  const navigate = useNavigate();
 
   const handleClickEmoji = (emoji) => {
     let emojiDetails1 = findEmojiInData(emoji);
-    if (drawerOpen) {
+    if (drawerOpen && selectedEmojiDetails?.emoji === emoji) {
       handleCloseDrawer();
-      setTimeout(() => {
-        handleOpenDrawer(emojiDetails1);
-      }, 300); // Adjust this delay if necessary
     } else {
       handleOpenDrawer(emojiDetails1);
     }
@@ -123,9 +122,12 @@ const EmojiGrid = forwardRef(({ weeks }, ref) => {
     const weekData = trends.find((weekData) => weekData.week === week);
     if (weekData) {
       return weekData.events.map((event, index) => (
-        <div className='event-container'>
-          <p key={index}>{event}</p>
-          <img className='arrow' src={arrow} />
+        <div
+          className='event-container'
+          key={index}
+          onClick={() => navigate(`/events/${event}`)}>
+          <p>{event}</p>
+          <img className='arrow' src={arrow} alt='arrow' />
         </div>
       ));
     }
@@ -141,7 +143,7 @@ const EmojiGrid = forwardRef(({ weeks }, ref) => {
           index === visibleColumnIndex ? "highlighted" : ""
         }`}>
         <div className='emoji-row' onClick={() => handleRowClick(index)}>
-          {weekData.map((emoji, idx) => (
+          {weekData.toReversed().map((emoji, idx) => (
             <div
               className={`emoji ${
                 index === visibleColumnIndex ? "clickable" : ""
@@ -166,11 +168,11 @@ const EmojiGrid = forwardRef(({ weeks }, ref) => {
             <p className='week'>{week.text}</p>
             <div className='additional-text bottom'>
               <div className='events-window'>
-                <p className='title'>אירועים שקרו בשבוע</p>
+                <p className='title'>אירועים שקרו בשבוע זה</p>
                 <div className='events'>{returnWeekEvents(week.text)}</div>
               </div>
               <div className='trends-window'>
-                <p className='title'>מילים שחזרו בשבוע</p>
+                <p className='title'>מילים שחזרו בשבוע זה</p>
                 <div className='trends'>{returnWeekTrend(week.text)}</div>
               </div>
             </div>
@@ -198,7 +200,7 @@ const EmojiGrid = forwardRef(({ weeks }, ref) => {
         <EmojiDrawer
           open={drawerOpen}
           onClose={handleCloseDrawer}
-          emojiDetails={selectedEmojiDetails}
+          details={selectedEmojiDetails}
         />
       )}
     </>

@@ -55,7 +55,7 @@
 
 .events-window {
   margin: 20px 0px 0px 20px;
-  width: 48%;
+  width: 55%;
 }
 
 .trends {
@@ -78,30 +78,49 @@
   flex-direction: column;
   color: rgba(255, 214, 0, 1);
   font-family: "Narkis-Medium";
-  font-size: 22.1px;
+  font-size: 23.5px;
 }
 
 .events:hover {
   cursor: pointer;
 }
+
 .event-container {
-  display: inline-flex; /* Use inline-flex to size to content */
-  align-items: center; /* Center items vertically if necessary */
-  margin: 0; /* Remove any margin */
-  height: auto; /* Ensure height is auto */
-  background-color: #272727;
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  height: auto;
   width: fit-content;
   margin-bottom: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.event-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0.5px;
+  background-color: rgba(255, 214, 0, 1); /* Adjust color to fit your design */
+  transition: width 0.5s ease-in-out;
+}
+
+.event-container:hover::after {
+  width: 100%;
+  right: 0;
+  left: auto;
 }
 
 .arrow {
   width: 15px;
   padding-right: 5px;
-  transition: transform 0.8s ease-in-out;
+  transition: transform 0.3s ease-out; /* Make transition time similar to the underline */
 }
 
 .event-container:hover .arrow {
-  animation: moveArrow 0.8s infinite;
+  transform: translateX(-3px); /* Adjust as needed */
 }
 
 @keyframes moveArrow {
@@ -109,7 +128,7 @@
     transform: translateX(0);
   }
   50% {
-    transform: translateX(-5px);
+    transform: translateX(5px);
   }
   100% {
     transform: translateX(0);
@@ -213,18 +232,21 @@
 .emoji {
   font-size: 36px;
   margin-right: 10px;
+  display: inline-block;
+  position: relative;
+  transition: transform 0.3s ease-out; /* Smooth the transition */
+  will-change: transform; /* Optimizes for transformations */
 }
 
 .emoji.clickable {
   cursor: pointer;
   opacity: 1;
-  transition: opacity 0.5s;
-  transition: font-size 0.02s;
+  transition: opacity 0.3s ease; /* Make opacity transition smoother */
 }
 
-/* .emoji.clickable:hover {
-    padding-bottom: 5px;
-  } */
+.emoji.clickable:hover {
+  transform: translateY(-5px); /* Smooth movement upwards */
+}
 
 .emoji:not(.clickable) {
   pointer-events: none;

@@ -1,4 +1,4 @@
-.drawer {
+.emoji-drawer {
   position: fixed;
   top: 0;
   right: -38.3vw; /* Initially off-screen */
@@ -13,7 +13,7 @@
   backdrop-filter: blur(1px);
 }
 
-.drawer.open {
+.emoji-drawer.open {
   right: 0; /* Slide in */
 }
 
