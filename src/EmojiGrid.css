@@ -31,18 +31,18 @@
 }
 
 .week {
-  font-size: 17.2px;
+  font-size: 22.1px;
   margin: 0;
   color: #e7e7e7;
   line-height: 1.19rem;
-  margin: 2px 0px 20px 0px;
+  margin: 10px 0px 20px 0px;
   opacity: 1;
   transition: opacity 0.5s;
 }
 
 .year {
   color: #e7e7e7;
-  font-size: 17.2px;
+  font-size: 22.1px;
   margin: 0;
   opacity: 1;
   transition: opacity 0.5s;
@@ -55,7 +55,7 @@
 
 .events-window {
   margin: 20px 0px 0px 20px;
-  width: 40%;
+  width: 55%;
 }
 
 .trends {
@@ -74,9 +74,75 @@
 }
 
 .events {
-  color: #ffd600;
-  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  color: rgba(255, 214, 0, 1);
+  font-family: "Narkis-Medium";
+  font-size: 23.5px;
 }
+
+.events:hover {
+  cursor: pointer;
+}
+
+.event-container {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  height: auto;
+  width: fit-content;
+  margin-bottom: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.event-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0.5px;
+  background-color: rgba(255, 214, 0, 1); /* Adjust color to fit your design */
+  transition: width 0.5s ease-in-out;
+}
+
+.event-container:hover::after {
+  width: 100%;
+  right: 0;
+  left: auto;
+}
+
+.arrow {
+  width: 15px;
+  padding-right: 5px;
+  transition: transform 0.3s ease-out; /* Make transition time similar to the underline */
+}
+
+.event-container:hover .arrow {
+  transform: translateX(-3px); /* Adjust as needed */
+}
+
+@keyframes moveArrow {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* .event-container {
+  display: flex;
+  align-items: flex-start;
+  background-color: rgba(231, 231, 231, 0.6);
+  border-radius: 15px;
+  margin-bottom: 5px;
+  padding: 0px 10px;
+} */
 
 .emoji-grid-container {
   width: 100%;
@@ -166,18 +232,21 @@
 .emoji {
   font-size: 36px;
   margin-right: 10px;
+  display: inline-block;
+  position: relative;
+  transition: transform 0.3s ease-out; /* Smooth the transition */
+  will-change: transform; /* Optimizes for transformations */
 }
 
 .emoji.clickable {
   cursor: pointer;
   opacity: 1;
-  transition: opacity 0.5s;
-  transition: font-size 0.02s;
+  transition: opacity 0.3s ease; /* Make opacity transition smoother */
 }
 
-/* .emoji.clickable:hover {
-    padding-bottom: 5px;
-  } */
+.emoji.clickable:hover {
+  transform: translateY(-5px); /* Smooth movement upwards */
+}
 
 .emoji:not(.clickable) {
   pointer-events: none;

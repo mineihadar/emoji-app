@@ -18,7 +18,8 @@ const ScrollableSidebar = ({ weeks, currentIndex, onScrollToWeek }) => {
       "נובמבר",
       "דצמבר",
     ];
-    return monthNames[date.getMonth()];
+    let month = monthNames[date.getMonth()];
+    return month !== "ינואר" ? month : `${month} ${date.getFullYear()}`;
   };
 
   const isDifferentMonth = (currentWeek, previousWeek) => {

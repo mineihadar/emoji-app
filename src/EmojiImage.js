@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import "./EmojiImage.css";
 import emojiRows from "./images/north_img.json";
-import EmojiDrawer from "./EmojiDrawer"; // Import EmojiDrawer component
+import EventDrawer from "./EventDrawer";
+import eventDetails from "./data/eventDetails.json";
 
 const EmojiImage = () => {
+  const { eventName } = useParams();
   const [loadedRows, setLoadedRows] = useState([]);
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const [selectedEmojiDetails, setSelectedEmojiDetails] = useState(null);
 
   useEffect(() => {
     let currentRow = 0;
@@ -16,37 +18,6 @@ const EmojiImage = () => {
           return [...prevRows, emojiRows[currentRow++]];
         } else {
           clearInterval(intervalId);
-          setSelectedEmojiDetails({
-            emoji: "🇮🇱",
-            id: {
-              value: "דגל ישראל | דגלי מדינות | 2015",
-              category: "שם האימוג׳י | קטגוריה | שנת יצירת האימוג׳י",
-            },
-            details: [
-              {
-                category: "מדד פופולריות",
-                text: "מבין האימוג׳ים בהם משתמשים בישראל",
-                value: "1",
-                additionalText: "/230",
-              },
-              {
-                category: "סנטימנט",
-                text: "אחוזי הופעה בפוסטים לפי הקשר רגשי (חולץ על סמך מודל שפה)",
-                value: [{ חיובי: 79 }, { ניטרלי: 20 }, { שלילי: 11 }],
-              },
-              {
-                category: "שכיחות",
-                text: "ממוצע הופעות בפוסט בודד (כמה פעמים מקלידים אותו בפוסט)",
-                value: "1.83",
-                additionalText: "מופעים/פוסט",
-              },
-              {
-                category: "שילובים",
-                text: "אימוג׳ים נפוצים בצירוף (נוטים להופיע יחד עם אימוג’י זה בפוסטים)",
-                value: ["💙", "💪", "✊", "🙏", "❤️"],
-              },
-            ],
-          });
           setDrawerOpen(true);
           return prevRows;
         }
@@ -63,14 +34,11 @@ const EmojiImage = () => {
           {row}
         </div>
       ))}
-      {selectedEmojiDetails && (
-        <EmojiDrawer
-          open={drawerOpen}
-          onClose={() => setDrawerOpen(false)}
-          emojiDetails={selectedEmojiDetails}
-          direction='left' // For the drawer opening from the left after image loading
-        />
-      )}
+      <EventDrawer
+        open={drawerOpen}
+        onClose={() => setDrawerOpen(false)}
+        details={eventDetails["מחאות קפלן"]}
+      />
     </div>
   );
 };

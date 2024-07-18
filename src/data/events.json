@@ -1,162 +1,216 @@
 [
   {
-    "מחאות קפלן": {
-      "firstDay": "01/01/2023",
+    "Kaplan": {
+      "text": "מחאות קפלן",
+      "img": "kaplan_img.json",
+      "firstDay": "07/01/2023",
       "lastDay": "10/06/2023"
     }
   },
   {
-    "אירוויזיון 2023": {
+    "Euro2023": {
+      "text": "אירוויזיון",
+      "img": "unicron_img.json",
       "firstDay": "05/09/2023",
       "lastDay": "05/13/2023"
     }
   },
   {
-    "מבצע מגן וחץ": {
+    "Magen": {
+      "text": "מבצע מגן וחץ",
+      "img": "magenhetz_img.json",
       "firstDay": "05/09/2023",
       "lastDay": "05/13/2023"
     }
   },
   {
-    "מונדיאליטו 2023": {
+    "Mondialito": {
+      "text": "מונדיאליטו",
+      "img": "mondialito_img.json",
       "firstDay": "06/11/2023",
       "lastDay": null
     }
   },
   {
-    "עימותים בכיכר דיזינגוף": {
+    "DiziKippur": {
+      "text": "עימותים בכיכר דיזינגוף",
+      "img": "dizengof_img.json",
       "firstDay": "09/24/2024",
       "lastDay": null
     }
   },
   {
-    "השבעה באוקטובר": {
+    "October": {
+      "text": "השבעה באוקטובר",
+      "img": "oct7_img.json",
       "firstDay": "10/07/2023",
       "lastDay": null
     }
   },
   {
-    "מלחמת חרבות ברזל": {
+    "IronSwords": {
+      "text": "מלחמת חרבות ברזל",
+      "img": "ironsword_img.json",
       "firstDay": "10/07/2023",
       "lastDay": "05/26/2024"
     }
   },
   {
     "חזית בלבנון": {
+      "text": "חזית בלבנון",
+      "img": "north_img.json",
       "firstDay": "10/08/2023",
       "lastDay": "05/26/2024"
     }
   },
   {
-    "מאבק להחזרת החטופים": {
+    "BringThemHome": {
+      "text": "מאבק להחזרת החטופים",
+      "img": "bringthemhome_img.json",
       "firstDay": "10/07/2023",
       "lastDay": "05/26/2024"
     }
   },
   {
-    "גיוס חרדים לצה״ל": {
+    "Haredim": {
+      "text": "גיוס חרדים לצה״ל",
+      "img": "haredim_img.json",
       "firstDay": "02/09/2024",
       "lastDay": "05/26/2024"
     }
   },
   {
-    "המתקפה האיראנית": {
+    "Iran": {
+      "text": "המתקפה האיראנית",
+      "img": "iran_img.json",
       "firstDay": "04/13/2024",
       "lastDay": "04/14/2024"
     }
   },
   {
-    "אירוויזיון 2024": {
+    "Euro2024": {
+      "text": "אירוויזיון",
+      "img": "eden_img.json",
       "firstDay": "05/07/2024",
       "lastDay": "05/11/2024"
     }
   },
   {
-    "סילבסטר 2023": {
+    "NewYear2023": {
+      "text": "סילבסטר",
+      "img": "newyear23_img.json",
       "firstDay": "01/01/2023",
       "lastDay": null
     }
   },
   {
-    "פורים 2023": {
+    "Purim23": {
+      "text": "פורים",
+      "img": "purim23_img.json",
       "firstDay": "03/07/2023",
       "lastDay": "03/08/2023"
     }
   },
   {
-    "פסח 2023": {
+    "Pesach23": {
+      "text": "פסח",
+      "img": "pesach23_img.json",
       "firstDay": "04/05/2023",
       "lastDay": "04/12/2023"
     }
   },
   {
     "שבועות 2023": {
+      "text": "אירוויזיון",
+      "img": "unicron_img.json",
       "firstDay": "05/25/2023",
       "lastDay": "05/26/2023"
     }
   },
   {
     "יום הזיכרון 2023": {
+      "text": "אירוויזיון",
+      "img": "unicron_img.json",
       "firstDay": "04/24/2023",
       "lastDay": "04/25/2023"
     }
   },
   {
     "יום העצמאות 2023": {
+      "text": "אירוויזיון",
+      "img": "unicron_img.json",
       "firstDay": "04/25/2023",
       "lastDay": "04/26/2023"
     }
   },
   {
     "ראש השנה 2023": {
+      "text": "אירוויזיון",
+      "img": "unicron_img.json",
       "firstDay": "09/15/2023",
       "lastDay": "09/17/2023"
     }
   },
   {
     "יום כיפור 2023": {
+      "text": "אירוויזיון",
+      "img": "unicron_img.json",
       "firstDay": "09/24/2023",
       "lastDay": "09/25/2023"
     }
   },
   {
     "סוכות 2023": {
+      "text": "אירוויזיון",
+      "img": "unicron_img.json",
       "firstDay": "09/29/2023",
       "lastDay": "10/06/2023"
     }
   },
   {
     "חנוכה 2023": {
+      "text": "אירוויזיון",
+      "img": "unicron_img.json",
       "firstDay": "12/07/2023",
       "lastDay": "12/15/2023"
     }
   },
   {
-    "סילבסטר 2024": {
+    "NewYear2024": {
+      "text": "סילבסטר",
+      "img": "newyear23_img.json",
       "firstDay": "01/01/2024",
       "lastDay": null
     }
   },
   {
-    "פורים 2024": {
-      "firstDay": "03/24/2024",
-      "lastDay": "03/25/2024"
+    "Purim24": {
+      "text": "פורים",
+      "img": "purim24_img.json",
+      "firstDay": "03/07/2023",
+      "lastDay": "03/08/2023"
     }
   },
   {
-    "פסח 2024": {
-      "firstDay": "04/22/2024",
-      "lastDay": "04/29/2024"
+    "Pesach24": {
+      "text": "פסח",
+      "img": "pesach24_img.json",
+      "firstDay": "04/05/2023",
+      "lastDay": "04/12/2023"
     }
   },
   {
     "יום הזיכרון 2024": {
+      "text": "אירוויזיון",
+      "img": "unicron_img.json",
       "firstDay": "05/12/2024",
       "lastDay": "05/13/2024"
     }
   },
   {
     "יום העצמאות 2024": {
+      "text": "אירוויזיון",
+      "img": "unicron_img.json",
       "firstDay": "05/13/2024",
       "lastDay": "05/14/2024"
     }

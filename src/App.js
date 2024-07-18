@@ -9,6 +9,8 @@ import weeks from "./data/weeks.json";
 import About from "./About";
 import EmojiIndex from "./EmojiIndex";
 import EventIndex from "./EventIndex";
+import OpenScreen from "./OpenScreen";
+import Logo from "./Logo";
 
 function App() {
   const [isHovered, setIsHovered] = useState(false);
@@ -24,7 +26,7 @@ function App() {
   return (
     <Router>
       <div className='App'>
-        <div className='header'>
+        {/* <div className='header'>
           <img
             className='logo-div'
             src={isHovered ? logoHover : logo}
@@ -38,14 +40,18 @@ function App() {
             <Link to='/emojis'>אימוג׳ים</Link>
             <Link to='/about'>על הפרויקט</Link>
           </div>
-        </div>
+        </div> */}
         <div style={{ height: "100%" }}>
           <Routes>
             <Route path='/timeline' element={<EmojiGrid weeks={weeks} />} />
+<<<<<<< HEAD
             <Route path='/events' element={<EventIndex />} />
+=======
+            <Route path='/events/:eventName' element={<EmojiImage />} />
+>>>>>>> e798246991b7a64e18f06aad177fa47c6d28d647
             <Route path='/emojis' element={<EmojiIndex />} />
             <Route path='/about' element={<About />} />
-            <Route path='/' element={<EmojiImage />} /> {/* Default route */}
+            <Route path='/' element={<Logo />} /> {/* Default route */}
           </Routes>
         </div>
       </div>
