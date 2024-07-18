@@ -42,18 +42,22 @@
 
 .emoji-title h3 {
   font-size: 72px;
-  line-height: 0.5em;
+  line-height: 1.2em;
   margin-left: 15px;
 }
 
 .emoji-id {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   margin-bottom: 10px;
+  line-height: 1rem;
 }
 
 .emoji-id h5 {
-  font-size: 25px;
+  font-size: 32.1px;
+  font-family: "Narkis-Regular";
+  line-height: 2.5rem;
 }
 
 .category {

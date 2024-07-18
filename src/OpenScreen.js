@@ -9,13 +9,13 @@ function OpenScreen() {
 
   const textLines = [
     "כאן תוכלו ללמוד על טרנדים ומגמות באימוג׳ים מינואר 2023 ועד מאי 2024",
-    "מישראל התוכן מבוסס על פוסטים מטוויטר שנאספו באמצעות Data Scraping",
-    "ובאופן ידני בחרו שנה וחודש או התחילו לגלול כדי לחקור",
+    "מישראל התוכן מבוסס על פוסטים מטוויטר שנאספו באמצעות Data Scraping ובאופן ידני ",
+    "בחרו שנה וחודש או התחילו לגלול כדי לחקור",
   ];
 
   const images = useMemo(() => {
     const loadedImages = [];
-    for (let i = 0; i < 80; i++) {
+    for (let i = 0; i < 24; i++) {
       const img = new Image();
       img.src = `./images/LogoFrames/emoji_logo_frames${i}.png`;
       img.onload = () => console.log(`Image ${i} loaded`);
@@ -41,13 +41,13 @@ function OpenScreen() {
 
     const scene = new ScrollMagic.Scene({
       triggerElement: "#trigger",
-      duration: "300%", // Adjust duration for smoother animation
+      duration: "100%", // Adjust duration for smoother animation
       triggerHook: 0.2, // Trigger the animation when the element is in the middle of the viewport
     })
       .setPin("#canvas-container") // Pin the canvas container
       .addTo(controller)
       .on("progress", (event) => {
-        const frameIndex = Math.floor(event.progress * 79); // Calculate frame index based on scroll progress
+        const frameIndex = Math.floor(event.progress * 23); // Calculate frame index based on scroll progress
         render(frameIndex);
 
         // Animate text lines appearance from below without fade-in

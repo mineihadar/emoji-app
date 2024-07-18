@@ -26,6 +26,10 @@
   background-color: #ffd600;
 }
 
+.week-line:hover {
+  background-color: #ffd600;
+}
+
 .circle {
   width: 10px;
   height: 10px;
@@ -36,6 +40,10 @@
   top: 50%;
   transform: translateY(-50%);
   transition: background-color 0.3s;
+}
+
+.circle:hover {
+  background-color: rgba(255, 214, 0, 0.5);
 }
 
 .circle.active {

@@ -31,18 +31,18 @@
 }
 
 .week {
-  font-size: 17.2px;
+  font-size: 22.1px;
   margin: 0;
   color: #e7e7e7;
   line-height: 1.19rem;
-  margin: 2px 0px 20px 0px;
+  margin: 10px 0px 20px 0px;
   opacity: 1;
   transition: opacity 0.5s;
 }
 
 .year {
   color: #e7e7e7;
-  font-size: 17.2px;
+  font-size: 22.1px;
   margin: 0;
   opacity: 1;
   transition: opacity 0.5s;
@@ -55,7 +55,7 @@
 
 .events-window {
   margin: 20px 0px 0px 20px;
-  width: 40%;
+  width: 45%;
 }
 
 .trends {
@@ -75,7 +75,23 @@
 
 .events {
   color: #ffd600;
-  font-size: 20px;
+  font-family: "Narkis-Regular";
+  font-size: 22.1px;
+}
+
+.events:hover {
+  cursor: pointer;
+}
+
+.event-container {
+  display: flex;
+  align-items: flex-start; /* Centering items vertically */
+}
+
+.event-container img {
+  margin-right: 10px;
+  width: 10px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .emoji-grid-container {

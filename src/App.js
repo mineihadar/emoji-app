@@ -25,7 +25,7 @@ function App() {
   return (
     <Router>
       <div className='App'>
-        {/* <div className='header'>
+        <div className='header'>
           <img
             className='logo-div'
             src={isHovered ? logoHover : logo}
@@ -39,7 +39,7 @@ function App() {
             <Link to='/emojis'>אימוג׳ים</Link>
             <Link to='/about'>על הפרויקט</Link>
           </div>
-        </div> */}
+        </div>
         <div style={{ height: "100%" }}>
           <Routes>
             <Route path='/timeline' element={<EmojiGrid weeks={weeks} />} />

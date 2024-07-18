@@ -5,6 +5,7 @@ import trends from "./data/modified_trending_data_with_corrected_years.json";
 import EmojiDrawer from "./EmojiDrawer";
 import ScrollableSidebar from "./ScrollableSidebar";
 import { findEmojiInData } from "./helpers/findEmojisData";
+import externalLinkIcon from "./images/arrow.png";
 
 const EmojiGrid = forwardRef(({ weeks }, ref) => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -16,14 +17,12 @@ const EmojiGrid = forwardRef(({ weeks }, ref) => {
 
   const handleClickEmoji = (emoji) => {
     let emojiDetails1 = findEmojiInData(emoji);
-    console.log(emojiDetails1);
     if (drawerOpen) {
       handleCloseDrawer();
       setTimeout(() => {
         handleOpenDrawer(emojiDetails1);
       }, 300); // Adjust this delay if necessary
     } else {
-      console.log("here");
       handleOpenDrawer(emojiDetails1);
     }
   };
@@ -114,7 +113,7 @@ const EmojiGrid = forwardRef(({ weeks }, ref) => {
     const weekData = trends.find((weekData) => weekData.week === week);
     if (weekData) {
       return weekData.trending_words.map((trend, index) => (
-        <p key={index}>{trend.includes("#") ? trend : `#${trend}`}</p>
+        <p key={index}>{`${trend}, `}</p>
       ));
     }
     return [];
@@ -123,8 +122,14 @@ const EmojiGrid = forwardRef(({ weeks }, ref) => {
   const returnWeekEvents = (week) => {
     const weekData = trends.find((weekData) => weekData.week === week);
     if (weekData) {
-      console.log(weekData.events);
-      return weekData.events.map((event, index) => <p key={index}>{event}</p>);
+      return weekData.events.map((event, index) => (
+        <div className='event-container'>
+          <p key={index}>{event}</p>
+          <div style={{ height: "30px" }}>
+            <img src={externalLinkIcon} />
+          </div>
+        </div>
+      ));
     }
     return [];
   };
