@@ -8,6 +8,7 @@ import logoHover from "./images/emoji_logo.gif"; // Add your hover logo image he
 import weeks from "./data/weeks.json";
 import About from "./About";
 import EmojiIndex from "./EmojiIndex";
+import EventIndex from "./EventIndex";
 
 function App() {
   const [isHovered, setIsHovered] = useState(false);
@@ -41,7 +42,7 @@ function App() {
         <div style={{ height: "100%" }}>
           <Routes>
             <Route path='/timeline' element={<EmojiGrid weeks={weeks} />} />
-            <Route path='/events' element={<EmojiImage />} />
+            <Route path='/events' element={<EventIndex />} />
             <Route path='/emojis' element={<EmojiIndex />} />
             <Route path='/about' element={<About />} />
             <Route path='/' element={<EmojiImage />} /> {/* Default route */}
