@@ -1,16 +1,19 @@
 #emoji-container {
-  font-size: 0.8em; /* Adjust font size as needed */
-  line-height: 0.8em; /* Adjust line height to provide enough spacing between rows */
+  font-size: 1.2rem; /* Adjust font size as needed */
+  line-height: 0.968rem; /* Adjust line height to provide enough spacing between rows */
   white-space: pre; /* Ensure white space is preserved */
-  overflow-y: auto; /* Add vertical scroll if necessary */
-  max-height: 100vh; /* Ensure the container doesn't exceed the viewport height */
+  max-height: calc(
+    100vh - 8vh
+  ); /* Ensure the container doesn't exceed the viewport height minus header height */
   width: 100vw; /* Make sure the container takes full width */
   display: flex;
   flex-direction: column;
   align-items: center; /* Center align the rows */
+  padding-top: 8vh; /* Add padding to account for the header height */
 }
 
 .emoji-image-row {
   width: 100%; /* Ensure each row takes full width */
   text-align: center; /* Center text within each row */
+  direction: ltr;
 }
