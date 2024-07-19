@@ -31,19 +31,19 @@ const ImageGrid = () => {
     return (
         <div className='grid-container'>
             <div className="image-grid">
-                {allImageData.map((image, index) => (
-                    <div key={index} className="image-item" onClick={() => navigate(`/events/${image.name}`)}>
-                        {image.empty ? (
+                {allImageData.map((event, index) => (
+                    <div key={index} className="image-item" onClick={() => navigate(`/events/${event.name}`)}>
+                        {event.empty ? (
                             <div className="image-placeholder"></div>
                         ) : (
                             <>
                                 <div
                                     className="image"
-                                    style={{ backgroundImage: `url(${image.src})` }}
+                                    style={{ backgroundImage: `url(${event.imageSrc})` }}
                                 ></div>
-                                <div className="image-date">{image.date}</div>
+                                <div className="image-date"> {event.endDate != null ? event.endDate + " - " + event.startDate : event.startDate} </div>
                                 <div className='index-event-container'>
-                                    <p>{image.name}</p>
+                                    <p>{event.name}</p>
                                     <img className='index-arrow' src={arrow} alt='arrow' />
                                 </div>
                             </>

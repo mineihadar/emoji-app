@@ -1,13 +1,163 @@
 [
-    { "src": "./index_north.png", "date": "08.10.2023 - 07.10.2023", "name": "מלחמה בצפון" },
-    { "src": "./index_eurovision24.png", "date": "23.04.2024 - 22.04.2024", "name": "אירוויזיון 24'" },
-    { "src": "./index_north.png", "date": "08.10.2023 - 07.10.2023", "name": "מלחמה בצפון" },
-    { "src": "./index_north.png", "date": "08.10.2023 - 07.10.2023", "name": "מלחמה בצפון" },
-    { "src": "./index_north.png", "date": "08.10.2023 - 07.10.2023", "name": "מלחמה בצפון" },
-    { "src": "./index_north.png", "date": "08.10.2023 - 07.10.2023", "name": "מלחמה בצפון" },
-    { "src": "./index_north.png", "date": "08.10.2023 - 07.10.2023", "name": "מלחמה בצפון" },
-    { "src": "./index_north.png", "date": "08.10.2023 - 07.10.2023", "name": "מלחמה בצפון" },
-    { "src": "./index_north.png", "date": "08.10.2023 - 07.10.2023", "name": "מלחמה בצפון" },
-    { "src": "./index_north.png", "date": "08.10.2023 - 07.10.2023", "name": "מלחמה בצפון" },
-    { "src": "./index_north.png", "date": "08.10.2023 - 07.10.2023", "name": "מלחמה בצפון" }
+    {
+        "name": "סילבסטר 23'",
+        "imageSrc": "./index_newyear23.png",
+        "startDate": "01.01.2023",
+        "endDate": null},
+
+    {
+        "name": "מחאות קפלן",
+        "imageSrc": "./index_kaplan.png",
+        "startDate": "01.01.2023",
+        "endDate": "06.10.2023"},
+
+    {
+        "name": "פורים 23'",
+        "imageSrc": "./index_purim23.png",
+        "startDate": "07.03.2023",
+        "endDate": "08.03.2023"},
+
+    {
+        "name": "פסח 23'",
+        "imageSrc": "./index_pesach23.png",
+        "startDate": "05.04.2023",
+        "endDate": "12.04.2023"},
+
+    {
+        "name": "יום הזיכרון 23'",
+        "imageSrc": "./index_zikaron23.png",
+        "startDate": "24.04.2023",
+        "endDate": "25.04.2023"},
+
+    {
+        "name": "יום העצמאות 23'",
+        "imageSrc": "./index_independence23.png",
+        "startDate": "25.04.2023",
+        "endDate": "26.04.2023"},
+
+    {
+        "name": "אירוויזיון 23'",
+        "imageSrc": "./index_eurovision23.png",
+        "startDate": "09.05.2023",
+        "endDate": "13.05.2023"},
+
+    {
+        "name": "מבצע מגן וחץ",
+        "imageSrc": "./index_magenhetz.png",
+        "startDate": "09.05.2023",
+        "endDate": "13.05.2023"},
+
+    {
+        "name": "שבועות 23'",
+        "imageSrc": "./index_shavuot23.png",
+        "startDate": "25.05.2023",
+        "endDate": "26.05.2023"},
+
+    {
+        "name": "מונדיאליטו",
+        "imageSrc": "./index_mondialito.png",
+        "startDate": "11.06.2023",
+        "endDate": null},
+
+    {
+        "name": "ראש השנה 23'",
+        "imageSrc": "./index_roshhashana23.png",
+        "startDate": "15.09.2023",
+        "endDate": "17.09.2023"},
+
+    {
+        "name": "יום כיפור 23'",
+        "imageSrc": "./index_kippur23.png",
+        "startDate": "24.09.2023",
+        "endDate": "25.09.2023"},
+
+    {
+        "name": "עימותים בכיכר דיזינגוף",
+        "imageSrc": "./index_dizengof.png",
+        "startDate": "24.09.2024",
+        "endDate": null},
+
+    {
+        "name": "סוכות 23'",
+        "imageSrc": "./index_succot23.png",
+        "startDate": "29.09.2023",
+        "endDate": "06.10.2023"},
+
+    {
+        "name": "השבעה באוקטובר",
+        "imageSrc": "./index_oct7.png",
+        "startDate": "07.10.2023",
+        "endDate": null},
+
+    {
+        "name": "מלחמת חרבות ברזל",
+        "imageSrc": "./index_ironsword.png",
+        "startDate": "07.10.2023",
+        "endDate": "26.05.2024"},
+
+    {
+        "name": "חזית בלבנון",
+        "imageSrc": "./index_north.png",
+        "startDate": "08.10.2023",
+        "endDate": "26.05.2024"},
+
+    {
+        "name": "מאבק להחזרת החטופים",
+        "imageSrc": "./index_bringthemhome.png",
+        "startDate": "07.10.2023",
+        "endDate": "26.05.2024"},
+
+    {
+        "name": "חנוכה 23'",
+        "imageSrc": "./index_hannukah23.png",
+        "startDate": "07.12.2023",
+        "endDate": "15.12.2023"},
+
+    {
+        "name": "סילבסטר 24'",
+        "imageSrc": "./index_newyear24.png",
+        "startDate": "01.01.2024",
+        "endDate": null},
+
+    {
+        "name": "גיוס חרדים לצה״ל",
+        "imageSrc": "./index_haredim.png",
+        "startDate": "09.02.2024",
+        "endDate": "26.05.2024"},
+
+    {
+        "name": "פורים 24'",
+        "imageSrc": "./index_purim24.png",
+        "startDate": "07.03.2023",
+        "endDate": "08.03.2023"},
+
+    {
+        "name": "המתקפה האיראנית",
+        "imageSrc": "./index_iran.png",
+        "startDate": "13.04.2024",
+        "endDate": "14.04.2024"},
+
+    {
+        "name": "פסח 24'",
+        "imageSrc": "./index_pesach24.png",
+        "startDate": "22.04.2024",
+        "endDate": "29.04.2024"},
+
+    {
+        "name": "אירוויזיון 24'",
+        "imageSrc": "./index_eurovision24.png",
+        "startDate": "07.05.2024",
+        "endDate": "11.05.2024"},
+
+    {
+        "name": "יום הזיכרון 24'",
+        "imageSrc": "./index_zikaron24.png",
+        "startDate": "12.05.2024",
+        "endDate": "13.05.2024"},
+
+    {
+        "name": "יום העצמאות 24'",
+        "imageSrc": "./index_independence24.png",
+        "startDate": "13.05.2024",
+        "endDate": "14.05.2024"}
 ]
