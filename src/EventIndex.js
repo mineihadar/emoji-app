@@ -1,24 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './EventIndex.css'; // Import your CSS file
-import image1 from './index_north.png'; // Import your image file
-
-// Define your image data array
-const imageData = [
-    { src: image1, date: '07/10/2023-07/10/2023', name: 'מלחמה בצפון' },
-    { src: image1, date: '07/10/2023-07/10/2023', name: 'מלחמה בצפון' },
-    { src: image1, date: '07/10/2023-07/10/2023', name: 'מלחמה בצפון' },
-    { src: image1, date: '07/10/2023-07/10/2023', name: 'מלחמה בצפון' },
-    { src: image1, date: '07/10/2023-07/10/2023', name: 'מלחמה בצפון' },
-    { src: image1, date: '07/10/2023-07/10/2023', name: 'מלחמה בצפון' },
-    { src: image1, date: '07/10/2023-07/10/2023', name: 'מלחמה בצפון' },
-    { src: image1, date: '07/10/2023-07/10/2023', name: 'מלחמה בצפון' },
-    { src: image1, date: '07/10/2023-07/10/2023', name: 'מלחמה בצפון' },
-    { src: image1, date: '07/10/2023-07/10/2023', name: 'מלחמה בצפון' },
-    { src: image1, date: '07/10/2023-07/10/2023', name: 'מלחמה בצפון' }
-    // Add more images as needed
-];
+import arrow from "./images/arrow.png";
+import { useNavigate } from "react-router-dom";
+import eventData from "./data/event_index_data.json"; // Import your JSON file
 
 const ImageGrid = () => {
+    const [imageData, setImageData] = useState([]);
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        // Set the imported JSON data directly
+        setImageData(eventData);
+    }, []);
+
     // Calculate the number of empty items needed
     const remainder = imageData.length % 4;
     const emptyItemsCount = remainder === 0 ? 0 : 4 - remainder;
@@ -38,7 +32,7 @@ const ImageGrid = () => {
         <div className='grid-container'>
             <div className="image-grid">
                 {allImageData.map((image, index) => (
-                    <div key={index} className="image-item">
+                    <div key={index} className="image-item" onClick={() => navigate(`/events/${image.name}`)}>
                         {image.empty ? (
                             <div className="image-placeholder"></div>
                         ) : (
@@ -48,7 +42,10 @@ const ImageGrid = () => {
                                     style={{ backgroundImage: `url(${image.src})` }}
                                 ></div>
                                 <div className="image-date">{image.date}</div>
-                                <div className="image-name">{image.name}</div>
+                                <div className='event-container'>
+                                    <p>{image.name}</p>
+                                    <img className='arrow' src={arrow} alt='arrow' />
+                                </div>
                             </>
                         )}
                     </div>

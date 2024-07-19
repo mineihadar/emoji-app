@@ -10,7 +10,7 @@
     margin-bottom: 20vh;
     display: flex;
     flex-wrap: wrap;
-    row-gap: 5vh; /* Adjust the gap as needed */
+    row-gap: 8vh; /* Adjust the gap as needed */
     justify-content: space-between;
     margin-right: 17vw;
     margin-left: 17vw;
@@ -20,6 +20,7 @@
     text-align: right;
     width: 25vh; /* Adjust width for roughly 4 items per row with gap */
     box-sizing: border-box;
+    position: relative; /* For positioning the event-container */
 }
 
 .image {
@@ -31,23 +32,73 @@
     transition: background-size 0.3s ease-in-out; /* Transition effect for background size */
 }
 
-.image:hover {
+.image-item:hover {
+    cursor: pointer;
+}
+
+.image-item:hover .image {
     background-size: 375%; /* Increased background size on hover */
+}
+
+.image-item:hover .event-container::after {
+    width: 100%;
+    right: 0;
+    left: auto;
+}
+
+.image-item:hover .arrow {
+    transform: translateX(-3px); /* Adjust as needed */
 }
 
 .image-date{
     margin-top: 8px;
     text-align: right;
-    font-family: "Narkis-Regular";
+    font-family: "Narkis-Extralight";
     color: #e7e7e7;
     font-size: 16px;
-    opacity: 50%;
+    opacity: 60%;
 }
 
-.image-name {
-    text-align: right;
-    font-family: "Narkis-Regular";
-    color: #e7e7e7;
-    font-size: 16px;
+.event-container {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    height: auto;
+    width: fit-content;
+    margin-bottom: 5px;
+    position: absolute; /* Position inside the image-item */
+    bottom: -30px; /* Adjust based on your layout */
+    color: rgba(255, 214, 0, 1);
+    font-family: "Narkis-Medium";
+    font-size: 20px;
+    cursor: pointer;
 }
 
+.event-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.5px;
+    background-color: rgba(255, 214, 0, 1); /* Adjust color to fit your design */
+    transition: width 0.5s ease-in-out;
+}
+
+.arrow {
+    width: 15px;
+    padding-right: 5px;
+    transition: transform 0.3s ease-out; /* Make transition time similar to the underline */
+}
+
+@keyframes moveArrow {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
