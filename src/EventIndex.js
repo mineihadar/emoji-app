@@ -42,9 +42,9 @@ const ImageGrid = () => {
                                     style={{ backgroundImage: `url(${image.src})` }}
                                 ></div>
                                 <div className="image-date">{image.date}</div>
-                                <div className='event-container'>
+                                <div className='index-event-container'>
                                     <p>{image.name}</p>
-                                    <img className='arrow' src={arrow} alt='arrow' />
+                                    <img className='index-arrow' src={arrow} alt='arrow' />
                                 </div>
                             </>
                         )}

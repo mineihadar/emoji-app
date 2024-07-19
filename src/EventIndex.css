@@ -40,13 +40,13 @@
     background-size: 375%; /* Increased background size on hover */
 }
 
-.image-item:hover .event-container::after {
+.image-item:hover .index-event-container::after {
     width: 100%;
     right: 0;
     left: auto;
 }
 
-.image-item:hover .arrow {
+.image-item:hover .index-arrow {
     transform: translateX(-3px); /* Adjust as needed */
 }
 
@@ -59,7 +59,7 @@
     opacity: 60%;
 }
 
-.event-container {
+.index-event-container {
     display: inline-flex;
     align-items: center;
     margin: 0;
@@ -74,7 +74,7 @@
     cursor: pointer;
 }
 
-.event-container::after {
+.index-event-container::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -85,7 +85,7 @@
     transition: width 0.5s ease-in-out;
 }
 
-.arrow {
+.index-arrow {
     width: 15px;
     padding-right: 5px;
     transition: transform 0.3s ease-out; /* Make transition time similar to the underline */
