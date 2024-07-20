@@ -70,7 +70,6 @@
         "#הפגנה",
         "#ישראל",
         "#החזית_הורודה",
-        "#8",
         "#נתניה",
         "#democracy",
         "#קפלן",
@@ -348,7 +347,7 @@
         "🤣": 6,
         "👍": 4
       },
-      "common_hashtags": [],
+      "common_hashtags": ["#מגן_וחץ"],
       "common_words": [
         "מגן",
         "וחץ",
@@ -487,12 +486,7 @@
         "שמח",
         "ושנה"
       ],
-      "common_words": [
-        "#shanatova",
-        "#roshhashana",
-        "#פיד_ימין",
-        "#סוגריםאתבזן"
-      ]
+      "common_words": ["#shanatova", "#roshhashana", "#פיד_ימין"]
     }
   },
   "DiziKippur": {
@@ -840,7 +834,6 @@
       "common_hashtags": [
         "#חנוכה",
         "#Hanukkah2023",
-        "#Janucá",
         "#חנוכה_שמח",
         "#Chanukah2023",
         "#HappyHanukkah",
@@ -891,14 +884,8 @@
       },
       "common_hashtags": [
         "#HappyNewYear",
-        "#ליברפול",
-        "#YNWA",
-        "#TopOfTheLeague",
         "#nofilter",
-        "#NH106",
-        "#NewProfilePic",
         "#2024coming",
-        "#France",
         "#Israël"
       ],
       "common_words": [
@@ -1231,7 +1218,6 @@
       "common_hashtags": [
         "#Israel",
         "#bringthemhomenow",
-        "#غزة",
         "#HappyBirthdayIsrael",
         "#עם_ישראל_חי",
         "#independenceday",

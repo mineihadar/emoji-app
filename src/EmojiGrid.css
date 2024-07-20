@@ -55,7 +55,7 @@
 
 .events-window {
   margin: 20px 0px 0px 20px;
-  width: 45%;
+  width: 50%;
 }
 
 .trends {
@@ -77,7 +77,7 @@
   display: flex;
   flex-direction: column;
 }
-
+/* 
 .event-container {
   display: inline-flex;
   align-items: center;
@@ -96,7 +96,7 @@
   left: 0;
   width: 0;
   height: 0.5px;
-  background-color: rgba(255, 214, 0, 1); /* Adjust color to fit your design */
+  background-color: rgba(255, 214, 0, 1);
   transition: width 0.5s ease-in-out;
 }
 
@@ -109,11 +109,11 @@
 .arrow {
   width: 15px;
   padding-right: 5px;
-  transition: transform 0.3s ease-out; /* Make transition time similar to the underline */
+  transition: transform 0.3s ease-out;
 }
 
 .event-container:hover .arrow {
-  transform: translateX(-3px); /* Adjust as needed */
+  transform: translateX(-3px);
 }
 
 @keyframes moveArrow {
@@ -126,7 +126,7 @@
   100% {
     transform: translateX(0);
   }
-}
+} */
 
 .emoji-grid-container {
   width: 100%;
@@ -210,7 +210,7 @@
 
 .emoji-row {
   display: flex;
-  width: 85vw;
+  width: 80vw;
   justify-content: flex-end;
 }
 
