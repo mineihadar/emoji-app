@@ -9,7 +9,6 @@ import weeks from "./data/weeks.json";
 import About from "./About";
 import EmojiIndex from "./EmojiIndex";
 import EventIndex from "./EventIndex";
-import OpenScreen from "./OpenScreen";
 import Logo from "./Logo";
 
 function App() {
