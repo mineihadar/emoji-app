@@ -1,7 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./EmojiDrawer.css"; // Add your styles here
+import allEmojis from "./data/all_emojis.json";
 
 const EmojiDrawer = ({ open, onClose, details }) => {
+  const emojiPictures = {
+    "⁉️": "./images/exclamation-question-mark.png",
+    "‼️": "./images/double-exclamation-mark.png",
+    "♥️": "./images/heart_suit.png",
+  };
+
+  useEffect(() => {
+    if (open) {
+      const drawerElement = document.querySelector(".emoji-drawer");
+      drawerElement.classList.add("opening");
+      setTimeout(() => {
+        drawerElement.classList.remove("opening");
+      }, 300); // The duration of your CSS transition
+    }
+  }, [open, details]);
+
+  const getEmojiIndex = (emoji) => {
+    const keys = Object.keys(allEmojis);
+    return keys.indexOf(emoji) + 1;
+  };
+
   return (
     <div className={`emoji-drawer ${open ? "open" : ""}`} onClick={onClose}>
       <div className='info-frame'>
@@ -9,7 +31,15 @@ const EmojiDrawer = ({ open, onClose, details }) => {
           <span className='close-icon'>&rarr;</span>
         </div>
         <div className='emoji-title'>
-          <h3>{details.emoji}</h3>
+          {!(details.emoji in emojiPictures) ? (
+            <h3>{details.emoji}</h3>
+          ) : (
+            <img
+              style={{ width: "72px", padding: "0px 0px 20px 10px" }}
+              src={emojiPictures[details.emoji]}
+            />
+          )}
+
           <div className='emoji-id'>
             <h5>{details.id.name}</h5>
             <p>קטגוריה: {details.id.category}</p>
@@ -19,8 +49,8 @@ const EmojiDrawer = ({ open, onClose, details }) => {
         {/* Popularity Index */}
         <div className='emoji-info'>
           <div style={{ display: "flex", alignItems: "flex-end" }}>
-            <p className='info-value-number'>{details.details[0].value}</p>
-            <p className='info-value'>{details.details[0].additionalText}</p>
+            <p className='info-value-number'>{getEmojiIndex(details.emoji)}</p>
+            <p className='info-value'>/ 682</p>
           </div>
           <div className='category'>
             <p className='info-category'>{details.details[0].category}</p>

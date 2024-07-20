@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import EmojiGrid from "./EmojiGrid";
 import EmojiImage from "./EmojiImage";
@@ -13,34 +13,33 @@ import OpenScreen from "./OpenScreen";
 import Logo from "./Logo";
 
 function App() {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isGif, setIsGif] = useState(false);
 
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsGif(true);
+      const gifTimeout = setTimeout(() => {
+        setIsGif(false);
+      }, 2500); // Duration to show the GIF (2 seconds)
 
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
+      return () => clearTimeout(gifTimeout); // Clean up the timeout on component unmount
+    }, 10000); // Toggle every 20 seconds
+
+    return () => clearInterval(interval); // Clean up the interval on component unmount
+  }, []);
 
   return (
     <Router>
       <div className='App'>
-        {/* <div className='header'>
-          <img
-            className='logo-div'
-            src={isHovered ? logoHover : logo}
-            alt='Logo'
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          />
+        <div className='header'>
+          <img className='logo-div' src={isGif ? logoHover : logo} alt='Logo' />
           <div className='menu-options'>
             <Link to='/timeline'>ציר זמן</Link>
             <Link to='/events'>אירועים</Link>
             <Link to='/emojis'>אימוג׳ים</Link>
             <Link to='/about'>על הפרויקט</Link>
           </div>
-        </div> */}
+        </div>
         <div style={{ height: "100%" }}>
           <Routes>
             <Route path='/timeline' element={<EmojiGrid weeks={weeks} />} />

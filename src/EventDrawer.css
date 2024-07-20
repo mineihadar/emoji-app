@@ -1,16 +1,20 @@
 .event-drawer {
   position: fixed;
   top: 0;
-  left: -37.3vw;
-  width: 30.3vw;
+  left: -28.3vw;
+  width: 25.3vw;
   height: 100%;
   color: #e7e7e7;
   transition: left 0.3s ease;
   z-index: 1300; /* Ensure it appears on top */
-  padding: 20px 60px;
+  padding: 50px 60px 20px 40px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Adjust shadow for left side */
-  background-color: rgb(45, 45, 45, 0.9);
+  background-color: rgb(45, 45, 45, 0.95);
   backdrop-filter: blur(1px);
+}
+
+.event-drawer:hover {
+  left: -25.3vw;
 }
 
 .event-drawer.open {
@@ -33,6 +37,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  position: relative;
+  height: 90vh;
 }
 
 .event-id {
@@ -66,16 +72,20 @@
 
 .event-title p {
   color: rgba(231, 231, 231, 0.7);
+  font-size: 17.2px;
+  font-family: "Narkis-Extralight";
 }
 
-.event-id p {
-  font-size: 17.2px;
+.event-about {
+  font-size: 22.1px;
   overflow-wrap: break-word; /* Break long words */
   word-break: break-word; /* Break words at line end */
   white-space: normal; /* Allow wrapping */
+  font-family: "Narkis-Regular";
+  line-height: 1.5rem;
 }
 
-.category {
+.event-category {
   display: flex;
   padding-top: 10px;
 }
@@ -96,9 +106,10 @@
   margin-left: 10px;
 }
 
-.info-value {
+.info-value-event {
+  width: 27px;
   font-size: 17.2px;
-  margin: 0px 0px 2px 10px;
+  margin: 0px 0px -5px 10px;
 }
 
 .info-value-number {
@@ -114,6 +125,14 @@
 }
 
 .list-words {
+  display: flex;
+  gap: 0.7vw;
+  flex-wrap: wrap;
+  font-family: "Narkis-Regular";
+  font-size: 22.1px;
+}
+
+.list-hashtags {
   display: flex;
   gap: 0.7vw;
   flex-wrap: wrap;

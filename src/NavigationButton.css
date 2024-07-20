@@ -1,0 +1,44 @@
+.button-container {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  height: auto;
+  width: fit-content;
+  margin-bottom: 5px;
+  position: relative;
+  cursor: pointer;
+  color: rgba(255, 214, 0, 1);
+  font-family: "Narkis-Medium";
+  font-size: 23.5px;
+}
+
+.events:hover {
+  cursor: pointer;
+}
+
+.button-container::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 0.5px;
+  background-color: rgba(255, 214, 0, 1); /* Adjust color to fit your design */
+  transition: width 0.5s ease-in-out;
+}
+
+.button-container:hover::after {
+  width: 100%;
+  right: 0;
+  left: auto;
+}
+
+.arrow {
+  width: 15px;
+  padding-right: 5px;
+  transition: transform 0.3s ease-out; /* Make transition time similar to the underline */
+}
+
+.button-container:hover .arrow {
+  transform: translateX(-3px); /* Adjust as needed */
+}

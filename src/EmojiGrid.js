@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef, forwardRef } from "react";
-import { useNavigate } from "react-router-dom";
 import "./EmojiGrid.css";
 import emojiData from "./data/weekly_emojis.json";
 import trends from "./data/modified_trending_data_with_corrected_years.json";
@@ -7,6 +6,7 @@ import EmojiDrawer from "./EmojiDrawer";
 import ScrollableSidebar from "./ScrollableSidebar";
 import { findEmojiInData } from "./helpers/findEmojisData";
 import arrow from "./images/arrow.png";
+import NavigationButton from "./NavigationButton";
 
 const EmojiGrid = forwardRef(({ weeks }, ref) => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -15,11 +15,20 @@ const EmojiGrid = forwardRef(({ weeks }, ref) => {
   const internalRef = useRef(null);
   const gridRef = ref || internalRef;
   const isScrolling = useRef(false);
-  const navigate = useNavigate();
+  const pendingEmojiDetails = useRef(null);
+
+  const emojiPictures = {
+    "⁉️": "./images/exclamation-question-mark.png",
+    "‼️": "./images/double-exclamation-mark.png",
+    "♥️": "./images/heart_suit.png",
+  };
 
   const handleClickEmoji = (emoji) => {
-    let emojiDetails1 = findEmojiInData(emoji);
+    const emojiDetails1 = findEmojiInData(emoji);
     if (drawerOpen && selectedEmojiDetails?.emoji === emoji) {
+      handleCloseDrawer();
+    } else if (drawerOpen) {
+      pendingEmojiDetails.current = emojiDetails1;
       handleCloseDrawer();
     } else {
       handleOpenDrawer(emojiDetails1);
@@ -34,6 +43,17 @@ const EmojiGrid = forwardRef(({ weeks }, ref) => {
   const handleCloseDrawer = () => {
     setDrawerOpen(false);
   };
+
+  useEffect(() => {
+    if (!drawerOpen && pendingEmojiDetails.current) {
+      const timeout = setTimeout(() => {
+        handleOpenDrawer(pendingEmojiDetails.current);
+        pendingEmojiDetails.current = null;
+      }, 300); // Match this duration with your CSS transition duration
+
+      return () => clearTimeout(timeout);
+    }
+  }, [drawerOpen]);
 
   const handleScrollToWeek = (index) => {
     const columns = document.querySelectorAll(".week-column");
@@ -112,7 +132,10 @@ const EmojiGrid = forwardRef(({ weeks }, ref) => {
     const weekData = trends.find((weekData) => weekData.week === week);
     if (weekData) {
       return weekData.trending_words.map((trend, index) => (
-        <p key={index}>{`${trend} \u00B7`}</p>
+        <p key={index}>
+          {trend}
+          {index < weekData.trending_words.length - 1 && " \u00B7"}
+        </p>
       ));
     }
     return [];
@@ -122,13 +145,11 @@ const EmojiGrid = forwardRef(({ weeks }, ref) => {
     const weekData = trends.find((weekData) => weekData.week === week);
     if (weekData) {
       return weekData.events.map((event, index) => (
-        <div
-          className='event-container'
-          key={index}
-          onClick={() => navigate(`/events/${event}`)}>
-          <p>{event}</p>
-          <img className='arrow' src={arrow} alt='arrow' />
-        </div>
+        <NavigationButton
+          address={`/events/${Object.keys(event)}`}
+          value={Object.values(event)}
+          index={index}
+        />
       ));
     }
     return [];
@@ -153,7 +174,11 @@ const EmojiGrid = forwardRef(({ weeks }, ref) => {
                 e.stopPropagation(); // Prevent row click from triggering
                 index === visibleColumnIndex && handleClickEmoji(emoji);
               }}>
-              {emoji}
+              {!(emoji in emojiPictures) ? (
+                emoji
+              ) : (
+                <img src={emojiPictures[emoji]} />
+              )}
             </div>
           ))}
         </div>
