@@ -2,9 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./EmojiImage.css";
 import EventDrawer from "./EventDrawer";
-import eventDetails from "./data/eventDetails.json";
 import events from "./data/events.json";
-import NavigationButton from "./NavigationButton";
 
 const EmojiImage = () => {
   const { eventName } = useParams();

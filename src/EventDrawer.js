@@ -19,7 +19,7 @@ const EventDrawer = ({ open, onClose, details }) => {
         </div>
 
         {/* Common Hashtags */}
-        {details.common_hashtags.length != 0 && (
+        {details.common_hashtags.length !== 0 && (
           <div className='section-info'>
             <div className='list-hashtags'>
               {details.common_hashtags.map((hashtag, subIndex) => (

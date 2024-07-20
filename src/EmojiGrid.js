@@ -5,7 +5,6 @@ import trends from "./data/modified_trending_data_with_corrected_years.json";
 import EmojiDrawer from "./EmojiDrawer";
 import ScrollableSidebar from "./ScrollableSidebar";
 import { findEmojiInData } from "./helpers/findEmojisData";
-import arrow from "./images/arrow.png";
 import NavigationButton from "./NavigationButton";
 
 const EmojiGrid = forwardRef(({ weeks }, ref) => {
