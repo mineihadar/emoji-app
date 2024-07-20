@@ -177,7 +177,7 @@ const EmojiGrid = forwardRef(({ weeks }, ref) => {
               {!(emoji in emojiPictures) ? (
                 emoji
               ) : (
-                <img src={emojiPictures[emoji]} />
+                <img src={emojiPictures[emoji]} alt='emoji' />
               )}
             </div>
           ))}

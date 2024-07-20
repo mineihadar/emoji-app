@@ -35,6 +35,7 @@ const EmojiDrawer = ({ open, onClose, details }) => {
             <h3>{details.emoji}</h3>
           ) : (
             <img
+              alt='emoji'
               style={{ width: "72px", padding: "0px 0px 20px 10px" }}
               src={emojiPictures[details.emoji]}
             />

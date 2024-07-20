@@ -6,7 +6,7 @@ import BigLogo from "./images/big_logo.gif"; // Ensure this is the correct impor
 function Logo() {
   return (
     <div style={{ height: "100vh", bottom: "auto" }}>
-      <img src={BigLogo} />
+      <img src={BigLogo} alt='logo' />
     </div>
   );
 }
