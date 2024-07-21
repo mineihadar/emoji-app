@@ -5,10 +5,6 @@
   padding: 10px;
 }
 
-.grid-container::-webkit-scrollbar {
-  display: none;
-}
-
 .image-grid {
   margin-top: 20vh;
   margin-bottom: 20vh;

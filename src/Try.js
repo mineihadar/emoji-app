@@ -1,32 +1,41 @@
-import React, { useEffect, useRef } from "react";
+import React, {useEffect, useRef, useState} from "react";
 import p5 from "p5";
 import "./Try.css";
 
 const emojis = [
   "😊",
-  "🌟",
   "🍕",
-  "🐱",
-  "🎉",
   "🌈",
   "🚀",
-  "💡",
   "🌸",
-  "🎨",
-  "🏀",
-  "🐶",
-  "🌍",
-  "💻",
-  "🎵",
-  "📚",
-  "🍫",
   "✨",
-  "🚴",
-  "🎁",
-  "🎬",
   "🍔",
-  "🏖",
   "🌷",
+  "😂",
+  "😍",
+  "🇮🇱",
+  "🔯",
+  "🔥",
+  "🕯",
+  "️🥙",
+  "💔",
+  "💙",
+  "👑",
+  "🦄",
+  "🎗",
+  "️❤",
+  "️🇺🇸",
+  "⚽",
+  "🏓",
+  "💛",
+  "😭",
+  "🖥",
+  "️👏",
+  "💪",
+  "🏀",
+  "🥀",
+  "🍉",
+  "🎉"
 ];
 
 const Try = () => {
@@ -105,7 +114,8 @@ const Try = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       const currentIndex = emojis.indexOf(emojiRef.current);
-      const nextIndex = (currentIndex + 1) % emojis.length;
+      // const nextIndex = (currentIndex + 1) % emojis.length;
+      const nextIndex = Math.floor(Math.random() * emojis.length);
       emojiRef.current = emojis[nextIndex];
     }, 3000); // Change every 10 seconds
 
