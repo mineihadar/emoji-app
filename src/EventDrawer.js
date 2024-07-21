@@ -119,7 +119,7 @@ const EventDrawer = ({ details, open, onClose, onOpen, previousAddress }) => {
                     display: "flex",
                     gap: "0.2vw",
                     alignItems: "flex-end",
-                    marginBottom: "25px",
+                    paddingBottom: "35px",
                   }}
                   key={subIndex}>
                   <div className='info-emoji-event-container'>
@@ -130,7 +130,7 @@ const EventDrawer = ({ details, open, onClose, onOpen, previousAddress }) => {
               )
             )}
           </div>
-          <div className='event-category'>
+          <div className='event-category' style={{ lineHeight: "0.001em" }}>
             <p className='info-category'>אימוג׳ים נפוצים</p>
             <p className='explain-category'>בפוסטים קשורים</p>
           </div>
