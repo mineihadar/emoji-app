@@ -7,7 +7,7 @@
   height: 100vh;
   width: 100vw;
   position: relative;
-  z-index: 1; /* Ensure the container has a higher z-index */
+  z-index: 3; /* Ensure the container has a higher z-index */
 }
 
 .text-container {
@@ -17,7 +17,7 @@
 }
 
 .about-text {
-  margin: 500px 70px 0px 0px;
+  margin: 600px 70px 0px 0px;
   color: #e7e7e7;
   font-size: 22.1px;
   text-align: right;
@@ -37,7 +37,7 @@
   margin-right: 50px;
   font-family: "Narkis-Medium";
   color: #e7e7e7;
-  font-size: 380px;
+  font-size: 400px;
   text-align: right;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   position: absolute;
