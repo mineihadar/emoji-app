@@ -49,11 +49,11 @@ const Try = () => {
       p.setup = () => {
         p.createCanvas(p.windowWidth, p.windowHeight);
         p.textSize(100);
-        p.background(39, 39, 39); // Set the background color once
+        p.background(45, 45, 45); // Set the background color once
       };
 
       p.draw = () => {
-        p.background(39, 39, 39); // Clear the background each frame
+        p.background(45, 45, 45); // Clear the background each frame
         const now = p.millis();
 
         // Remove emojis older than 10 seconds
@@ -101,7 +101,7 @@ const Try = () => {
 
       p.windowResized = () => {
         p.resizeCanvas(p.windowWidth, p.windowHeight);
-        p.background(39, 39, 39); // Reset background after resizing
+        p.background(45, 45, 45); // Reset background after resizing
       };
     };
 

@@ -7,6 +7,7 @@ import Try from "./Try";
 const OpenScreen = () => {
   const textRef = useRef(null);
   const aboutTextRef = useRef(null);
+  const openContainerRef = useRef(null);
 
   useEffect(() => {
     // Animate the main text
@@ -48,13 +49,21 @@ const OpenScreen = () => {
           duration: 1,
           ease: "power4.out",
           stagger: 0.2, // Stagger each line animation
+          onComplete: () => {
+            // Slide up and disappear after the about-text animation completes
+            gsap.to(openContainerRef.current, {
+              y: "-100vh",
+              duration: 1,
+              ease: "power4.in",
+            });
+          },
         }
       );
     };
   }, []);
 
   return (
-    <div className='open-container'>
+    <div ref={openContainerRef} className='open-container'>
       <Try style={{ position: "absolute", top: 0, left: 0, zIndex: 0 }} />
       <div className='text-container'>
         <div

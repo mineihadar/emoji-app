@@ -77,10 +77,11 @@ function App() {
           <Route path='/events/:eventName' element={<EmojiImage />} />
           <Route path='/emojis' element={<EmojiIndex />} />
           <Route path='/about' element={<About />} />
-          <Route path='/' element={<OpenScreen />} />{" "}
+          <Route path='/' element={<EmojiGrid weeks={weeks} />} />{" "}
           {/* Default route for opening screen */}
         </Routes>
       </div>
+      <OpenScreen /> {/* Position OpenScreen on top of the content */}
     </div>
   );
 }
