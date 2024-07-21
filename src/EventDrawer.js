@@ -33,7 +33,7 @@ const EventDrawer = ({ details, open, onClose, onOpen, previousAddress }) => {
     <div className={`event-drawer ${open ? "open" : ""}`} onClick={handleClick}>
       <div className='left-icon-frame'>
         <img
-          className={`arrow ${open ? "opposite" : ""}`}
+          className={`arrowDrawer ${open ? "opposite" : ""}`}
           alt='arrow'
           style={{ width: "20px" }}
           src={arrow}
