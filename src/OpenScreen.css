@@ -1,3 +1,4 @@
+/* OpenScreen.css */
 .open-container {
   display: flex;
   flex-direction: column;
@@ -5,23 +6,31 @@
   align-items: flex-start;
   height: 100vh;
   width: 100vw;
-  background-color: #2d2d2d;
   position: relative;
-  z-index: 2000;
+  z-index: 1; /* Ensure the container has a higher z-index */
 }
 
 .text-container {
   width: 40%;
   text-align: center;
+  z-index: 2; /* Ensure text is above the Try component */
 }
 
 .about-text {
-  margin: 500px 60px 0px 0px;
+  margin: 500px 70px 0px 0px;
   color: #e7e7e7;
   font-size: 22.1px;
   text-align: right;
   font-family: "Narkis-Medium";
   line-height: 1.5rem;
+  z-index: 3; /* Ensure it is above other elements */
+  overflow: hidden; /* Ensure the animation appears from beneath */
+  display: none; /* Ensure it is hidden initially */
+}
+
+.about-text p span {
+  display: inline-block; /* Ensure the spans are treated as block elements for animation */
+  transform: translateY(100%); /* Initial state for the animation */
 }
 
 .our-text {
@@ -34,4 +43,14 @@
   position: absolute;
   bottom: 0; /* Position it at the bottom */
   width: 100%; /* Ensure it takes the full width */
+  z-index: 2; /* Ensure it is above the Try component but below the text-container */
+}
+
+.emoji-drawing-container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; /* Ensure it is below the other content */
 }

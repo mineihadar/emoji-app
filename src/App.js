@@ -4,13 +4,13 @@ import EmojiGrid from "./EmojiGrid";
 import EmojiImage from "./EmojiImage";
 import "./App.css";
 import logo from "./images/emoji_logo_static.png";
-import logoHover from "./images/reverse_logo.gif"; // Add your hover logo image here
+import logoHover from "./images/reverse_logo.gif";
 import weeks from "./data/weeks.json";
 import About from "./About";
 import EmojiIndex from "./EmojiIndex";
 import EventIndex from "./EventIndex";
-import Logo from "./Logo";
-import CurveGraph from "./CurveGraph";
+import Try from "./Try";
+import OpenScreen from "./OpenScreen";
 
 function App() {
   const [isGif, setIsGif] = useState(false);
@@ -20,12 +20,12 @@ function App() {
       setIsGif(true);
       const gifTimeout = setTimeout(() => {
         setIsGif(false);
-      }, 6000); // Duration to show the GIF (2 seconds)
+      }, 6000);
 
-      return () => clearTimeout(gifTimeout); // Clean up the timeout on component unmount
-    }, 10000); // Toggle every 20 seconds
+      return () => clearTimeout(gifTimeout);
+    }, 10000);
 
-    return () => clearInterval(interval); // Clean up the interval on component unmount
+    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -47,7 +47,8 @@ function App() {
             <Route path='/events/:eventName' element={<EmojiImage />} />
             <Route path='/emojis' element={<EmojiIndex />} />
             <Route path='/about' element={<About />} />
-            <Route path='/' element={<CurveGraph />} /> {/* Default route */}
+            <Route path='/' element={<OpenScreen />} />{" "}
+            {/* Default route for opening screen */}
           </Routes>
         </div>
       </div>
