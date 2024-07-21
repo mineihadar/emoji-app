@@ -3,7 +3,7 @@ import { scaleTime, scaleLinear } from "@visx/scale";
 import { LinePath } from "@visx/shape";
 import { Group } from "@visx/group";
 import { curveMonotoneX } from "@visx/curve";
-import { extent, max, bisector } from "d3-array";
+import { max, bisector } from "d3-array";
 import { Tooltip, defaultStyles } from "@visx/tooltip";
 import { localPoint } from "@visx/event";
 import monthlyData from "./data/monthly_emojis.json"; // Adjust the path as necessary
@@ -21,7 +21,7 @@ const parseMonthDate = (monthDate) => {
   return new Date(Date.parse(`${month} 1, ${year}`));
 };
 
-const getCompleteData = (data) => {
+const getCompleteData = (data, startDate, endDate) => {
   const parsedData = Object.entries(data)
     .map(([key, value]) => ({
       date: parseMonthDate(key),
@@ -29,14 +29,10 @@ const getCompleteData = (data) => {
     }))
     .sort((a, b) => a.date - b.date);
 
-  const dateExtent = extent(parsedData, (d) => d.date);
-  const minDate = new Date(dateExtent[0]);
-  const maxDate = new Date(dateExtent[1]);
   const completeData = [];
-
   for (
-    let date = new Date(minDate);
-    date <= maxDate;
+    let date = new Date(startDate);
+    date <= endDate;
     date.setMonth(date.getMonth() + 1)
   ) {
     const existing = parsedData.find(
@@ -60,17 +56,19 @@ const CurveGraph = ({ emoji }) => {
 
   const data = monthlyData[emoji];
   if (!data) {
-    return <div>No data available for {emoji}</div>;
+    return <div>אין לנו נתונים {emoji}</div>;
   }
 
-  const parsedData = getCompleteData(data);
+  const startDate = new Date(2023, 0, 1); // January 2023
+  const endDate = new Date(2024, 4, 1); // May 2024
+  const parsedData = getCompleteData(data, startDate, endDate);
 
   const width = window.innerWidth * 0.27;
   const height = 150;
   const margin = { top: 20, right: 20, bottom: 40, left: 50 };
 
   const xScale = scaleTime({
-    domain: extent(parsedData, (d) => d.date).reverse(), // Reverse the domain
+    domain: [startDate, endDate].reverse(), // Reverse the domain
     range: [margin.left, width - margin.right],
   });
 

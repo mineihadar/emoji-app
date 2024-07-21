@@ -48,6 +48,38 @@ const EventDrawer = ({ details, open, onClose, onOpen, previousAddress }) => {
           <p className='event-about'>{details.id.about}</p>
         </div>
 
+        {/* Emojis */}
+        <div className='emoji-info'>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+            }}>
+            {Object.entries(details.common_emojis).map(
+              ([emoji, percentage], subIndex) => (
+                <div
+                  className='info-value-emoji-event'
+                  style={{
+                    display: "flex",
+                    gap: "0.2vw",
+                    alignItems: "flex-end",
+                    paddingBottom: "35px",
+                  }}
+                  key={subIndex}>
+                  <div className='info-emoji-event-container'>
+                    {renderEmoji(emoji)}
+                  </div>
+                  <p className='info-value-event'>{percentage}%</p>
+                </div>
+              )
+            )}
+          </div>
+          <div className='event-category' style={{ lineHeight: "0.001em" }}>
+            <p className='info-category'>אימוג׳ים נפוצים</p>
+            <p className='explain-category'>בפוסטים קשורים</p>
+          </div>
+        </div>
+
         {/* Sentiment */}
         <div className='emoji-info'>
           <div style={{ display: "flex", gap: "0.8vw" }}>
@@ -89,52 +121,23 @@ const EventDrawer = ({ details, open, onClose, onOpen, previousAddress }) => {
         )}
 
         {/* Common Words */}
-        <div className='section-info'>
-          <div className='list-words'>
-            {details.common_words.map((word, subIndex) => (
-              <p className='words' key={subIndex}>
-                {word}
-                {subIndex < details.common_words.length - 1 && " \u00B7"}
-              </p>
-            ))}
+        {details.common_words.length !== 0 && (
+          <div className='section-info'>
+            <div className='list-words'>
+              {details.common_words.map((word, subIndex) => (
+                <p className='words' key={subIndex}>
+                  {word}
+                  {subIndex < details.common_words.length - 1 && " \u00B7"}
+                </p>
+              ))}
+            </div>
+            <div className='event-category'>
+              <p className='info-category'>מילים נפוצות</p>
+              <p className='explain-category'>בפוסטים קשורים</p>
+            </div>
           </div>
-          <div className='event-category'>
-            <p className='info-category'>מילים נפוצות</p>
-            <p className='explain-category'>בפוסטים קשורים</p>
-          </div>
-        </div>
+        )}
 
-        {/* Emojis */}
-        <div className='emoji-info'>
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-            }}>
-            {Object.entries(details.common_emojis).map(
-              ([emoji, percentage], subIndex) => (
-                <div
-                  className='info-value-emoji-event'
-                  style={{
-                    display: "flex",
-                    gap: "0.2vw",
-                    alignItems: "flex-end",
-                    paddingBottom: "35px",
-                  }}
-                  key={subIndex}>
-                  <div className='info-emoji-event-container'>
-                    {renderEmoji(emoji)}
-                  </div>
-                  <p className='info-value-event'>{percentage}%</p>
-                </div>
-              )
-            )}
-          </div>
-          <div className='event-category' style={{ lineHeight: "0.001em" }}>
-            <p className='info-category'>אימוג׳ים נפוצים</p>
-            <p className='explain-category'>בפוסטים קשורים</p>
-          </div>
-        </div>
         <div
           style={{
             position: "absolute",
