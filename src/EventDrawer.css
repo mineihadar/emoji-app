@@ -21,6 +21,15 @@
   left: 0vw;
 }
 
+.arrowDrawer {
+  transition: transform 0.3s ease;
+  transform: rotate(180deg); /* Rotate icon to point left */
+}
+
+.arrowDrawer.opposite {
+  transform: rotate(0deg); /* Rotate icon to point left */
+}
+
 .left-icon-frame {
   display: flex;
   justify-content: flex-start; /* Adjust close icon to the left */
@@ -30,7 +39,6 @@
 .left-close-icon {
   font-size: 34px;
   font-weight: normal;
-  transform: rotate(0deg); /* Rotate icon to point left */
 }
 
 .info-frame-event {
@@ -87,7 +95,6 @@
 
 .event-category {
   display: flex;
-  padding-top: 10px;
 }
 
 .section-info {
@@ -130,6 +137,7 @@
   flex-wrap: wrap;
   font-family: "Narkis-Regular";
   font-size: 22.1px;
+  margin-bottom: 10px;
 }
 
 .list-hashtags {
@@ -138,6 +146,7 @@
   flex-wrap: wrap;
   font-family: "Narkis-Regular";
   font-size: 22.1px;
+  margin-bottom: 10px;
 }
 
 .info-value-emoji-event {

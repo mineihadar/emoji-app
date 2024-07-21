@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
 import "./EmojiImage.css";
 import EventDrawer from "./EventDrawer";
 import events from "./data/events.json";
@@ -13,6 +13,7 @@ const emojiPictures = {
 
 const EmojiImage = () => {
   const { eventName } = useParams();
+  const location = useLocation();
   const [emojiRows, setEmojiRows] = useState([]);
   const [loadedRows, setLoadedRows] = useState([]);
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -67,6 +68,8 @@ const EmojiImage = () => {
     return result;
   };
 
+  const handleOpen = () => setDrawerOpen(true);
+
   return (
     <div id='emoji-container'>
       {loadedRows.map((row, index) => (
@@ -81,6 +84,8 @@ const EmojiImage = () => {
         details={events[eventName].details}
         open={drawerOpen}
         onClose={() => setDrawerOpen(false)}
+        onOpen={handleOpen}
+        previousAddress={location.state?.from || "/timeline"} // Pass the previous address or fallback to "/timeline"
       />
     </div>
   );

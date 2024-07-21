@@ -45,7 +45,12 @@ const ImageGrid = () => {
           <div
             key={index}
             className='image-item'
-            onClick={() => !event.empty && navigate(`/events/${event.key}`)}>
+            onClick={() =>
+              !event.empty &&
+              navigate(`/events/${event.key}`, {
+                state: { from: "/events" },
+              })
+            }>
             {event.empty ? (
               <div className='image-placeholder'></div>
             ) : (

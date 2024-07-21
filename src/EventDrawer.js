@@ -3,7 +3,7 @@ import "./EventDrawer.css"; // Add your styles here
 import NavigationButton from "./NavigationButton";
 import arrow from "./images/white_arrow.png";
 
-const EventDrawer = ({ details, open, onClose }) => {
+const EventDrawer = ({ details, open, onClose, onOpen, previousAddress }) => {
   const emojiPictures = {
     "⁉️": "/images/exclamation-question-mark.png",
     "‼️": "/images/double-exclamation-mark.png",
@@ -20,12 +20,22 @@ const EventDrawer = ({ details, open, onClose }) => {
     return <span className='emoji-text'>{emoji}</span>;
   };
 
+  const handleClick = (e) => {
+    e.stopPropagation(); // Prevents the event from bubbling up to parent elements
+    if (open) {
+      onClose();
+    } else {
+      onOpen();
+    }
+  };
+
   return (
-    <div className={`event-drawer ${open ? "open" : ""}`} onClick={onClose}>
+    <div className={`event-drawer ${open ? "open" : ""}`} onClick={handleClick}>
       <div className='left-icon-frame'>
         <img
+          className={`arrow ${open ? "opposite" : ""}`}
           alt='arrow'
-          style={{ width: "20px", transform: "rotate(180deg)" }}
+          style={{ width: "20px" }}
           src={arrow}
         />
       </div>
@@ -47,6 +57,7 @@ const EventDrawer = ({ details, open, onClose }) => {
                   display: "flex",
                   gap: "0.2vw",
                   alignItems: "flex-end",
+                  marginBottom: "10px",
                 }}
                 key={subIndex}>
                 <p className='info-value-number'>{value}%</p>
@@ -108,7 +119,7 @@ const EventDrawer = ({ details, open, onClose }) => {
                     display: "flex",
                     gap: "0.2vw",
                     alignItems: "flex-end",
-                    marginBottom: "12px",
+                    marginBottom: "25px",
                   }}
                   key={subIndex}>
                   <div className='info-emoji-event-container'>
@@ -130,7 +141,14 @@ const EventDrawer = ({ details, open, onClose }) => {
             bottom: "-30px",
             left: "0",
           }}>
-          <NavigationButton address={`/timeline`} value={"חזור לציר הזמן"} />
+          <NavigationButton
+            address={previousAddress}
+            value={
+              previousAddress === "/timeline"
+                ? "חזרה לציר הזמן"
+                : "חזרה לאינדקס אירועים"
+            }
+          />
         </div>
       </div>
     </div>
