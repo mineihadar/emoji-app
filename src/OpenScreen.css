@@ -6,8 +6,10 @@
   align-items: flex-start;
   height: 100vh;
   width: 100vw;
-  position: relative;
-  z-index: 3; /* Ensure the container has a higher z-index */
+  position: absolute; /* Ensure it's positioned absolutely */
+  top: 0;
+  left: 0;
+  z-index: 4; /* Ensure the container has a higher z-index */
 }
 
 .text-container {
