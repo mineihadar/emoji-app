@@ -3,6 +3,13 @@ import { useParams } from "react-router-dom";
 import "./EmojiImage.css";
 import EventDrawer from "./EventDrawer";
 import events from "./data/events.json";
+import emojiRegex from "emoji-regex";
+
+const emojiPictures = {
+  "⁉️": "/images/exclamation-question-mark.png",
+  "‼️": "/images/double-exclamation-mark.png",
+  "♥️": "/images/heart_suit.png",
+};
 
 const EmojiImage = () => {
   const { eventName } = useParams();
@@ -33,7 +40,7 @@ const EmojiImage = () => {
           return [...prevRows, emojiRows[currentRow++]];
         } else {
           clearInterval(intervalId);
-          setDrawerOpen(true);
+          setDrawerOpen(true); // Open drawer immediately after loading rows
           return prevRows;
         }
       });
@@ -42,17 +49,38 @@ const EmojiImage = () => {
     return () => clearInterval(intervalId);
   }, [emojiRows]);
 
+  const renderEmoji = (emoji) => {
+    const imagePath = emojiPictures[emoji];
+    if (imagePath) {
+      return <img style={{ width: "19px" }} src={imagePath} alt='emoji' />;
+    }
+    return emoji;
+  };
+
+  const splitEmojis = (str) => {
+    const regex = emojiRegex();
+    let match;
+    const result = [];
+    while ((match = regex.exec(str)) !== null) {
+      result.push(match[0]);
+    }
+    return result;
+  };
+
   return (
     <div id='emoji-container'>
       {loadedRows.map((row, index) => (
         <div key={index} className='emoji-image-row'>
-          {row}
+          {splitEmojis(row).map((emoji, emojiIndex) => (
+            <span key={emojiIndex}>{renderEmoji(emoji)}</span>
+          ))}
         </div>
       ))}
+
       <EventDrawer
+        details={events[eventName].details}
         open={drawerOpen}
         onClose={() => setDrawerOpen(false)}
-        details={events[eventName].details}
       />
     </div>
   );
