@@ -13,7 +13,7 @@ const EmojiImage = () => {
   useEffect(() => {
     const loadEmojiRows = async () => {
       try {
-        const emojiData = await import(`./jsons/${events[eventName].img}`);
+        const emojiData = await import(`./jsons2/${events[eventName].img}`);
         setEmojiRows(emojiData.default);
       } catch (error) {
         console.error("Error loading emoji rows:", error);
