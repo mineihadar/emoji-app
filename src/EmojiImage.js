@@ -15,7 +15,7 @@ const EmojiImage = () => {
   const { eventName } = useParams();
   const [emojiRows, setEmojiRows] = useState([]);
   const [loadedRows, setLoadedRows] = useState([]);
-  const [drawerOpen, setDrawerOpen] = useState(false); // New state variable
+  const [drawerOpen, setDrawerOpen] = useState(false);
 
   useEffect(() => {
     const loadEmojiRows = async () => {
@@ -40,7 +40,7 @@ const EmojiImage = () => {
           return [...prevRows, emojiRows[currentRow++]];
         } else {
           clearInterval(intervalId);
-          setDrawerOpen(true);
+          setDrawerOpen(true); // Open drawer immediately after loading rows
           return prevRows;
         }
       });
@@ -82,7 +82,6 @@ const EmojiImage = () => {
         open={drawerOpen}
         onClose={() => setDrawerOpen(false)}
       />
-      {/* Conditionally render EventDrawer */}
     </div>
   );
 };
