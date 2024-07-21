@@ -3,7 +3,7 @@ import { scaleTime, scaleLinear } from "@visx/scale";
 import { LinePath } from "@visx/shape";
 import { Group } from "@visx/group";
 import { curveMonotoneX } from "@visx/curve";
-import { extent, max, bisector } from "d3-array";
+import { max, bisector } from "d3-array";
 import { Tooltip, defaultStyles } from "@visx/tooltip";
 import { localPoint } from "@visx/event";
 import monthlyData from "./data/monthly_emojis.json"; // Adjust the path as necessary
