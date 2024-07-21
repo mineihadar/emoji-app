@@ -7,7 +7,7 @@
 
 .grid {
   gap: 10px;
-  margin-top: 20vh;
+  margin-top: 15vh;
   margin-bottom: 20vh;
   display: flex;
   flex-wrap: wrap;
@@ -17,6 +17,8 @@
 }
 
 .cell {
+  width: 120px;
+  height: 120px;
   padding: 25px;
   display: flex;
   flex-direction: column;
