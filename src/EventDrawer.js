@@ -138,7 +138,7 @@ const EventDrawer = ({ details, open, onClose, onOpen, previousAddress }) => {
         <div
           style={{
             position: "absolute",
-            bottom: "-30px",
+            bottom: "-20px",
             left: "0",
           }}>
           <NavigationButton
