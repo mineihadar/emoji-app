@@ -6,7 +6,6 @@ import EmojiDrawer from "./EmojiDrawer";
 import ScrollableSidebar from "./ScrollableSidebar";
 import { findEmojiInData } from "./helpers/findEmojisData";
 import NavigationButton from "./NavigationButton";
-import OpenScreen from "./OpenScreen";
 
 const EmojiGrid = forwardRef(({ weeks }, ref) => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -209,7 +208,6 @@ const EmojiGrid = forwardRef(({ weeks }, ref) => {
 
   return (
     <>
-      {/* <OpenScreen /> */}
       <ScrollableSidebar
         weeks={weeks}
         currentIndex={visibleColumnIndex}

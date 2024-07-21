@@ -24,6 +24,7 @@ const EventDrawer = ({ details, open, onClose }) => {
     <div className={`event-drawer ${open ? "open" : ""}`} onClick={onClose}>
       <div className='left-icon-frame'>
         <img
+          alt='arrow'
           style={{ width: "20px", transform: "rotate(180deg)" }}
           src={arrow}
         />

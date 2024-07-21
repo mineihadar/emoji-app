@@ -38,6 +38,7 @@ const EmojiDrawer = ({ open, onClose, details }) => {
     <div className={`emoji-drawer ${open ? "open" : ""}`} onClick={onClose}>
       <div className='icon-frame'>
         <img
+          alt='arrow'
           style={{
             position: "absolute",
             width: "20px",
