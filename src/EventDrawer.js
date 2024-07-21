@@ -1,20 +1,39 @@
 import React from "react";
 import "./EventDrawer.css"; // Add your styles here
 import NavigationButton from "./NavigationButton";
+import arrow from "./images/white_arrow.png";
 
-const EventDrawer = ({ open, onClose, details }) => {
+const EventDrawer = ({ details, open, onClose }) => {
+  const emojiPictures = {
+    "⁉️": "/images/exclamation-question-mark.png",
+    "‼️": "/images/double-exclamation-mark.png",
+    "♥️": "/images/heart_suit.png",
+  };
+
+  const renderEmoji = (emoji) => {
+    const imagePath = emojiPictures[emoji];
+    if (imagePath) {
+      console.log(`Rendering image for ${emoji}: ${imagePath}`);
+      return <img src={imagePath} alt={emoji} className='emoji-image' />;
+    }
+    console.log(`Rendering text for ${emoji}`);
+    return <span className='emoji-text'>{emoji}</span>;
+  };
+
   return (
     <div className={`event-drawer ${open ? "open" : ""}`} onClick={onClose}>
+      <div className='left-icon-frame'>
+        <img
+          style={{ width: "20px", transform: "rotate(180deg)" }}
+          src={arrow}
+        />
+      </div>
       <div className='info-frame'>
-        <div className='left-icon-frame' onClick={onClose}>
-          <span className='left-close-icon'>&rarr;</span>
-        </div>
         <div className='event-id'>
           <div className='event-title'>
             <h3>{details.id.name}</h3>
             <p>{details.id.date}</p>
           </div>
-
           <p className='event-about'>{details.id.about}</p>
         </div>
 
@@ -78,20 +97,22 @@ const EventDrawer = ({ open, onClose, details }) => {
           <div
             style={{
               display: "flex",
-              gap: "1vw",
               flexWrap: "wrap",
             }}>
             {Object.entries(details.common_emojis).map(
               ([emoji, percentage], subIndex) => (
                 <div
+                  className='info-value-emoji-event'
                   style={{
                     display: "flex",
                     gap: "0.2vw",
                     alignItems: "flex-end",
-                    marginBottom: "20px",
+                    marginBottom: "12px",
                   }}
                   key={subIndex}>
-                  <p className='info-value-emoji'>{emoji}</p>
+                  <div className='info-emoji-event-container'>
+                    {renderEmoji(emoji)}
+                  </div>
                   <p className='info-value-event'>{percentage}%</p>
                 </div>
               )
@@ -105,7 +126,7 @@ const EventDrawer = ({ open, onClose, details }) => {
         <div
           style={{
             position: "absolute",
-            bottom: "-40px",
+            bottom: "-30px",
             left: "0",
           }}>
           <NavigationButton address={`/timeline`} value={"חזור לציר הזמן"} />

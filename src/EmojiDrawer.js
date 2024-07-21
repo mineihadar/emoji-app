@@ -24,6 +24,14 @@ const EmojiDrawer = ({ open, onClose, details }) => {
     return keys.indexOf(emoji) + 1;
   };
 
+  const renderEmoji = (emoji) => {
+    const imagePath = emojiPictures[emoji];
+    if (imagePath) {
+      return <img src={imagePath} alt='emoji' />;
+    }
+    return <p>{emoji}</p>;
+  };
+
   return (
     <div className={`emoji-drawer ${open ? "open" : ""}`} onClick={onClose}>
       <div className='info-frame'>
@@ -31,16 +39,7 @@ const EmojiDrawer = ({ open, onClose, details }) => {
           <span className='close-icon'>&rarr;</span>
         </div>
         <div className='emoji-title'>
-          {!(details.emoji in emojiPictures) ? (
-            <h3>{details.emoji}</h3>
-          ) : (
-            <img
-              alt='emoji'
-              style={{ width: "72px", padding: "0px 0px 20px 10px" }}
-              src={emojiPictures[details.emoji]}
-            />
-          )}
-
+          <div className='emoji-container'>{renderEmoji(details.emoji)}</div>
           <div className='emoji-id'>
             <h5>{details.id.name}</h5>
             <p>קטגוריה: {details.id.category}</p>
@@ -104,13 +103,16 @@ const EmojiDrawer = ({ open, onClose, details }) => {
             {Object.entries(details.details[3].value).map(
               ([emoji, percentage], subIndex) => (
                 <div
+                  className='info-value-emoji'
                   style={{
                     display: "flex",
                     gap: "0.2vw",
                     alignItems: "flex-end",
                   }}
                   key={subIndex}>
-                  <p className='info-value-emoji'>{emoji}</p>
+                  <div className='info-value-emoji-container'>
+                    {renderEmoji(emoji)}
+                  </div>
                   <p className='info-value'>{percentage}%</p>
                 </div>
               )
