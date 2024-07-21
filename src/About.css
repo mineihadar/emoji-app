@@ -1,0 +1,45 @@
+/* src/About.css */
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px;
+    max-width: 50vw;
+    height: 100vh;
+}
+
+
+.about-title {
+    text-align: right;
+    margin-bottom: 15px;
+    color: #ffd600;
+    font-family: "Narkis-Medium";
+    font-size: 52.1px;
+    line-height: 1.2em;
+}
+
+.about-section {
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-family: "Narkis-Extralight";
+    color: rgba(231, 231, 231, 0.7);
+    font-size: 17.2px;
+    font-size: 17.2px;
+    font-family: "Narkis-Extralight";
+    text-align: right;
+}
+
+.section-paragraph {
+    font-size: 22.1px;
+    overflow-wrap: break-word; /* Break long words */
+    word-break: break-word; /* Break words at line end */
+    white-space: normal; /* Allow wrapping */
+    font-family: "Narkis-Regular";
+    line-height: 1.5rem;
+    color: #e7e7e7;
+}
