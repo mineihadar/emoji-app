@@ -80,18 +80,23 @@ const EmojiDrawer = ({ open, onClose, details }) => {
         {/* Sentiment */}
         <div className='emoji-info'>
           <div style={{ display: "flex", gap: "0.8vw" }}>
-            {details.details[1].value.map((item, subIndex) => (
-              <div
-                style={{
-                  display: "flex",
-                  gap: "0.2vw",
-                  alignItems: "flex-end",
-                }}
-                key={subIndex}>
-                <p className='info-value-number'>{item[Object.keys(item)]}%</p>
-                <p className='info-value'>{Object.keys(item)}</p>
-              </div>
-            ))}
+            {details.details[1].value.map(
+              (item, subIndex) =>
+                Object.keys(item)[0] !== "ניטרלי" && (
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "0.2vw",
+                      alignItems: "flex-end",
+                    }}
+                    key={subIndex}>
+                    <p className='info-value-number'>
+                      {item[Object.keys(item)]}%
+                    </p>
+                    <p className='info-value'>{Object.keys(item)}</p>
+                  </div>
+                )
+            )}
           </div>
           <div className='category'>
             <p className='info-category'>{details.details[1].category}</p>
