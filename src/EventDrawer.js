@@ -28,7 +28,7 @@ const EventDrawer = ({ details, open, onClose }) => {
           src={arrow}
         />
       </div>
-      <div className='info-frame'>
+      <div className='info-frame-event'>
         <div className='event-id'>
           <div className='event-title'>
             <h3>{details.id.name}</h3>

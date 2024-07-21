@@ -10,6 +10,7 @@ import About from "./About";
 import EmojiIndex from "./EmojiIndex";
 import EventIndex from "./EventIndex";
 import Logo from "./Logo";
+import CurveGraph from "./CurveGraph";
 
 function App() {
   const [isGif, setIsGif] = useState(false);
@@ -46,7 +47,7 @@ function App() {
             <Route path='/events/:eventName' element={<EmojiImage />} />
             <Route path='/emojis' element={<EmojiIndex />} />
             <Route path='/about' element={<About />} />
-            <Route path='/' element={<Logo />} /> {/* Default route */}
+            <Route path='/' element={<CurveGraph />} /> {/* Default route */}
           </Routes>
         </div>
       </div>

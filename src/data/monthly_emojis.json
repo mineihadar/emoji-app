@@ -1,0 +1,6410 @@
+{
+  "🔴": {
+    "2023-December": 11,
+    "2023-August": 27,
+    "2023-May": 7,
+    "2023-September": 27,
+    "2024-May": 7,
+    "2023-February": 9,
+    "2024-January": 8,
+    "2023-June": 16,
+    "2023-January": 12,
+    "2023-July": 24,
+    "2024-March": 16,
+    "2023-March": 58,
+    "2023-April": 13,
+    "2023-November": 4,
+    "2024-April": 24,
+    "2023-October": 30,
+    "2024-February": 13
+  },
+  "⚡": {
+    "2023-December": 6,
+    "2023-August": 1,
+    "2023-May": 5,
+    "2023-September": 2,
+    "2023-January": 7,
+    "2023-July": 2,
+    "2024-March": 2,
+    "2023-November": 1,
+    "2024-February": 4
+  },
+  "📹": {
+    "2023-December": 1,
+    "2023-February": 1,
+    "2023-June": 1,
+    "2023-January": 1,
+    "2023-July": 1,
+    "2023-March": 1
+  },
+  "😂": {
+    "2023-December": 52,
+    "2023-August": 174,
+    "2023-May": 51,
+    "2023-September": 108,
+    "2024-May": 42,
+    "2023-February": 61,
+    "2024-January": 85,
+    "2023-June": 110,
+    "2023-January": 121,
+    "2023-July": 112,
+    "2024-March": 47,
+    "2023-March": 201,
+    "2023-April": 65,
+    "2023-November": 42,
+    "2024-April": 133,
+    "2023-October": 42,
+    "2024-February": 77
+  },
+  "🤥": {
+    "2023-December": 1,
+    "2023-August": 1,
+    "2023-May": 5,
+    "2023-January": 1,
+    "2023-July": 1,
+    "2023-November": 1,
+    "2023-October": 2,
+    "2024-February": 1
+  },
+  "❗": {
+    "2023-December": 17,
+    "2023-August": 37,
+    "2023-May": 24,
+    "2023-September": 28,
+    "2024-May": 4,
+    "2023-February": 30,
+    "2024-January": 13,
+    "2023-June": 36,
+    "2023-January": 52,
+    "2023-July": 5,
+    "2024-March": 19,
+    "2023-March": 32,
+    "2023-April": 44,
+    "2023-November": 45,
+    "2024-April": 14,
+    "2023-October": 36,
+    "2024-February": 7
+  },
+  "🤔": {
+    "2023-December": 23,
+    "2023-August": 20,
+    "2023-May": 22,
+    "2023-September": 21,
+    "2024-May": 5,
+    "2023-February": 25,
+    "2024-January": 14,
+    "2023-June": 19,
+    "2023-January": 30,
+    "2023-July": 28,
+    "2024-March": 11,
+    "2023-March": 18,
+    "2023-April": 24,
+    "2023-November": 15,
+    "2024-April": 7,
+    "2023-October": 11,
+    "2024-February": 11
+  },
+  "🤦‍♂️": {
+    "2023-December": 7,
+    "2023-August": 9,
+    "2023-May": 12,
+    "2023-September": 16,
+    "2023-February": 17,
+    "2024-January": 7,
+    "2023-June": 14,
+    "2023-January": 15,
+    "2023-July": 31,
+    "2024-March": 10,
+    "2023-March": 11,
+    "2023-April": 10,
+    "2023-November": 5,
+    "2024-April": 6,
+    "2023-October": 5,
+    "2024-February": 4
+  },
+  "🤦": {
+    "2023-December": 17,
+    "2023-August": 27,
+    "2023-May": 21,
+    "2023-September": 23,
+    "2024-May": 29,
+    "2023-February": 21,
+    "2024-January": 16,
+    "2023-June": 41,
+    "2023-January": 30,
+    "2023-July": 34,
+    "2024-March": 19,
+    "2023-March": 23,
+    "2023-April": 38,
+    "2023-November": 17,
+    "2024-April": 10,
+    "2023-October": 40,
+    "2024-February": 12
+  },
+  "🤍": {
+    "2023-December": 8,
+    "2023-August": 4,
+    "2023-May": 16,
+    "2023-September": 19,
+    "2024-May": 8,
+    "2024-January": 3,
+    "2023-June": 18,
+    "2023-January": 2,
+    "2023-July": 8,
+    "2024-March": 9,
+    "2023-March": 8,
+    "2023-April": 10,
+    "2023-November": 2,
+    "2024-April": 8,
+    "2023-October": 16,
+    "2024-February": 3,
+    "2022-December": 1
+  },
+  "‼️": {
+    "2023-December": 46,
+    "2023-August": 70,
+    "2023-May": 38,
+    "2023-September": 50,
+    "2024-May": 58,
+    "2023-February": 77,
+    "2024-January": 56,
+    "2023-June": 73,
+    "2023-January": 145,
+    "2023-July": 82,
+    "2024-March": 64,
+    "2023-March": 93,
+    "2023-April": 54,
+    "2023-November": 113,
+    "2024-April": 36,
+    "2023-October": 116,
+    "2024-February": 59
+  },
+  "😱": {
+    "2023-December": 12,
+    "2023-August": 6,
+    "2023-May": 8,
+    "2023-September": 2,
+    "2024-May": 3,
+    "2023-February": 14,
+    "2024-January": 3,
+    "2023-June": 4,
+    "2023-January": 22,
+    "2023-July": 9,
+    "2024-March": 9,
+    "2023-March": 1,
+    "2023-April": 12,
+    "2023-November": 5,
+    "2024-April": 5,
+    "2023-October": 2,
+    "2024-February": 6
+  },
+  "🔥": {
+    "2023-December": 10,
+    "2023-August": 19,
+    "2023-May": 20,
+    "2023-September": 25,
+    "2024-May": 9,
+    "2023-February": 24,
+    "2024-January": 9,
+    "2023-June": 13,
+    "2023-January": 28,
+    "2023-July": 11,
+    "2024-March": 17,
+    "2023-March": 25,
+    "2023-April": 18,
+    "2023-November": 9,
+    "2024-April": 9,
+    "1741-January": 1,
+    "2023-October": 24,
+    "2024-February": 12
+  },
+  "🌆": {
+    "2023-December": 1
+  },
+  "👰": {
+    "2023-December": 1,
+    "2024-March": 1,
+    "2024-February": 1
+  },
+  "⬇️": {
+    "2023-December": 15,
+    "2023-August": 13,
+    "2023-May": 11,
+    "2023-September": 15,
+    "2024-May": 2,
+    "2023-February": 4,
+    "2024-January": 7,
+    "2023-June": 4,
+    "2023-January": 40,
+    "2023-July": 10,
+    "2024-March": 10,
+    "2023-March": 11,
+    "2023-April": 7,
+    "2023-November": 17,
+    "2024-April": 11,
+    "2023-October": 32,
+    "2024-February": 10
+  },
+  "❤️": {
+    "2023-December": 86,
+    "2023-August": 94,
+    "2023-May": 131,
+    "2023-September": 135,
+    "2024-May": 48,
+    "2023-February": 34,
+    "2024-January": 100,
+    "2023-June": 62,
+    "2023-January": 78,
+    "2023-July": 87,
+    "2024-March": 39,
+    "2023-March": 55,
+    "2023-April": 97,
+    "2023-November": 54,
+    "2024-April": 52,
+    "2023-October": 151,
+    "2024-February": 26,
+    "2022-December": 10
+  },
+  "🤣": {
+    "2023-December": 79,
+    "2023-August": 106,
+    "2023-May": 99,
+    "2023-September": 111,
+    "2024-May": 66,
+    "2023-February": 62,
+    "2024-January": 159,
+    "2023-June": 85,
+    "2023-January": 179,
+    "2023-July": 180,
+    "2024-March": 63,
+    "2023-March": 125,
+    "2023-April": 114,
+    "2023-November": 64,
+    "2024-April": 55,
+    "2023-October": 64,
+    "2024-February": 97,
+    "2022-December": 3
+  },
+  "🥲": {
+    "2023-December": 11,
+    "2023-August": 3,
+    "2023-May": 4,
+    "2023-September": 1,
+    "2024-May": 4,
+    "2023-February": 1,
+    "2024-January": 4,
+    "2023-June": 4,
+    "2023-January": 4,
+    "2024-March": 4,
+    "2023-March": 4,
+    "2023-April": 1,
+    "2023-November": 1,
+    "2023-October": 5,
+    "2024-February": 4
+  },
+  "🎙️": {
+    "2023-December": 2,
+    "2023-August": 1,
+    "2024-May": 6,
+    "2023-February": 1,
+    "2024-January": 5,
+    "2023-June": 2,
+    "2023-January": 3,
+    "2023-July": 2,
+    "2024-March": 2,
+    "2023-April": 2,
+    "2024-April": 6,
+    "2024-February": 5
+  },
+  "🏀": {
+    "2023-December": 8,
+    "2023-August": 16,
+    "2023-May": 26,
+    "2023-September": 2,
+    "2024-January": 1,
+    "2023-June": 5,
+    "2023-January": 6,
+    "2024-March": 2,
+    "2023-March": 1,
+    "2023-April": 2,
+    "2024-April": 2,
+    "2024-February": 8
+  },
+  "⬅️": {
+    "2023-December": 2,
+    "2023-August": 1,
+    "2023-May": 5,
+    "2023-September": 10,
+    "2023-February": 2,
+    "2024-January": 2,
+    "2023-June": 3,
+    "2023-January": 4,
+    "2023-July": 28,
+    "2023-April": 4,
+    "2024-April": 1,
+    "2024-February": 7
+  },
+  "❓": {
+    "2023-December": 8,
+    "2023-August": 13,
+    "2023-May": 5,
+    "2023-September": 4,
+    "2023-February": 6,
+    "2024-January": 5,
+    "2023-June": 4,
+    "2023-January": 8,
+    "2023-July": 4,
+    "2024-March": 8,
+    "2023-March": 5,
+    "2023-April": 3,
+    "2023-November": 4,
+    "2024-April": 1,
+    "2023-October": 14,
+    "2024-February": 6
+  },
+  "💩": {
+    "2023-December": 4,
+    "2023-August": 2,
+    "2023-May": 3,
+    "2023-September": 1,
+    "2024-May": 33,
+    "2023-February": 1,
+    "2024-January": 21,
+    "2023-January": 5,
+    "2023-July": 22,
+    "2024-March": 4,
+    "2023-March": 34,
+    "2023-April": 1,
+    "2023-November": 2,
+    "2024-April": 2,
+    "2023-October": 1,
+    "2024-February": 9
+  },
+  "🇮🇱": {
+    "2023-December": 91,
+    "2023-August": 120,
+    "2023-May": 318,
+    "2023-September": 164,
+    "2024-May": 159,
+    "2023-February": 86,
+    "2024-January": 54,
+    "2023-June": 152,
+    "2023-January": 237,
+    "2023-July": 156,
+    "2024-March": 90,
+    "2023-March": 264,
+    "2023-April": 272,
+    "2023-November": 143,
+    "2024-April": 138,
+    "2023-October": 255,
+    "2024-February": 110,
+    "2022-December": 3
+  },
+  "🦓": {
+    "2023-December": 1,
+    "2023-September": 1,
+    "2024-January": 1
+  },
+  "🔅": {
+    "2023-December": 8,
+    "2023-August": 20,
+    "2023-May": 19,
+    "2023-September": 16,
+    "2024-May": 4,
+    "2023-February": 30,
+    "2024-January": 17,
+    "2023-June": 18,
+    "2023-January": 46,
+    "2023-July": 7,
+    "2024-March": 11,
+    "2023-March": 30,
+    "2023-April": 10,
+    "2023-November": 14,
+    "2024-April": 10,
+    "2023-October": 27,
+    "2024-February": 16
+  },
+  "😡": {
+    "2023-December": 15,
+    "2023-August": 34,
+    "2023-May": 27,
+    "2023-September": 26,
+    "2024-May": 14,
+    "2023-February": 41,
+    "2024-January": 19,
+    "2023-June": 19,
+    "2023-January": 67,
+    "2023-July": 31,
+    "2024-March": 22,
+    "2023-March": 37,
+    "2023-April": 30,
+    "2023-November": 45,
+    "2024-April": 5,
+    "2023-October": 64,
+    "2024-February": 25
+  },
+  "🤬": {
+    "2023-December": 16,
+    "2023-August": 5,
+    "2023-May": 4,
+    "2023-September": 1,
+    "2024-May": 4,
+    "2023-February": 8,
+    "2024-January": 4,
+    "2023-June": 5,
+    "2023-January": 12,
+    "2023-July": 8,
+    "2024-March": 18,
+    "2023-March": 4,
+    "2023-April": 3,
+    "2023-November": 4,
+    "2024-April": 4,
+    "2023-October": 12,
+    "2024-February": 2
+  },
+  "😬": {
+    "2023-December": 2,
+    "2023-August": 10,
+    "2023-May": 7,
+    "2023-February": 1,
+    "2023-June": 3,
+    "2023-January": 2,
+    "2023-July": 3,
+    "2023-March": 4,
+    "2023-April": 3,
+    "2023-November": 8,
+    "2024-April": 1,
+    "2023-October": 3,
+    "2024-February": 4
+  },
+  "👏": {
+    "2023-December": 12,
+    "2023-August": 47,
+    "2023-May": 63,
+    "2023-September": 59,
+    "2024-May": 8,
+    "2023-February": 63,
+    "2024-January": 11,
+    "2023-June": 54,
+    "2023-January": 29,
+    "2023-July": 15,
+    "2024-March": 23,
+    "2023-March": 43,
+    "2023-April": 53,
+    "2023-November": 11,
+    "2024-April": 31,
+    "2023-October": 27,
+    "2024-February": 19
+  },
+  "💙": {
+    "2023-December": 20,
+    "2023-August": 10,
+    "2023-May": 27,
+    "2023-September": 31,
+    "2024-May": 36,
+    "2023-February": 14,
+    "2024-January": 8,
+    "2023-June": 28,
+    "2023-January": 10,
+    "2023-July": 17,
+    "2024-March": 25,
+    "2023-March": 25,
+    "2023-April": 55,
+    "2023-November": 15,
+    "2024-April": 16,
+    "2023-October": 25,
+    "2024-February": 17
+  },
+  "💛": {
+    "2023-December": 13,
+    "2023-August": 29,
+    "2023-May": 75,
+    "2023-September": 27,
+    "2024-May": 23,
+    "2023-February": 15,
+    "2024-January": 16,
+    "2023-June": 27,
+    "2023-January": 22,
+    "2023-July": 24,
+    "2024-March": 15,
+    "2023-March": 14,
+    "2023-April": 21,
+    "2023-November": 7,
+    "2024-April": 38,
+    "2023-October": 19,
+    "2024-February": 16
+  },
+  "😝": {
+    "2023-December": 46,
+    "2023-August": 1,
+    "2023-May": 3,
+    "2023-February": 6,
+    "2024-January": 265,
+    "2023-June": 1,
+    "2023-January": 13,
+    "2023-July": 1,
+    "2024-March": 7,
+    "2023-March": 1,
+    "2023-April": 2,
+    "2023-November": 1,
+    "2024-February": 1
+  },
+  "😜": {
+    "2023-December": 7,
+    "2023-August": 13,
+    "2023-May": 11,
+    "2023-September": 11,
+    "2024-May": 3,
+    "2023-February": 10,
+    "2024-January": 10,
+    "2023-June": 9,
+    "2023-January": 12,
+    "2023-July": 10,
+    "2024-March": 9,
+    "2023-March": 11,
+    "2023-April": 8,
+    "2023-November": 7,
+    "2024-April": 3,
+    "2023-October": 10,
+    "2024-February": 2
+  },
+  "😭": {
+    "2023-December": 29,
+    "2023-August": 21,
+    "2023-May": 11,
+    "2023-September": 16,
+    "2024-May": 16,
+    "2023-February": 11,
+    "2024-January": 20,
+    "2023-June": 16,
+    "2023-January": 17,
+    "2024-March": 15,
+    "2023-March": 5,
+    "2023-April": 7,
+    "2023-November": 12,
+    "2024-April": 13,
+    "2023-October": 27,
+    "2024-February": 24
+  },
+  "🤭": {
+    "2023-December": 1,
+    "2023-August": 4,
+    "2023-May": 7,
+    "2023-September": 6,
+    "2024-May": 3,
+    "2023-February": 3,
+    "2024-January": 3,
+    "2023-June": 5,
+    "2023-January": 5,
+    "2023-July": 7,
+    "2024-March": 2,
+    "2023-March": 6,
+    "2023-April": 6,
+    "2024-April": 3,
+    "2023-October": 2,
+    "2024-February": 1
+  },
+  "🤷": {
+    "2023-December": 8,
+    "2023-August": 6,
+    "2023-May": 8,
+    "2023-September": 16,
+    "2024-May": 8,
+    "2023-February": 15,
+    "2024-January": 9,
+    "2023-June": 4,
+    "2023-January": 10,
+    "2023-July": 10,
+    "2024-March": 3,
+    "2023-March": 5,
+    "2023-April": 5,
+    "2023-November": 11,
+    "2024-April": 4,
+    "2023-October": 2,
+    "2024-February": 5
+  },
+  "😁": {
+    "2023-December": 2,
+    "2023-August": 18,
+    "2023-May": 6,
+    "2023-September": 10,
+    "2024-May": 3,
+    "2023-February": 8,
+    "2024-January": 7,
+    "2023-June": 9,
+    "2023-January": 7,
+    "2023-July": 3,
+    "2024-March": 4,
+    "2023-March": 9,
+    "2023-April": 11,
+    "2023-November": 4,
+    "2024-April": 2,
+    "2023-October": 3,
+    "2024-February": 2
+  },
+  "🙏": {
+    "2023-December": 57,
+    "2023-August": 67,
+    "2023-May": 116,
+    "2023-September": 111,
+    "2024-May": 43,
+    "2023-February": 50,
+    "2024-January": 59,
+    "2023-June": 41,
+    "2023-January": 52,
+    "2023-July": 74,
+    "2024-March": 42,
+    "2023-March": 55,
+    "2023-April": 64,
+    "2023-November": 71,
+    "2024-April": 65,
+    "2023-October": 157,
+    "2024-February": 51,
+    "2022-December": 1
+  },
+  "😳": {
+    "2023-December": 6,
+    "2023-August": 12,
+    "2023-May": 5,
+    "2023-September": 9,
+    "2024-May": 1,
+    "2023-February": 6,
+    "2024-January": 3,
+    "2023-June": 11,
+    "2023-January": 18,
+    "2024-March": 2,
+    "2023-March": 6,
+    "2023-April": 1,
+    "2023-November": 1,
+    "2024-April": 2,
+    "2023-October": 11,
+    "2024-February": 50
+  },
+  "👈": {
+    "2023-December": 1,
+    "2023-August": 3,
+    "2023-May": 5,
+    "2023-September": 4,
+    "2023-February": 9,
+    "2024-January": 4,
+    "2023-June": 3,
+    "2023-January": 4,
+    "2023-July": 8,
+    "2024-March": 3,
+    "2023-March": 2,
+    "2023-April": 3,
+    "2023-November": 9,
+    "2023-October": 11,
+    "2024-February": 6
+  },
+  "✔️": {
+    "2023-December": 1,
+    "2023-January": 2,
+    "2023-July": 2,
+    "2024-March": 1,
+    "2023-March": 4,
+    "2023-October": 10
+  },
+  "😢": {
+    "2023-December": 6,
+    "2023-August": 9,
+    "2023-May": 1,
+    "2023-September": 7,
+    "2024-May": 15,
+    "2023-February": 13,
+    "2024-January": 5,
+    "2023-June": 10,
+    "2023-January": 4,
+    "2023-July": 1,
+    "2024-March": 12,
+    "2023-March": 5,
+    "2023-April": 5,
+    "2023-November": 16,
+    "2024-April": 6,
+    "2023-October": 16,
+    "2024-February": 18
+  },
+  "😍": {
+    "2023-December": 7,
+    "2023-August": 12,
+    "2023-May": 47,
+    "2023-September": 20,
+    "2024-May": 8,
+    "2023-February": 26,
+    "2024-January": 25,
+    "2023-June": 21,
+    "2023-January": 7,
+    "2023-July": 16,
+    "2024-March": 21,
+    "2023-March": 16,
+    "2023-April": 7,
+    "2023-November": 10,
+    "2024-April": 12,
+    "2023-October": 6,
+    "2024-February": 3,
+    "2022-December": 3
+  },
+  "📖": {
+    "2023-December": 2,
+    "2023-August": 4,
+    "2023-May": 3,
+    "2023-September": 2,
+    "2023-February": 2,
+    "2023-June": 7,
+    "2023-January": 1,
+    "2024-March": 3,
+    "2023-March": 4,
+    "2023-November": 1
+  },
+  "✨": {
+    "2023-December": 7,
+    "2023-August": 7,
+    "2023-May": 12,
+    "2023-September": 3,
+    "2024-May": 1,
+    "2023-February": 4,
+    "2023-June": 15,
+    "2023-January": 9,
+    "2023-July": 6,
+    "2024-March": 5,
+    "2023-March": 6,
+    "2023-April": 4,
+    "2023-November": 1,
+    "2024-April": 3,
+    "2023-October": 3
+  },
+  "💔": {
+    "2023-December": 64,
+    "2023-August": 4,
+    "2023-May": 2,
+    "2023-September": 5,
+    "2024-May": 103,
+    "2023-February": 30,
+    "2024-January": 45,
+    "2023-June": 3,
+    "2023-January": 5,
+    "2023-July": 6,
+    "2024-March": 40,
+    "2023-March": 1,
+    "2023-April": 11,
+    "2023-November": 81,
+    "2024-April": 24,
+    "2023-October": 61,
+    "2024-February": 58
+  },
+  "💇": {
+    "2023-December": 1
+  },
+  "😮": {
+    "2023-December": 3,
+    "2023-August": 2,
+    "2023-May": 12,
+    "2023-September": 2,
+    "2023-February": 3,
+    "2024-January": 2,
+    "2023-January": 8,
+    "2023-July": 14,
+    "2024-March": 4,
+    "2023-November": 1
+  },
+  "👇": {
+    "2023-December": 21,
+    "2023-August": 73,
+    "2023-May": 42,
+    "2023-September": 44,
+    "2024-May": 17,
+    "2023-February": 21,
+    "2024-January": 23,
+    "2023-June": 39,
+    "2023-January": 55,
+    "2023-July": 72,
+    "2024-March": 29,
+    "2023-March": 30,
+    "2023-April": 48,
+    "2023-November": 14,
+    "2024-April": 19,
+    "2023-October": 93,
+    "2024-February": 33
+  },
+  "👺": {
+    "2023-December": 1,
+    "2023-August": 4,
+    "2023-May": 2,
+    "2023-September": 4,
+    "2024-May": 1,
+    "2023-February": 4,
+    "2023-June": 6,
+    "2023-January": 6,
+    "2023-July": 2,
+    "2024-March": 1,
+    "2023-March": 4,
+    "2023-April": 2,
+    "2023-October": 3
+  },
+  "👹": {
+    "2023-December": 1,
+    "2023-August": 3,
+    "2023-September": 2,
+    "2023-February": 6,
+    "2024-January": 2,
+    "2023-June": 6,
+    "2023-January": 1,
+    "2023-July": 1,
+    "2024-March": 2,
+    "2023-March": 2,
+    "2024-April": 1,
+    "2023-October": 1,
+    "2024-February": 1
+  },
+  "🤷‍♂️": {
+    "2023-December": 13,
+    "2023-August": 9,
+    "2023-May": 4,
+    "2023-September": 8,
+    "2024-May": 6,
+    "2023-February": 6,
+    "2024-January": 8,
+    "2023-June": 3,
+    "2023-January": 11,
+    "2023-July": 1,
+    "2024-March": 1,
+    "2023-March": 4,
+    "2023-April": 1,
+    "2023-November": 1,
+    "2024-April": 2,
+    "2023-October": 2,
+    "2024-February": 9
+  },
+  "🤪": {
+    "2023-December": 27,
+    "2023-August": 9,
+    "2023-May": 3,
+    "2024-May": 11,
+    "2023-February": 2,
+    "2024-January": 11,
+    "2023-June": 4,
+    "2023-January": 10,
+    "2023-July": 1,
+    "2024-March": 11,
+    "2023-March": 11,
+    "2023-April": 3,
+    "2023-November": 4,
+    "2024-April": 1,
+    "2023-October": 3,
+    "2024-February": 8
+  },
+  "😈": {
+    "2023-December": 1,
+    "2023-May": 2,
+    "2024-May": 1,
+    "2023-February": 7,
+    "2023-June": 1,
+    "2023-January": 1,
+    "2023-July": 6,
+    "2024-March": 10,
+    "2023-April": 2,
+    "2024-April": 1,
+    "2024-February": 1
+  },
+  "🕯️": {
+    "2023-December": 21,
+    "2023-August": 2,
+    "2023-May": 3,
+    "2023-September": 1,
+    "2024-May": 19,
+    "2023-February": 4,
+    "2024-January": 6,
+    "2023-June": 1,
+    "2023-January": 9,
+    "2024-March": 10,
+    "2023-March": 1,
+    "2023-April": 25,
+    "2023-November": 24,
+    "2024-April": 3,
+    "2023-October": 7,
+    "2024-February": 19
+  },
+  "🚨": {
+    "2023-December": 15,
+    "2023-August": 11,
+    "2023-May": 11,
+    "2023-September": 10,
+    "2024-May": 6,
+    "2023-February": 6,
+    "2024-January": 4,
+    "2023-June": 12,
+    "2023-January": 32,
+    "2023-July": 27,
+    "2024-March": 4,
+    "2023-March": 11,
+    "2023-April": 12,
+    "2023-November": 7,
+    "2024-April": 20,
+    "2023-October": 18,
+    "2024-February": 18
+  },
+  "🥀": {
+    "2023-December": 6,
+    "2024-May": 15,
+    "2023-February": 2,
+    "2024-January": 1,
+    "2023-July": 2,
+    "2024-March": 2,
+    "2023-April": 4,
+    "2023-November": 2,
+    "2024-April": 1,
+    "2023-October": 1,
+    "2024-February": 5
+  },
+  "🏃": {
+    "2023-December": 2,
+    "2023-May": 1,
+    "2023-February": 3,
+    "2023-July": 6,
+    "2024-February": 1
+  },
+  "🏋️": {
+    "2023-December": 1,
+    "2024-January": 1
+  },
+  "⛹️": {
+    "2023-December": 1
+  },
+  "🤸": {
+    "2023-December": 1,
+    "2023-October": 1
+  },
+  "⁉️": {
+    "2023-December": 6,
+    "2023-August": 10,
+    "2023-May": 8,
+    "2023-September": 13,
+    "2024-May": 15,
+    "2023-February": 2,
+    "2024-January": 4,
+    "2023-June": 11,
+    "2023-January": 13,
+    "2023-July": 6,
+    "2024-March": 9,
+    "2023-March": 13,
+    "2023-April": 3,
+    "2023-November": 23,
+    "2024-April": 4,
+    "2023-October": 5,
+    "2024-February": 11
+  },
+  "🤮": {
+    "2023-December": 15,
+    "2023-August": 44,
+    "2023-May": 30,
+    "2023-September": 61,
+    "2024-May": 26,
+    "2023-February": 33,
+    "2024-January": 26,
+    "2023-June": 121,
+    "2023-January": 53,
+    "2023-July": 28,
+    "2024-March": 7,
+    "2023-March": 37,
+    "2023-April": 26,
+    "2023-November": 30,
+    "2024-April": 17,
+    "2023-October": 32,
+    "2024-February": 21
+  },
+  "🐍": {
+    "2023-December": 3,
+    "2023-September": 2,
+    "2024-January": 1,
+    "2023-June": 1,
+    "2023-January": 4,
+    "2024-March": 1,
+    "2023-March": 2,
+    "2023-April": 1,
+    "2023-November": 2,
+    "2024-April": 1,
+    "2023-October": 1,
+    "2024-February": 2
+  },
+  "⛈️": {
+    "2023-December": 3,
+    "2023-February": 2,
+    "2024-January": 1,
+    "2023-January": 2,
+    "2023-March": 1
+  },
+  "🌦️": {
+    "2023-December": 1,
+    "2023-September": 1,
+    "2023-January": 1,
+    "2023-March": 2
+  },
+  "💨": {
+    "2023-December": 3,
+    "2023-August": 1,
+    "2023-February": 1,
+    "2024-January": 1,
+    "2023-January": 5,
+    "2024-March": 1,
+    "2023-March": 1
+  },
+  "😉": {
+    "2023-December": 9,
+    "2023-August": 24,
+    "2023-May": 26,
+    "2023-September": 33,
+    "2024-May": 4,
+    "2023-February": 16,
+    "2024-January": 16,
+    "2023-June": 14,
+    "2023-January": 29,
+    "2023-July": 27,
+    "2024-March": 17,
+    "2023-March": 27,
+    "2023-April": 18,
+    "2023-November": 10,
+    "2024-April": 4,
+    "2023-October": 19,
+    "2024-February": 15,
+    "2022-December": 1
+  },
+  "💫": {
+    "2023-December": 6,
+    "2023-August": 5,
+    "2023-May": 7,
+    "2023-September": 4,
+    "2024-May": 2,
+    "2023-February": 2,
+    "2024-January": 2,
+    "2023-January": 3,
+    "2023-July": 2,
+    "2024-March": 1,
+    "2023-April": 5,
+    "2023-November": 1,
+    "2023-October": 12,
+    "2024-February": 3
+  },
+  "😤": {
+    "2023-December": 4,
+    "2023-August": 1,
+    "2023-February": 1,
+    "2024-January": 2,
+    "2023-June": 1,
+    "2023-January": 1,
+    "2024-March": 1,
+    "2023-March": 2,
+    "2023-November": 5
+  },
+  "😪": {
+    "2023-December": 6,
+    "2023-August": 2,
+    "2023-May": 1,
+    "2023-September": 3,
+    "2024-May": 2,
+    "2023-February": 2,
+    "2024-January": 1,
+    "2024-March": 3,
+    "2023-March": 19,
+    "2023-November": 5,
+    "2024-April": 2,
+    "2023-October": 9,
+    "2024-February": 4
+  },
+  "😅": {
+    "2023-December": 11,
+    "2023-August": 26,
+    "2023-May": 17,
+    "2023-September": 11,
+    "2024-May": 10,
+    "2023-February": 15,
+    "2024-January": 25,
+    "2023-June": 21,
+    "2023-January": 23,
+    "2023-July": 5,
+    "2024-March": 16,
+    "2023-March": 9,
+    "2023-April": 10,
+    "2023-November": 18,
+    "2024-April": 9,
+    "2023-October": 10,
+    "2024-February": 5
+  },
+  "🖤": {
+    "2023-December": 7,
+    "2023-August": 15,
+    "2023-May": 64,
+    "2023-September": 12,
+    "2024-May": 7,
+    "2023-February": 4,
+    "2024-January": 6,
+    "2023-June": 22,
+    "2023-January": 13,
+    "2023-July": 23,
+    "2024-March": 12,
+    "2023-March": 10,
+    "2023-April": 8,
+    "2023-November": 5,
+    "2024-April": 15,
+    "2023-October": 7,
+    "2024-February": 8
+  },
+  "🤝": {
+    "2023-December": 5,
+    "2023-August": 8,
+    "2023-May": 14,
+    "2023-September": 8,
+    "2024-May": 2,
+    "2023-February": 9,
+    "2024-January": 4,
+    "2023-June": 4,
+    "2023-January": 7,
+    "2023-July": 9,
+    "2024-March": 1,
+    "2023-March": 4,
+    "2023-April": 3,
+    "2023-November": 6,
+    "2024-April": 5,
+    "2023-October": 3
+  },
+  "🕎": {
+    "2023-December": 37,
+    "2023-August": 1,
+    "2023-May": 3,
+    "2023-September": 4,
+    "2024-May": 1,
+    "2023-February": 3,
+    "2023-July": 2,
+    "2024-March": 2,
+    "2023-March": 1,
+    "2023-April": 1,
+    "2024-April": 1,
+    "2023-October": 1,
+    "2024-February": 1
+  },
+  "♥️": {
+    "2023-December": 7,
+    "2023-August": 3,
+    "2023-May": 7,
+    "2023-September": 28,
+    "2024-May": 9,
+    "2023-February": 9,
+    "2024-January": 5,
+    "2023-June": 18,
+    "2023-January": 12,
+    "2023-July": 9,
+    "2024-March": 13,
+    "2023-March": 4,
+    "2023-April": 11,
+    "2023-November": 16,
+    "2024-April": 7,
+    "2023-October": 12,
+    "2024-February": 9,
+    "2022-December": 1
+  },
+  "🥃": {
+    "2023-December": 1,
+    "2023-February": 1,
+    "2024-March": 2,
+    "2023-October": 1
+  },
+  "💜": {
+    "2023-December": 2,
+    "2023-August": 3,
+    "2023-May": 15,
+    "2023-September": 4,
+    "2023-February": 7,
+    "2023-June": 2,
+    "2023-January": 2,
+    "2023-July": 2,
+    "2024-March": 2,
+    "2023-March": 4,
+    "2023-April": 1,
+    "2023-November": 6,
+    "2024-April": 1,
+    "2023-October": 3,
+    "2024-February": 7
+  },
+  "😥": {
+    "2023-December": 8,
+    "2023-August": 2,
+    "2023-May": 1,
+    "2023-September": 6,
+    "2024-May": 1,
+    "2023-February": 4,
+    "2024-January": 2,
+    "2023-June": 1,
+    "2023-January": 5,
+    "2024-March": 3,
+    "2023-March": 1,
+    "2023-April": 4,
+    "2023-November": 2,
+    "2024-April": 2,
+    "2023-October": 10,
+    "2024-February": 3
+  },
+  "👑": {
+    "2023-December": 6,
+    "2023-August": 7,
+    "2023-May": 32,
+    "2023-September": 12,
+    "2024-May": 2,
+    "2023-February": 1,
+    "2024-January": 4,
+    "2023-June": 25,
+    "2023-January": 10,
+    "2023-July": 6,
+    "2024-March": 7,
+    "2023-March": 12,
+    "2023-April": 6,
+    "2023-November": 21,
+    "2024-April": 2,
+    "2023-October": 15,
+    "2024-February": 3
+  },
+  "🌷": {
+    "2023-December": 2,
+    "2023-August": 14,
+    "2023-May": 4,
+    "2023-September": 9,
+    "2023-February": 9,
+    "2024-January": 5,
+    "2023-June": 2,
+    "2023-January": 4,
+    "2023-July": 6,
+    "2024-March": 1,
+    "2023-March": 2,
+    "2023-April": 30,
+    "2023-November": 2,
+    "2023-October": 4
+  },
+  "💪": {
+    "2023-December": 16,
+    "2023-August": 29,
+    "2023-May": 34,
+    "2023-September": 40,
+    "2024-May": 9,
+    "2023-February": 33,
+    "2024-January": 13,
+    "2023-June": 31,
+    "2023-January": 12,
+    "2023-July": 24,
+    "2024-March": 22,
+    "2023-March": 78,
+    "2023-April": 14,
+    "2023-November": 19,
+    "2024-April": 25,
+    "2023-October": 52,
+    "2024-February": 21
+  },
+  "💖": {
+    "2023-December": 4,
+    "2023-August": 3,
+    "2023-May": 2,
+    "2023-September": 1,
+    "2024-May": 2,
+    "2023-February": 1,
+    "2024-January": 3,
+    "2023-June": 4,
+    "2023-January": 24,
+    "2023-July": 2,
+    "2024-March": 1,
+    "2023-March": 4,
+    "2023-November": 2,
+    "2024-April": 5,
+    "2023-October": 2
+  },
+  "🦨": {
+    "2023-December": 1
+  },
+  "👃": {
+    "2023-December": 1,
+    "2023-November": 1,
+    "2024-February": 1
+  },
+  "😘": {
+    "2023-December": 8,
+    "2023-August": 10,
+    "2023-May": 7,
+    "2023-September": 11,
+    "2024-May": 2,
+    "2023-February": 2,
+    "2024-January": 8,
+    "2023-June": 4,
+    "2023-January": 4,
+    "2023-July": 9,
+    "2024-March": 8,
+    "2023-March": 8,
+    "2023-April": 6,
+    "2023-November": 5,
+    "2024-April": 1,
+    "2023-October": 3,
+    "2024-February": 11
+  },
+  "😀": {
+    "2023-December": 8,
+    "2023-August": 3,
+    "2023-May": 11,
+    "2023-September": 3,
+    "2024-May": 4,
+    "2023-February": 6,
+    "2024-January": 2,
+    "2023-June": 4,
+    "2023-January": 12,
+    "2023-July": 3,
+    "2024-March": 5,
+    "2023-March": 24,
+    "2023-April": 4,
+    "2023-November": 2,
+    "2024-April": 1,
+    "2024-February": 2
+  },
+  "🥳": {
+    "2023-December": 7,
+    "2023-August": 8,
+    "2023-May": 34,
+    "2023-September": 14,
+    "2024-May": 1,
+    "2023-February": 6,
+    "2024-January": 9,
+    "2023-June": 12,
+    "2023-January": 4,
+    "2023-July": 10,
+    "2024-March": 12,
+    "2023-March": 14,
+    "2023-April": 6,
+    "2023-November": 3,
+    "2024-April": 6,
+    "2023-October": 12,
+    "2024-February": 2,
+    "2022-December": 4
+  },
+  "⚔️": {
+    "2023-December": 3,
+    "2023-August": 1,
+    "2023-May": 1,
+    "2023-September": 1,
+    "2024-May": 1,
+    "2024-January": 4,
+    "2024-March": 5,
+    "2023-April": 3,
+    "2023-November": 4,
+    "2023-October": 1,
+    "2024-February": 3
+  },
+  "😞": {
+    "2023-December": 3,
+    "2023-May": 1,
+    "2024-May": 8,
+    "2023-January": 1,
+    "2023-April": 1,
+    "2023-November": 2,
+    "2024-February": 2
+  },
+  "🍓": {
+    "2023-December": 4,
+    "2023-February": 1,
+    "2023-January": 2,
+    "2023-March": 1,
+    "2023-October": 4
+  },
+  "🦸‍♂️": {
+    "2023-December": 2
+  },
+  "🥸": {
+    "2023-December": 2,
+    "2023-May": 1,
+    "2023-September": 1,
+    "2023-February": 1,
+    "2024-January": 1,
+    "2023-June": 3,
+    "2023-April": 1,
+    "2024-April": 1,
+    "2024-February": 3
+  },
+  "⛔": {
+    "2023-December": 2,
+    "2023-August": 5,
+    "2023-February": 2,
+    "2023-January": 3,
+    "2024-March": 1,
+    "2023-October": 2
+  },
+  "🛑": {
+    "2023-December": 2,
+    "2023-August": 5,
+    "2023-September": 1,
+    "2023-February": 13,
+    "2023-July": 8,
+    "2023-March": 1,
+    "2023-April": 1,
+    "2024-February": 1
+  },
+  "😃": {
+    "2023-December": 20,
+    "2023-August": 3,
+    "2023-May": 8,
+    "2023-September": 2,
+    "2023-February": 4,
+    "2024-January": 15,
+    "2023-June": 6,
+    "2023-January": 15,
+    "2023-July": 6,
+    "2024-March": 4,
+    "2023-March": 3,
+    "2023-April": 7,
+    "2024-April": 1,
+    "2023-October": 2,
+    "2024-February": 1
+  },
+  "📸": {
+    "2023-December": 7,
+    "2023-August": 7,
+    "2023-May": 10,
+    "2023-September": 8,
+    "2024-May": 3,
+    "2023-February": 6,
+    "2024-January": 6,
+    "2023-June": 4,
+    "2023-January": 6,
+    "2023-July": 1,
+    "2024-March": 2,
+    "2023-March": 2,
+    "2023-April": 4,
+    "2023-October": 2,
+    "2024-February": 4
+  },
+  "😊": {
+    "2023-December": 9,
+    "2023-August": 10,
+    "2023-May": 14,
+    "2023-September": 5,
+    "2024-May": 1,
+    "2023-February": 14,
+    "2024-January": 8,
+    "2023-June": 7,
+    "2023-January": 14,
+    "2023-July": 7,
+    "2024-March": 4,
+    "2023-March": 8,
+    "2023-April": 6,
+    "2023-November": 15,
+    "2024-April": 4,
+    "2023-October": 5,
+    "2024-February": 4
+  },
+  "🖼️": {
+    "2023-December": 1,
+    "2023-October": 1
+  },
+  "🤓": {
+    "2023-December": 2,
+    "2023-August": 9,
+    "2023-May": 2,
+    "2024-May": 1,
+    "2023-February": 4,
+    "2024-January": 1,
+    "2023-June": 1,
+    "2023-July": 1,
+    "2024-March": 3,
+    "2023-March": 10,
+    "2023-April": 1,
+    "2024-April": 2,
+    "2024-February": 2
+  },
+  "▪️": {
+    "2023-December": 4,
+    "2023-August": 9,
+    "2023-May": 6,
+    "2024-May": 4,
+    "2024-January": 12,
+    "2023-June": 7,
+    "2023-January": 23,
+    "2023-July": 2,
+    "2024-March": 4,
+    "2023-March": 10,
+    "2023-October": 2,
+    "2024-February": 5
+  },
+  "🤒": {
+    "2023-December": 1,
+    "2023-February": 1,
+    "2024-January": 2,
+    "2023-March": 2
+  },
+  "😆": {
+    "2023-December": 4,
+    "2023-August": 27,
+    "2023-May": 8,
+    "2023-September": 7,
+    "2024-May": 21,
+    "2023-February": 8,
+    "2024-January": 5,
+    "2023-June": 4,
+    "2023-January": 8,
+    "2024-March": 4,
+    "2023-March": 3,
+    "2023-April": 3,
+    "2023-November": 2,
+    "2024-April": 2,
+    "2023-October": 1,
+    "2024-February": 2
+  },
+  "🥰": {
+    "2023-December": 4,
+    "2023-August": 16,
+    "2023-May": 6,
+    "2023-September": 13,
+    "2024-May": 2,
+    "2023-February": 10,
+    "2024-January": 14,
+    "2023-June": 27,
+    "2023-January": 6,
+    "2023-July": 20,
+    "2024-March": 7,
+    "2023-March": 16,
+    "2023-April": 5,
+    "2023-November": 5,
+    "2024-April": 10,
+    "2023-October": 6,
+    "2024-February": 8,
+    "2022-December": 1
+  },
+  "👀": {
+    "2023-December": 1,
+    "2023-August": 1,
+    "2023-May": 3,
+    "2024-May": 1,
+    "2023-February": 3,
+    "2024-January": 6,
+    "2023-June": 4,
+    "2023-January": 5,
+    "2023-July": 1,
+    "2024-March": 2,
+    "2023-March": 1,
+    "2023-April": 1,
+    "2023-November": 1,
+    "2024-April": 2,
+    "2024-February": 3
+  },
+  "💥": {
+    "2023-December": 4,
+    "2023-August": 4,
+    "2023-May": 3,
+    "2023-September": 6,
+    "2024-May": 16,
+    "2023-February": 9,
+    "2024-January": 3,
+    "2023-June": 8,
+    "2023-January": 41,
+    "2023-July": 1,
+    "2024-March": 12,
+    "2023-March": 70,
+    "2023-April": 22,
+    "2023-November": 11,
+    "2024-April": 7,
+    "2023-October": 3,
+    "2024-February": 10
+  },
+  "🤡": {
+    "2023-December": 8,
+    "2023-August": 13,
+    "2023-May": 12,
+    "2023-September": 24,
+    "2024-May": 36,
+    "2023-February": 11,
+    "2024-January": 12,
+    "2023-June": 23,
+    "2023-January": 23,
+    "2023-July": 23,
+    "2024-March": 26,
+    "2023-March": 20,
+    "2023-April": 18,
+    "2023-November": 5,
+    "2024-April": 6,
+    "2023-October": 4,
+    "2024-February": 16
+  },
+  "🤯": {
+    "2023-December": 7,
+    "2023-August": 4,
+    "2023-May": 7,
+    "2024-May": 1,
+    "2023-February": 8,
+    "2024-January": 3,
+    "2023-June": 2,
+    "2023-January": 5,
+    "2023-July": 4,
+    "2024-March": 1,
+    "2023-March": 4,
+    "2023-April": 8,
+    "2023-November": 1,
+    "2024-April": 7,
+    "2023-October": 3,
+    "2024-February": 4
+  },
+  "🍿": {
+    "2023-December": 1,
+    "2023-August": 3,
+    "2023-May": 1,
+    "2023-September": 3,
+    "2024-May": 1,
+    "2023-January": 4,
+    "2023-July": 4,
+    "2023-April": 5,
+    "2024-February": 2
+  },
+  "⚽": {
+    "2023-December": 2,
+    "2023-August": 8,
+    "2023-May": 12,
+    "2023-September": 1,
+    "2023-February": 5,
+    "2024-January": 2,
+    "2023-June": 32,
+    "2023-January": 2,
+    "2023-July": 22,
+    "2024-March": 5,
+    "2023-March": 2,
+    "2023-April": 2,
+    "2024-April": 2,
+    "2023-October": 2,
+    "2024-February": 4
+  },
+  "⚰️": {
+    "2023-December": 1,
+    "2023-May": 1,
+    "2023-January": 1,
+    "2024-March": 1
+  },
+  "🤷‍♀️": {
+    "2023-December": 2,
+    "2023-August": 8,
+    "2023-May": 5,
+    "2023-September": 3,
+    "2024-May": 4,
+    "2023-February": 3,
+    "2024-January": 1,
+    "2023-June": 2,
+    "2023-January": 7,
+    "2023-July": 1,
+    "2024-March": 2,
+    "2023-March": 5,
+    "2023-April": 1,
+    "2023-November": 3,
+    "2023-October": 6,
+    "2024-February": 1
+  },
+  "⚖️": {
+    "2023-December": 1,
+    "2023-September": 10,
+    "2024-May": 1,
+    "2023-February": 1,
+    "2023-June": 1,
+    "2023-March": 1,
+    "2023-April": 2,
+    "2023-October": 2,
+    "2024-February": 2
+  },
+  "🇩🇰": {
+    "2023-December": 1,
+    "2023-August": 1,
+    "2023-October": 1
+  },
+  "😔": {
+    "2023-December": 1,
+    "2023-August": 4,
+    "2023-May": 3,
+    "2024-May": 9,
+    "2023-February": 3,
+    "2024-January": 3,
+    "2023-January": 2,
+    "2023-July": 2,
+    "2024-March": 4,
+    "2023-April": 7,
+    "2023-November": 6,
+    "2023-October": 9,
+    "2024-February": 4
+  },
+  "😵": {
+    "2023-December": 1,
+    "2023-August": 4,
+    "2023-May": 8,
+    "2023-September": 3,
+    "2024-May": 1,
+    "2023-February": 2,
+    "2024-January": 1,
+    "2023-January": 3,
+    "2023-July": 1,
+    "2024-March": 1,
+    "2023-April": 4,
+    "2023-October": 7,
+    "2024-February": 2
+  },
+  "🌿": {
+    "2023-December": 1,
+    "2023-August": 3,
+    "2023-September": 8,
+    "2023-February": 2,
+    "2023-June": 1,
+    "2023-January": 2,
+    "2023-July": 2,
+    "2023-March": 1,
+    "2023-April": 8,
+    "2023-October": 1
+  },
+  "🍷": {
+    "2023-December": 1,
+    "2023-August": 7,
+    "2023-May": 2,
+    "2023-September": 12,
+    "2023-February": 1,
+    "2024-January": 2,
+    "2023-June": 4,
+    "2023-January": 2,
+    "2023-July": 3,
+    "2024-March": 1,
+    "2023-March": 1,
+    "2023-April": 34,
+    "2024-April": 8,
+    "2023-October": 2,
+    "2022-December": 1
+  },
+  "🙈": {
+    "2023-December": 1,
+    "2023-August": 1,
+    "2023-May": 5,
+    "2023-September": 2,
+    "2024-May": 1,
+    "2023-February": 1,
+    "2024-January": 9,
+    "2023-June": 1,
+    "2023-January": 5,
+    "2023-July": 8,
+    "2024-March": 2,
+    "2023-March": 3,
+    "2023-November": 4,
+    "2024-April": 1,
+    "2175-January": 1,
+    "2023-October": 7,
+    "2024-February": 9
+  },
+  "👌": {
+    "2023-December": 2,
+    "2023-August": 5,
+    "2023-May": 8,
+    "2023-September": 5,
+    "2024-May": 5,
+    "2023-February": 11,
+    "2024-January": 1,
+    "2023-June": 1,
+    "2023-January": 4,
+    "2023-July": 5,
+    "2023-March": 5,
+    "2023-April": 1,
+    "2024-April": 4,
+    "2023-October": 4,
+    "2024-February": 2
+  },
+  "🔫": {
+    "2023-December": 1,
+    "2024-April": 1
+  },
+  "🔵": {
+    "2023-December": 1,
+    "2023-September": 2,
+    "2023-February": 2,
+    "2024-January": 1,
+    "2023-July": 2,
+    "2023-March": 1,
+    "2024-February": 2
+  },
+  "🥇": {
+    "2023-December": 3,
+    "2023-May": 2,
+    "2023-September": 2,
+    "2024-May": 2,
+    "2024-January": 1,
+    "2023-April": 1,
+    "2024-April": 1
+  },
+  "💰": {
+    "2023-December": 1,
+    "2023-August": 2,
+    "2023-May": 2,
+    "2024-May": 5,
+    "2024-January": 7,
+    "2023-January": 13,
+    "2023-July": 3,
+    "2024-March": 2,
+    "2023-April": 1,
+    "2024-April": 7,
+    "2023-October": 2,
+    "2024-February": 15
+  },
+  "😎": {
+    "2023-December": 4,
+    "2023-August": 5,
+    "2023-May": 6,
+    "2023-September": 6,
+    "2024-May": 4,
+    "2023-February": 3,
+    "2024-January": 8,
+    "2023-June": 3,
+    "2023-January": 3,
+    "2023-July": 6,
+    "2024-March": 3,
+    "2023-March": 4,
+    "2023-April": 4,
+    "2023-November": 3,
+    "2024-April": 5,
+    "2023-October": 4,
+    "2024-February": 1,
+    "2022-December": 1
+  },
+  "💡": {
+    "2023-December": 2,
+    "2023-August": 2,
+    "2023-May": 1,
+    "2023-September": 6,
+    "2023-February": 1,
+    "2024-January": 4,
+    "2023-June": 1,
+    "2024-March": 1,
+    "2023-March": 1,
+    "2023-October": 4
+  },
+  "📣": {
+    "2023-December": 4,
+    "2023-August": 12,
+    "2023-May": 5,
+    "2023-September": 10,
+    "2024-May": 10,
+    "2023-February": 2,
+    "2024-January": 1,
+    "2023-June": 4,
+    "2023-January": 5,
+    "2023-July": 14,
+    "2024-March": 9,
+    "2023-March": 7,
+    "2023-April": 5,
+    "2024-April": 3,
+    "2023-October": 4
+  },
+  "📢": {
+    "2023-December": 5,
+    "2023-August": 2,
+    "2023-May": 9,
+    "2023-September": 6,
+    "2024-May": 4,
+    "2023-February": 6,
+    "2024-January": 4,
+    "2023-June": 25,
+    "2023-January": 4,
+    "2023-July": 5,
+    "2024-March": 6,
+    "2023-March": 19,
+    "2023-April": 11,
+    "2024-April": 6,
+    "2024-February": 2
+  },
+  "🧐": {
+    "2023-December": 5,
+    "2023-August": 6,
+    "2023-May": 5,
+    "2023-September": 2,
+    "2024-May": 2,
+    "2023-February": 2,
+    "2024-January": 1,
+    "2023-June": 2,
+    "2023-January": 3,
+    "2023-July": 1,
+    "2024-March": 2,
+    "2023-March": 2,
+    "2023-April": 4,
+    "2023-November": 1,
+    "2024-April": 3,
+    "2023-October": 2,
+    "2024-February": 3
+  },
+  "🎯": {
+    "2023-December": 6,
+    "2023-August": 23,
+    "2023-May": 7,
+    "2023-September": 11,
+    "2024-May": 7,
+    "2023-February": 11,
+    "2024-January": 6,
+    "2023-June": 16,
+    "2023-January": 15,
+    "2023-July": 8,
+    "2024-March": 13,
+    "2023-March": 2,
+    "2023-April": 12,
+    "2023-November": 5,
+    "2024-April": 1,
+    "2023-October": 12,
+    "2024-February": 10
+  },
+  "📰": {
+    "2023-December": 1
+  },
+  "🤖": {
+    "2023-December": 2,
+    "2023-August": 2,
+    "2023-February": 1,
+    "2023-January": 1,
+    "2024-February": 1
+  },
+  "🔝": {
+    "2023-December": 2,
+    "2023-May": 1,
+    "2023-February": 1,
+    "2023-July": 2,
+    "2024-April": 1,
+    "2024-February": 1
+  },
+  "🤗": {
+    "2023-December": 3,
+    "2023-August": 2,
+    "2023-May": 3,
+    "2023-September": 5,
+    "2024-May": 1,
+    "2023-February": 1,
+    "2024-January": 1,
+    "2023-June": 3,
+    "2023-January": 2,
+    "2023-July": 6,
+    "2023-March": 5,
+    "2023-April": 3,
+    "2024-April": 1,
+    "2023-October": 1
+  },
+  "😶": {
+    "2023-December": 2,
+    "2023-May": 1,
+    "2024-May": 1,
+    "2023-January": 3,
+    "2024-April": 1
+  },
+  "🧡": {
+    "2023-December": 3,
+    "2023-August": 1,
+    "2023-May": 2,
+    "2023-September": 8,
+    "2023-February": 2,
+    "2024-January": 4,
+    "2023-June": 3,
+    "2023-January": 1,
+    "2024-March": 1,
+    "2023-April": 4,
+    "2024-April": 3,
+    "2023-October": 6
+  },
+  "🏃‍♂️": {
+    "2023-December": 2,
+    "2023-February": 1
+  },
+  "🏃‍♀️": {
+    "2023-December": 1,
+    "2023-July": 1
+  },
+  "🥺": {
+    "2023-December": 1,
+    "2023-August": 3,
+    "2023-May": 3,
+    "2023-September": 7,
+    "2023-February": 4,
+    "2024-January": 3,
+    "2023-June": 1,
+    "2023-January": 5,
+    "2024-March": 1,
+    "2023-March": 1,
+    "2023-April": 5,
+    "2023-November": 4,
+    "2024-April": 4,
+    "2023-October": 5
+  },
+  "▫️": {
+    "2023-December": 2,
+    "2023-August": 8,
+    "2023-May": 4,
+    "2023-September": 8,
+    "2024-January": 3,
+    "2023-June": 2,
+    "2023-January": 2,
+    "2024-March": 4,
+    "2023-March": 4,
+    "2024-April": 3,
+    "2023-October": 6,
+    "2024-February": 2
+  },
+  "🙄": {
+    "2023-December": 5,
+    "2023-August": 13,
+    "2023-May": 2,
+    "2023-September": 2,
+    "2024-May": 2,
+    "2023-February": 15,
+    "2024-January": 4,
+    "2023-June": 1,
+    "2023-January": 11,
+    "2023-July": 2,
+    "2024-March": 4,
+    "2023-March": 10,
+    "2023-April": 4,
+    "2023-November": 9,
+    "2024-April": 5,
+    "2023-October": 11,
+    "2024-February": 3
+  },
+  "💀": {
+    "2023-December": 3,
+    "2023-August": 4,
+    "2023-May": 2,
+    "2023-September": 3,
+    "2024-May": 1,
+    "2023-February": 3,
+    "2024-January": 5,
+    "2023-July": 4,
+    "2024-March": 2,
+    "2023-March": 1,
+    "2023-April": 1,
+    "2023-November": 3,
+    "2023-October": 16,
+    "2024-February": 4
+  },
+  "😏": {
+    "2023-December": 1,
+    "2023-August": 3,
+    "2023-May": 4,
+    "2023-September": 3,
+    "2023-February": 16,
+    "2024-January": 1,
+    "2023-June": 9,
+    "2023-January": 5,
+    "2023-July": 1,
+    "2024-March": 6,
+    "2023-March": 1,
+    "2023-April": 2,
+    "2023-November": 2,
+    "2024-April": 1,
+    "2024-February": 1
+  },
+  "🥊": {
+    "2023-December": 2,
+    "2024-January": 1,
+    "2023-June": 3,
+    "2024-February": 2
+  },
+  "🟡": {
+    "2023-December": 1,
+    "2023-August": 3,
+    "2023-September": 3,
+    "2023-June": 1,
+    "2023-January": 1,
+    "2023-July": 3,
+    "2023-April": 1,
+    "2024-February": 2
+  },
+  "🟢": {
+    "2023-December": 2,
+    "2023-February": 2,
+    "2024-March": 1
+  },
+  "🏴": {
+    "2023-December": 2,
+    "2023-August": 2,
+    "2023-May": 7,
+    "2023-September": 1,
+    "2023-February": 3,
+    "2023-June": 9,
+    "2023-January": 4,
+    "2024-March": 7,
+    "2023-March": 20,
+    "2023-April": 1,
+    "2024-April": 3,
+    "2023-October": 13,
+    "2024-February": 7
+  },
+  "🥁": {
+    "2023-December": 4,
+    "2023-August": 6,
+    "2023-May": 1,
+    "2023-September": 5,
+    "2023-February": 4,
+    "2024-January": 7,
+    "2023-June": 1,
+    "2023-July": 8,
+    "2024-March": 2,
+    "2023-April": 5,
+    "2024-April": 2,
+    "2023-October": 2
+  },
+  "🎺": {
+    "2023-December": 1,
+    "2023-August": 2,
+    "2023-May": 6,
+    "2023-April": 1
+  },
+  "✊": {
+    "2023-December": 3,
+    "2023-August": 9,
+    "2023-May": 2,
+    "2023-September": 14,
+    "2023-February": 16,
+    "2024-January": 1,
+    "2023-June": 7,
+    "2023-January": 1,
+    "2023-July": 50,
+    "2024-March": 4,
+    "2023-March": 8,
+    "2023-April": 9,
+    "2023-November": 3,
+    "2024-April": 8,
+    "2024-February": 4
+  },
+  "⭐": {
+    "2023-December": 1,
+    "2023-August": 3,
+    "2023-September": 1,
+    "2023-February": 5,
+    "2024-January": 1,
+    "2023-June": 4,
+    "2023-January": 1,
+    "2024-March": 2,
+    "2023-March": 1,
+    "2023-April": 4,
+    "2023-November": 2,
+    "2024-April": 1,
+    "2024-February": 1
+  },
+  "🎬": {
+    "2023-December": 1,
+    "2024-May": 3,
+    "2024-January": 1,
+    "2023-June": 1,
+    "2023-March": 1,
+    "2023-November": 1,
+    "2024-April": 1
+  },
+  "😻": {
+    "2023-December": 1,
+    "2023-August": 2,
+    "2023-May": 1,
+    "2023-February": 1,
+    "2024-January": 2,
+    "2023-January": 2,
+    "2023-November": 4,
+    "2023-October": 3,
+    "2024-February": 1
+  },
+  "👸": {
+    "2023-December": 1,
+    "2023-May": 1,
+    "2023-June": 1,
+    "2024-March": 2,
+    "2023-March": 1
+  },
+  "💦": {
+    "2023-December": 3,
+    "2023-May": 2,
+    "2023-June": 3,
+    "2023-January": 1,
+    "2023-July": 2
+  },
+  "💐": {
+    "2023-December": 3,
+    "2023-August": 1,
+    "2023-May": 4,
+    "2023-September": 6,
+    "2024-May": 2,
+    "2023-February": 1,
+    "2024-January": 3,
+    "2023-June": 2,
+    "2023-January": 1,
+    "2023-July": 2,
+    "2023-March": 2,
+    "2023-April": 17,
+    "2023-November": 4,
+    "2024-April": 6
+  },
+  "🦾": {
+    "2023-December": 1,
+    "2023-May": 2,
+    "2023-February": 5,
+    "2023-January": 4,
+    "2024-March": 1,
+    "2023-November": 1,
+    "2024-April": 3,
+    "2023-October": 1
+  },
+  "🌟": {
+    "2023-December": 2,
+    "2023-May": 3,
+    "2023-September": 4,
+    "2023-June": 1,
+    "2023-January": 2,
+    "2023-March": 1,
+    "2023-April": 3,
+    "2023-November": 3,
+    "2023-October": 6
+  },
+  "🙃": {
+    "2023-December": 1,
+    "2023-August": 2,
+    "2023-May": 23,
+    "2023-September": 2,
+    "2024-May": 23,
+    "2023-February": 5,
+    "2024-January": 6,
+    "2023-January": 8,
+    "2023-July": 5,
+    "2024-March": 4,
+    "2023-March": 2,
+    "2023-April": 3,
+    "2023-November": 3,
+    "2024-April": 3,
+    "2023-October": 3,
+    "2024-February": 3
+  },
+  "🟥": {
+    "2023-December": 4,
+    "2023-August": 1,
+    "2023-May": 3,
+    "2023-September": 8,
+    "2024-May": 2,
+    "2023-February": 4,
+    "2024-January": 6,
+    "2023-June": 4,
+    "2023-January": 3,
+    "2023-July": 3,
+    "2023-March": 2,
+    "2023-November": 3,
+    "2024-April": 3,
+    "2023-October": 8,
+    "2024-February": 12
+  },
+  "✅": {
+    "2023-December": 5,
+    "2023-August": 26,
+    "2023-May": 20,
+    "2023-September": 9,
+    "2024-May": 4,
+    "2023-February": 22,
+    "2024-January": 11,
+    "2023-June": 5,
+    "2023-January": 9,
+    "2023-July": 5,
+    "2024-March": 5,
+    "2023-March": 17,
+    "2023-April": 5,
+    "2023-November": 4,
+    "2024-April": 6,
+    "2023-October": 10,
+    "2024-February": 12
+  },
+  "🌻": {
+    "2023-December": 3,
+    "2023-September": 4,
+    "2023-January": 1,
+    "2023-April": 12,
+    "2024-April": 1,
+    "2023-October": 2,
+    "2024-February": 2
+  },
+  "♦️": {
+    "2023-December": 1,
+    "2023-August": 2,
+    "2023-September": 7,
+    "2023-June": 1,
+    "2024-April": 1,
+    "2024-February": 1
+  },
+  "📷": {
+    "2023-December": 2,
+    "2023-August": 1,
+    "2023-May": 6,
+    "2023-September": 7,
+    "2024-May": 6,
+    "2023-February": 1,
+    "2024-January": 1,
+    "2023-June": 7,
+    "2023-July": 8,
+    "2024-March": 18,
+    "2023-March": 1,
+    "2023-April": 4,
+    "2023-November": 2,
+    "2024-April": 1,
+    "2023-October": 6,
+    "2024-February": 4
+  },
+  "🗓️": {
+    "2023-December": 1,
+    "2023-August": 1,
+    "2024-January": 1,
+    "2023-November": 1
+  },
+  "🫂": {
+    "2023-December": 3,
+    "2023-August": 1,
+    "2024-May": 1,
+    "2024-January": 1,
+    "2024-March": 1,
+    "2023-November": 1,
+    "2024-April": 1,
+    "2023-October": 2,
+    "2024-February": 2
+  },
+  "🪖": {
+    "2023-December": 3,
+    "2023-August": 1,
+    "2024-January": 1,
+    "2023-June": 1,
+    "2024-March": 1,
+    "2024-February": 1
+  },
+  "🙌": {
+    "2023-December": 3,
+    "2023-August": 1,
+    "2023-May": 16,
+    "2023-September": 10,
+    "2024-May": 3,
+    "2023-February": 3,
+    "2023-January": 1,
+    "2023-July": 7,
+    "2024-March": 5,
+    "2023-March": 2,
+    "2023-April": 3,
+    "2023-November": 5,
+    "2024-April": 9,
+    "2023-October": 3,
+    "2024-February": 6
+  },
+  "🤟": {
+    "2023-December": 1,
+    "2023-February": 1,
+    "2023-March": 1,
+    "2024-April": 1
+  },
+  "👊": {
+    "2023-December": 1,
+    "2023-August": 6,
+    "2023-May": 7,
+    "2023-September": 13,
+    "2024-May": 4,
+    "2023-February": 6,
+    "2024-January": 1,
+    "2023-June": 269,
+    "2023-January": 1,
+    "2023-July": 19,
+    "2024-March": 3,
+    "2023-March": 14,
+    "2023-April": 7,
+    "2023-November": 5,
+    "2024-April": 1,
+    "2023-October": 2
+  },
+  "😇": {
+    "2023-December": 4,
+    "2023-August": 3,
+    "2023-May": 4,
+    "2023-September": 9,
+    "2024-May": 2,
+    "2023-February": 5,
+    "2024-January": 3,
+    "2023-June": 1,
+    "2023-January": 3,
+    "2023-July": 2,
+    "2024-March": 2,
+    "2023-March": 14,
+    "2023-April": 5,
+    "2023-November": 7,
+    "2024-April": 6,
+    "2023-October": 1,
+    "2024-February": 1
+  },
+  "🛩️": {
+    "2023-December": 4,
+    "2023-August": 1
+  },
+  "😌": {
+    "2023-December": 1,
+    "2023-August": 3,
+    "2023-May": 2,
+    "2023-September": 4,
+    "2023-February": 1,
+    "2024-January": 1,
+    "2023-January": 5,
+    "2023-March": 1,
+    "2023-November": 1,
+    "2024-April": 1
+  },
+  "⚫": {
+    "2023-December": 1,
+    "2023-February": 2,
+    "2024-January": 1,
+    "2023-June": 4,
+    "2023-January": 2,
+    "2023-July": 3,
+    "2024-March": 1,
+    "2023-April": 3,
+    "2023-October": 2,
+    "2024-February": 1
+  },
+  "😰": {
+    "2023-December": 5,
+    "2023-September": 5,
+    "2024-May": 1,
+    "2023-February": 1,
+    "2024-January": 8,
+    "2023-January": 4,
+    "2023-July": 1,
+    "2024-March": 1,
+    "2023-March": 3,
+    "2023-November": 1,
+    "2023-October": 8
+  },
+  "🥴": {
+    "2023-December": 1,
+    "2023-August": 2,
+    "2023-May": 1,
+    "2023-September": 3,
+    "2024-May": 2,
+    "2023-February": 2,
+    "2024-January": 5,
+    "2023-June": 2,
+    "2023-January": 3,
+    "2023-July": 2,
+    "2024-March": 1,
+    "2023-March": 1,
+    "2023-November": 1,
+    "2024-April": 1,
+    "2023-October": 1,
+    "2024-February": 5
+  },
+  "🤦‍♀️": {
+    "2023-December": 5,
+    "2023-August": 8,
+    "2023-May": 8,
+    "2023-September": 8,
+    "2024-May": 7,
+    "2023-February": 7,
+    "2024-January": 5,
+    "2023-June": 5,
+    "2023-January": 12,
+    "2023-July": 11,
+    "2024-March": 4,
+    "2023-March": 16,
+    "2023-April": 7,
+    "2023-November": 10,
+    "2024-April": 6,
+    "2023-October": 16,
+    "2024-February": 5
+  },
+  "🌹": {
+    "2023-December": 6,
+    "2023-August": 18,
+    "2023-May": 29,
+    "2023-September": 17,
+    "2024-May": 11,
+    "2023-February": 19,
+    "2024-January": 5,
+    "2023-June": 14,
+    "2023-January": 23,
+    "2023-July": 14,
+    "2024-March": 7,
+    "2023-March": 18,
+    "2023-April": 14,
+    "2023-November": 5,
+    "2024-April": 6,
+    "2023-October": 20,
+    "2024-February": 6
+  },
+  "☕": {
+    "2023-December": 1,
+    "2023-August": 2,
+    "2023-June": 2,
+    "2024-March": 2,
+    "2023-April": 1,
+    "2024-April": 2,
+    "2023-October": 4
+  },
+  "🪠": {
+    "2023-December": 1,
+    "2023-August": 2,
+    "2023-June": 1,
+    "2023-July": 1
+  },
+  "🍾": {
+    "2023-December": 4,
+    "2023-March": 2,
+    "2023-April": 2,
+    "2023-November": 5,
+    "2024-April": 1,
+    "2023-October": 1,
+    "2022-December": 2
+  },
+  "🟣": {
+    "2023-December": 1,
+    "2023-August": 1,
+    "2023-September": 1,
+    "2024-March": 4,
+    "2024-February": 1
+  },
+  "🔯": {
+    "2023-December": 1,
+    "2023-April": 3
+  },
+  "🪃": {
+    "2023-December": 1
+  },
+  "🔍": {
+    "2023-December": 1,
+    "2023-August": 2,
+    "2023-May": 1,
+    "2023-September": 2,
+    "2024-January": 2,
+    "2023-July": 13,
+    "2023-October": 3
+  },
+  "🔞": {
+    "2023-December": 1,
+    "2023-September": 2,
+    "2024-February": 2
+  },
+  "☝️": {
+    "2023-December": 1,
+    "2023-August": 1,
+    "2023-May": 3,
+    "2023-September": 4,
+    "2024-May": 6,
+    "2023-February": 1,
+    "2024-January": 5,
+    "2023-June": 2,
+    "2023-July": 1,
+    "2024-March": 6,
+    "2023-March": 2,
+    "2023-April": 1,
+    "2023-November": 2,
+    "2023-October": 3,
+    "2024-February": 6
+  },
+  "👎": {
+    "2023-December": 4,
+    "2023-August": 16,
+    "2023-February": 5,
+    "2023-June": 5,
+    "2023-January": 28,
+    "2023-July": 1,
+    "2023-March": 4,
+    "2023-November": 1,
+    "2023-October": 1,
+    "2024-February": 4
+  },
+  "🇺🇸": {
+    "2023-December": 4,
+    "2023-August": 4,
+    "2023-May": 4,
+    "2023-September": 9,
+    "2024-May": 4,
+    "2023-February": 3,
+    "2024-January": 5,
+    "2023-June": 5,
+    "2023-January": 5,
+    "2023-July": 8,
+    "2024-March": 2,
+    "2023-March": 1,
+    "2024-April": 5,
+    "2023-October": 4
+  },
+  "💕": {
+    "2023-December": 3,
+    "2023-August": 4,
+    "2023-May": 3,
+    "2023-February": 3,
+    "2023-June": 4,
+    "2023-January": 2,
+    "2023-July": 1,
+    "2023-March": 2,
+    "2023-April": 1,
+    "2023-November": 6,
+    "2024-April": 1,
+    "2023-October": 2,
+    "2024-February": 1
+  },
+  "👍": {
+    "2023-December": 4,
+    "2023-August": 4,
+    "2023-May": 13,
+    "2023-September": 4,
+    "2024-May": 5,
+    "2023-February": 11,
+    "2024-January": 8,
+    "2023-June": 4,
+    "2023-January": 7,
+    "2023-July": 18,
+    "2024-March": 3,
+    "2023-March": 6,
+    "2023-April": 17,
+    "2023-November": 2,
+    "2024-April": 4,
+    "2023-October": 16,
+    "2024-February": 4
+  },
+  "☹️": {
+    "2023-December": 2,
+    "2023-May": 1,
+    "2023-September": 4,
+    "2023-February": 2,
+    "2023-June": 1,
+    "2023-July": 1,
+    "2024-March": 1,
+    "2023-April": 1,
+    "2024-February": 2
+  },
+  "🎶": {
+    "2023-December": 4,
+    "2023-August": 2,
+    "2023-May": 2,
+    "2023-September": 5,
+    "2023-February": 1,
+    "2024-January": 1,
+    "2023-June": 1,
+    "2023-January": 1,
+    "2024-March": 2,
+    "2023-March": 2,
+    "2023-November": 12,
+    "2024-April": 2,
+    "2023-October": 5
+  },
+  "🔽": {
+    "2023-December": 1,
+    "2023-August": 9,
+    "2023-May": 4,
+    "2023-September": 3,
+    "2024-May": 1,
+    "2023-February": 4,
+    "2024-January": 4,
+    "2023-June": 3,
+    "2023-January": 1,
+    "2023-July": 2,
+    "2023-March": 3,
+    "2023-April": 11,
+    "2023-November": 2,
+    "2024-February": 1
+  },
+  "🎵": {
+    "2023-December": 2,
+    "2023-August": 2,
+    "2024-May": 2,
+    "2024-January": 3,
+    "2023-March": 3,
+    "2023-November": 1,
+    "2024-April": 1,
+    "2023-October": 9
+  },
+  "👋": {
+    "2023-December": 4,
+    "2023-August": 1,
+    "2023-May": 1,
+    "2024-May": 1,
+    "2023-February": 1,
+    "2024-January": 1,
+    "2023-January": 2,
+    "2023-July": 8,
+    "2023-March": 1,
+    "2023-November": 3,
+    "2024-April": 2
+  },
+  "⚠️": {
+    "2023-December": 4,
+    "2023-May": 1,
+    "2023-September": 5,
+    "2023-February": 3,
+    "2024-January": 1,
+    "2023-January": 1,
+    "2023-July": 4,
+    "2023-March": 2,
+    "2024-April": 5,
+    "2023-October": 5,
+    "2024-February": 2
+  },
+  "🤩": {
+    "2023-December": 2,
+    "2023-August": 2,
+    "2023-May": 30,
+    "2023-September": 5,
+    "2024-May": 4,
+    "2023-February": 14,
+    "2024-January": 10,
+    "2023-June": 5,
+    "2023-January": 10,
+    "2024-March": 9,
+    "2023-March": 10,
+    "2023-April": 4,
+    "2023-November": 3,
+    "2024-April": 2,
+    "2023-October": 3,
+    "2024-February": 4
+  },
+  "🟠": {
+    "2023-December": 1,
+    "2023-May": 2,
+    "2023-September": 1,
+    "2024-January": 2,
+    "2023-June": 1,
+    "2023-January": 9,
+    "2024-March": 4,
+    "2023-November": 1,
+    "2122-January": 1,
+    "2024-February": 1
+  },
+  "🙁": {
+    "2023-December": 1,
+    "2023-September": 3,
+    "2023-January": 1,
+    "2023-April": 1,
+    "2023-November": 1,
+    "2024-April": 1
+  },
+  "🎲": {
+    "2023-December": 2
+  },
+  "😴": {
+    "2023-December": 1,
+    "2023-August": 2,
+    "2023-May": 1,
+    "2024-January": 2,
+    "2023-July": 1,
+    "2024-March": 1
+  },
+  "🎂": {
+    "2023-December": 2,
+    "2023-May": 1,
+    "2024-January": 2,
+    "2023-July": 2,
+    "2023-March": 1,
+    "2023-November": 1,
+    "2024-April": 1
+  },
+  "🏭": {
+    "2023-December": 2,
+    "2023-March": 1
+  },
+  "🇩🇪": {
+    "2023-December": 1,
+    "2023-August": 3,
+    "2023-September": 1,
+    "2024-May": 1,
+    "2023-February": 1,
+    "2024-January": 1,
+    "2023-June": 1,
+    "2023-January": 5,
+    "2023-April": 1,
+    "2023-October": 1
+  },
+  "⌛": {
+    "2023-December": 1,
+    "2024-May": 1,
+    "2023-February": 1,
+    "2023-June": 1,
+    "2023-October": 6
+  },
+  "⏳": {
+    "2023-December": 1,
+    "2023-August": 1,
+    "2023-May": 1,
+    "2024-May": 1,
+    "2024-January": 8,
+    "2023-July": 1,
+    "2023-March": 1,
+    "2023-October": 6
+  },
+  "🌋": {
+    "2023-December": 1
+  },
+  "🔗": {
+    "2023-December": 3,
+    "2024-May": 2,
+    "2024-January": 2,
+    "2023-January": 1,
+    "2024-March": 3,
+    "2023-March": 2,
+    "2023-November": 3
+  },
+  "📌": {
+    "2023-December": 8,
+    "2023-August": 11,
+    "2023-May": 7,
+    "2023-September": 8,
+    "2024-May": 7,
+    "2023-February": 27,
+    "2024-January": 5,
+    "2023-June": 5,
+    "2023-January": 11,
+    "2023-July": 11,
+    "2024-March": 25,
+    "2023-March": 33,
+    "2023-April": 5,
+    "2023-November": 4,
+    "2024-April": 5,
+    "2023-October": 18,
+    "2024-February": 5
+  },
+  "😓": {
+    "2023-December": 2,
+    "2023-September": 1,
+    "2024-May": 1,
+    "2023-February": 1,
+    "2024-January": 1,
+    "2023-January": 1,
+    "2023-July": 2,
+    "2024-March": 1,
+    "2023-November": 2,
+    "2024-April": 1,
+    "2023-October": 5
+  },
+  "🌧️": {
+    "2023-December": 1,
+    "2023-September": 2,
+    "2024-January": 1,
+    "2023-November": 1
+  },
+  "🌱": {
+    "2023-December": 1,
+    "2024-May": 1,
+    "2024-January": 1,
+    "2023-January": 1,
+    "2024-March": 1,
+    "2023-April": 1,
+    "2024-April": 1,
+    "2023-October": 2
+  },
+  "☺️": {
+    "2023-December": 3,
+    "2023-August": 32,
+    "2023-May": 1,
+    "2023-September": 4,
+    "2024-May": 1,
+    "2023-February": 1,
+    "2024-January": 2,
+    "2023-June": 3,
+    "2023-January": 1,
+    "2023-July": 8,
+    "2023-April": 2,
+    "2024-April": 1,
+    "2023-October": 2,
+    "2024-February": 2
+  },
+  "🕳️": {
+    "2023-December": 1,
+    "2024-January": 1,
+    "2023-March": 1
+  },
+  "☪️": {
+    "2023-December": 1
+  },
+  "🇵🇸": {
+    "2023-December": 1,
+    "2023-May": 1,
+    "2023-September": 2,
+    "2024-May": 2,
+    "2024-January": 2,
+    "2023-January": 9,
+    "2023-March": 5,
+    "2023-November": 2,
+    "2024-April": 4,
+    "2023-October": 1
+  },
+  "✡️": {
+    "2023-December": 6,
+    "2023-May": 1,
+    "2023-September": 10,
+    "2024-May": 6,
+    "2023-February": 2,
+    "2023-January": 1,
+    "2023-July": 2,
+    "2024-March": 2,
+    "2023-March": 2,
+    "2023-April": 5,
+    "2023-November": 4,
+    "2024-April": 3,
+    "2023-October": 16,
+    "2024-February": 3
+  },
+  "😠": {
+    "2023-December": 2,
+    "2024-May": 1,
+    "2024-January": 1,
+    "2023-January": 2,
+    "2023-July": 2,
+    "2024-March": 1,
+    "2023-October": 8
+  },
+  "✌️": {
+    "2023-December": 1,
+    "2023-August": 1,
+    "2023-May": 2,
+    "2023-September": 2,
+    "2023-February": 1,
+    "2023-January": 3,
+    "2023-July": 2,
+    "2023-March": 1,
+    "2023-April": 3,
+    "2023-November": 1,
+    "2023-October": 1,
+    "2024-February": 1
+  },
+  "🛋️": {
+    "2023-December": 1,
+    "2024-January": 1
+  },
+  "🧢": {
+    "2023-December": 1,
+    "2023-May": 26,
+    "2024-January": 1,
+    "2024-April": 1,
+    "2024-February": 1
+  },
+  "🙋‍♀️": {
+    "2023-December": 1,
+    "2023-May": 1,
+    "2023-February": 5,
+    "2023-January": 3,
+    "2023-April": 1
+  },
+  "👁️‍🗨️": {
+    "2023-December": 1
+  },
+  "🍕": {
+    "2023-December": 1,
+    "2023-February": 1
+  },
+  "😄": {
+    "2023-December": 4,
+    "2023-August": 7,
+    "2023-May": 2,
+    "2023-September": 5,
+    "2024-May": 4,
+    "2023-February": 3,
+    "2024-January": 10,
+    "2023-June": 8,
+    "2023-January": 8,
+    "2023-July": 3,
+    "2024-March": 3,
+    "2023-March": 1,
+    "2023-April": 6,
+    "2023-November": 10,
+    "2024-April": 4,
+    "2023-October": 11,
+    "2024-February": 9
+  },
+  "🩸": {
+    "2023-December": 5,
+    "2023-May": 1,
+    "2024-May": 4,
+    "2023-February": 2,
+    "2024-January": 1,
+    "2023-October": 3,
+    "2024-February": 2
+  },
+  "🉐": {
+    "2023-December": 1
+  },
+  "🤫": {
+    "2023-December": 1,
+    "2023-August": 1,
+    "2023-May": 2,
+    "2023-September": 2,
+    "2023-February": 2,
+    "2024-January": 1,
+    "2023-January": 3,
+    "2023-July": 2,
+    "2024-March": 1,
+    "2023-April": 1,
+    "2023-October": 3,
+    "2024-February": 8
+  },
+  "➖": {
+    "2023-December": 1,
+    "2023-June": 8,
+    "2023-November": 3
+  },
+  "🇬🇧": {
+    "2023-December": 1,
+    "2023-August": 1,
+    "2023-May": 6,
+    "2023-February": 1,
+    "2024-January": 2,
+    "2023-June": 3,
+    "2023-January": 2,
+    "2023-July": 3,
+    "2023-April": 2,
+    "2023-November": 3,
+    "2024-April": 3,
+    "2023-October": 1,
+    "2024-February": 1
+  },
+  "🧠": {
+    "2023-December": 1,
+    "2023-August": 1,
+    "2023-May": 1,
+    "2023-February": 2,
+    "2024-April": 1,
+    "2024-February": 1
+  },
+  "🦠": {
+    "2023-December": 1,
+    "2023-June": 1,
+    "2024-March": 1,
+    "2023-April": 1,
+    "2024-April": 1,
+    "2023-October": 1,
+    "2024-February": 2
+  },
+  "🖕": {
+    "2023-December": 6,
+    "2023-August": 3,
+    "2023-May": 3,
+    "2023-September": 6,
+    "2024-May": 1,
+    "2023-February": 1,
+    "2024-January": 1,
+    "2023-June": 20,
+    "2023-January": 2,
+    "2023-July": 4,
+    "2024-March": 2,
+    "2023-March": 4,
+    "2023-April": 1,
+    "2023-November": 8,
+    "2024-April": 2,
+    "2023-October": 7
+  },
+  "🥱": {
+    "2023-December": 2,
+    "2023-May": 1,
+    "2024-May": 1,
+    "2024-January": 1,
+    "2023-June": 3,
+    "2023-January": 2,
+    "2023-July": 12,
+    "2023-March": 7,
+    "2023-April": 2,
+    "2024-April": 1
+  },
+  "😕": {
+    "2023-December": 1,
+    "2023-August": 1,
+    "2023-February": 1,
+    "2023-June": 1,
+    "2023-January": 2,
+    "2023-July": 1,
+    "2023-November": 1,
+    "2024-April": 1,
+    "2024-February": 1
+  },
+  "💚": {
+    "2023-December": 2,
+    "2023-August": 8,
+    "2023-May": 6,
+    "2023-September": 11,
+    "2024-May": 1,
+    "2023-February": 16,
+    "2024-January": 10,
+    "2023-June": 7,
+    "2023-January": 2,
+    "2023-July": 4,
+    "2024-March": 4,
+    "2023-March": 7,
+    "2023-April": 15,
+    "2023-November": 2,
+    "2024-April": 4,
+    "1875-January": 2,
+    "2023-October": 2,
+    "2024-February": 15
+  },
+  "🎧": {
+    "2023-December": 1,
+    "2023-August": 1,
+    "2023-May": 1,
+    "2024-May": 2,
+    "2023-February": 2,
+    "2023-January": 6,
+    "2024-March": 5,
+    "2024-April": 3,
+    "2024-February": 1
+  },
+  "🍍": {
+    "2023-December": 1
+  },
+  "🚑": {
+    "2023-December": 1,
+    "2023-October": 2
+  },
+  "🩺": {
+    "2023-December": 1,
+    "2023-May": 2,
+    "2023-September": 1,
+    "2024-January": 1,
+    "2023-June": 1,
+    "2023-July": 2
+  },
+  "🥶": {
+    "2023-December": 2,
+    "2023-August": 3,
+    "2023-February": 2,
+    "2024-January": 4,
+    "2023-March": 7,
+    "2023-April": 1,
+    "2024-April": 1
+  },
+  "☃️": {
+    "2023-December": 1,
+    "2023-February": 1,
+    "2023-March": 1
+  },
+  "❄️": {
+    "2023-December": 1,
+    "2023-February": 1,
+    "2023-March": 1
+  },
+  "☀️": {
+    "2023-December": 2,
+    "2023-August": 7,
+    "2023-May": 7,
+    "2023-September": 5,
+    "2023-February": 1,
+    "2024-January": 1,
+    "2023-June": 1,
+    "2023-July": 2,
+    "2023-March": 1,
+    "2023-April": 2,
+    "2024-April": 2,
+    "1741-January": 1,
+    "2024-February": 1
+  },
+  "🌸": {
+    "2023-December": 1,
+    "2023-August": 1,
+    "2023-May": 1,
+    "2023-September": 3,
+    "2024-May": 1,
+    "2024-January": 3,
+    "2023-June": 1,
+    "2023-January": 1,
+    "2023-July": 5,
+    "2024-March": 6,
+    "2023-March": 2,
+    "2023-April": 21,
+    "2024-April": 5
+  },
+  "🍩": {
+    "2023-December": 7,
+    "2024-January": 1
+  },
+  "🇫🇷": {
+    "2023-December": 1,
+    "2023-August": 2,
+    "2023-May": 1,
+    "2023-February": 1,
+    "2023-July": 4,
+    "2023-April": 1,
+    "2023-October": 1
+  },
+  "🇦🇷": {
+    "2023-December": 1,
+    "2023-May": 1,
+    "2023-June": 1,
+    "2023-January": 1,
+    "2023-April": 1,
+    "2024-April": 1,
+    "2023-October": 1
+  },
+  "🎗️": {
+    "2023-December": 1,
+    "2024-May": 10,
+    "2024-January": 1,
+    "2024-March": 15,
+    "2023-November": 8,
+    "2024-April": 23,
+    "1856-January": 2,
+    "2024-February": 7
+  },
+  "🇹🇷": {
+    "2023-December": 1,
+    "2023-September": 2,
+    "2024-January": 2,
+    "2023-June": 1,
+    "2023-July": 2,
+    "2024-March": 1,
+    "2024-February": 1
+  },
+  "🐀": {
+    "2023-December": 1,
+    "2023-June": 2,
+    "2023-October": 1
+  },
+  "🪔": {
+    "2023-December": 2,
+    "2023-August": 2,
+    "2024-May": 1,
+    "2023-February": 2,
+    "2024-January": 1,
+    "2023-January": 3,
+    "2023-July": 4,
+    "2024-March": 1,
+    "2023-April": 1,
+    "2023-October": 2
+  },
+  "🐢": {
+    "2023-December": 1,
+    "2023-February": 2,
+    "2023-January": 1,
+    "2024-March": 10
+  },
+  "🏆": {
+    "2023-December": 1,
+    "2023-August": 7,
+    "2023-May": 24,
+    "2023-September": 9,
+    "2024-May": 2,
+    "2023-February": 3,
+    "2024-January": 4,
+    "2023-June": 13,
+    "2023-January": 2,
+    "2023-July": 4,
+    "2024-March": 5,
+    "2023-March": 1,
+    "2023-April": 6,
+    "2023-November": 1,
+    "2024-April": 1,
+    "2023-October": 1,
+    "2024-February": 2
+  },
+  "🍀": {
+    "2023-December": 1,
+    "2023-August": 1
+  },
+  "🥂": {
+    "2023-December": 3,
+    "2023-August": 5,
+    "2023-May": 1,
+    "2023-September": 7,
+    "2024-May": 2,
+    "2023-February": 8,
+    "2023-June": 4,
+    "2023-January": 9,
+    "2023-July": 1,
+    "2024-March": 2,
+    "2023-March": 6,
+    "2023-April": 6,
+    "2023-November": 1,
+    "2024-April": 9,
+    "2023-October": 3
+  },
+  "🍻": {
+    "2023-December": 1,
+    "2023-September": 4,
+    "2023-February": 1,
+    "2023-June": 1,
+    "2023-March": 2
+  },
+  "🎉": {
+    "2023-December": 2,
+    "2023-August": 1,
+    "2023-May": 1,
+    "2023-September": 3,
+    "2024-May": 1,
+    "2023-February": 5,
+    "2024-January": 5,
+    "2023-June": 3,
+    "2023-January": 2,
+    "2024-March": 7,
+    "2023-March": 4,
+    "2023-April": 4,
+    "2024-April": 4,
+    "2022-December": 2
+  },
+  "🎆": {
+    "2023-December": 1
+  },
+  "😲": {
+    "2023-August": 3,
+    "2023-May": 2,
+    "2023-January": 1,
+    "2024-March": 1,
+    "2023-April": 1,
+    "2024-April": 2,
+    "2024-February": 1
+  },
+  "🔔": {
+    "2023-August": 4,
+    "2023-May": 2,
+    "2024-May": 2,
+    "2023-February": 3,
+    "2023-June": 3,
+    "2023-January": 1,
+    "2023-March": 1,
+    "2024-April": 1,
+    "2023-October": 6
+  },
+  "🏡": {
+    "2023-August": 19,
+    "2024-May": 3,
+    "2023-June": 2,
+    "2023-July": 4,
+    "2023-March": 1,
+    "2023-April": 1,
+    "2023-November": 3,
+    "2023-October": 24
+  },
+  "🌼": {
+    "2023-August": 8,
+    "2023-May": 2,
+    "2023-September": 17,
+    "2024-January": 1,
+    "2024-March": 1,
+    "2023-April": 4,
+    "2024-April": 2
+  },
+  "🇳🇪": {
+    "2023-August": 5,
+    "2023-July": 2,
+    "2023-April": 1,
+    "2024-February": 1
+  },
+  "🍏": {
+    "2023-August": 1,
+    "2023-September": 11,
+    "2023-October": 4
+  },
+  "📻": {
+    "2023-August": 1,
+    "2024-February": 1
+  },
+  "💉": {
+    "2023-August": 5,
+    "2023-May": 3,
+    "2023-September": 3,
+    "2024-May": 2,
+    "2023-February": 1,
+    "2024-January": 1,
+    "2023-June": 3,
+    "2023-January": 1,
+    "2023-July": 3,
+    "2023-March": 1,
+    "2023-April": 4,
+    "2024-February": 3
+  },
+  "🍲": {
+    "2023-August": 2,
+    "2023-February": 1
+  },
+  "👩‍🍳": {
+    "2023-August": 1
+  },
+  "❌": {
+    "2023-August": 12,
+    "2023-May": 11,
+    "2024-May": 1,
+    "2023-February": 5,
+    "2024-January": 3,
+    "2023-January": 18,
+    "2023-July": 1,
+    "2024-March": 5,
+    "2023-March": 1,
+    "2023-April": 8,
+    "2023-November": 1,
+    "2023-October": 6,
+    "2024-February": 2
+  },
+  "⛲": {
+    "2023-August": 1,
+    "2024-January": 1
+  },
+  "🤏": {
+    "2023-August": 6,
+    "2023-May": 2,
+    "2023-June": 1,
+    "2023-July": 12,
+    "2023-October": 2
+  },
+  "🚰": {
+    "2023-August": 1
+  },
+  "✖️": {
+    "2023-August": 1,
+    "2023-March": 3
+  },
+  "☑️": {
+    "2023-August": 1,
+    "2023-May": 3,
+    "2023-February": 1,
+    "2023-March": 1
+  },
+  "🌺": {
+    "2023-August": 1,
+    "2023-May": 1,
+    "2023-September": 26,
+    "2024-May": 2,
+    "2023-February": 1,
+    "2023-January": 3,
+    "2023-July": 2,
+    "2023-March": 1,
+    "2023-April": 12,
+    "2023-November": 2,
+    "2024-April": 3,
+    "2023-October": 6
+  },
+  "🌓": {
+    "2023-August": 1,
+    "2024-February": 1
+  },
+  "🇸🇻": {
+    "2023-August": 10,
+    "2023-July": 9,
+    "2024-April": 1
+  },
+  "🔸": {
+    "2023-August": 9,
+    "2023-May": 3,
+    "2024-January": 4,
+    "2023-June": 2,
+    "2023-January": 8,
+    "2023-April": 1,
+    "2023-October": 2,
+    "2024-February": 1
+  },
+  "🍔": {
+    "2023-August": 3,
+    "2024-January": 1
+  },
+  "❎": {
+    "2023-August": 2,
+    "2023-September": 2,
+    "2024-March": 2,
+    "2023-April": 1,
+    "2023-November": 1,
+    "2024-April": 3
+  },
+  "🙂": {
+    "2023-August": 3,
+    "2023-May": 4,
+    "2023-September": 11,
+    "2023-February": 12,
+    "2024-January": 7,
+    "2023-June": 13,
+    "2023-January": 9,
+    "2023-July": 36,
+    "2024-March": 5,
+    "2023-March": 9,
+    "2023-April": 9,
+    "2023-November": 10,
+    "2024-April": 3,
+    "2023-October": 4,
+    "2024-February": 3
+  },
+  "🦖": {
+    "2023-August": 2
+  },
+  "🦕": {
+    "2023-August": 1,
+    "2023-June": 1
+  },
+  "🐒": {
+    "2023-August": 2,
+    "2023-September": 1,
+    "2023-July": 3,
+    "2024-March": 1
+  },
+  "💼": {
+    "2023-August": 2,
+    "2023-July": 4
+  },
+  "🤢": {
+    "2023-August": 4,
+    "2023-May": 1,
+    "2023-September": 3,
+    "2024-May": 2,
+    "2023-February": 3,
+    "2023-June": 3,
+    "2023-January": 5,
+    "2023-July": 7,
+    "2024-March": 1,
+    "2023-March": 12,
+    "2023-April": 4,
+    "2023-November": 4
+  },
+  "🤑": {
+    "2023-August": 3,
+    "2023-May": 1,
+    "2023-February": 5,
+    "2024-January": 2,
+    "2024-March": 1,
+    "2023-March": 8,
+    "2024-April": 1,
+    "2024-February": 1
+  },
+  "🇪🇸": {
+    "2023-August": 4,
+    "2023-September": 1,
+    "2023-June": 1,
+    "2023-January": 1,
+    "2023-July": 1
+  },
+  "🔺": {
+    "2023-August": 1,
+    "2023-May": 2,
+    "2023-September": 2,
+    "2024-May": 1,
+    "2023-February": 1,
+    "2023-June": 1,
+    "2023-July": 2,
+    "2023-April": 1,
+    "2023-October": 3,
+    "2024-February": 1
+  },
+  "👁️": {
+    "2023-August": 1,
+    "2023-May": 2,
+    "2024-May": 1,
+    "2023-February": 5,
+    "2024-January": 1,
+    "2023-June": 5,
+    "2023-January": 2,
+    "2023-July": 2,
+    "2023-April": 1,
+    "2023-October": 1,
+    "2024-February": 1
+  },
+  "🤜": {
+    "2023-August": 1
+  },
+  "🤠": {
+    "2023-August": 2,
+    "2024-January": 1,
+    "2024-March": 2,
+    "2023-March": 1
+  },
+  "➡️": {
+    "2023-August": 2,
+    "2023-June": 1,
+    "2023-April": 2
+  },
+  "🤧": {
+    "2023-August": 3
+  },
+  "🏹": {
+    "2023-August": 1,
+    "2023-May": 12,
+    "2023-April": 1
+  },
+  "🔰": {
+    "2023-August": 1,
+    "2023-May": 5,
+    "2023-June": 1,
+    "2023-January": 5,
+    "2023-July": 7,
+    "2024-March": 1,
+    "2023-October": 6
+  },
+  "👉": {
+    "2023-August": 1,
+    "2023-February": 1,
+    "2024-January": 1,
+    "2023-June": 3,
+    "2023-January": 1,
+    "2023-July": 1,
+    "2023-March": 3,
+    "2023-April": 5
+  },
+  "💣": {
+    "2023-August": 3,
+    "2023-May": 1,
+    "2024-May": 4,
+    "2023-February": 1,
+    "2024-January": 1,
+    "2023-January": 3,
+    "2024-March": 3,
+    "2023-March": 6,
+    "2023-November": 2,
+    "2024-April": 1,
+    "2023-October": 1
+  },
+  "🤨": {
+    "2023-August": 2,
+    "2023-May": 5,
+    "2024-May": 2,
+    "2023-February": 2,
+    "2024-January": 1,
+    "2023-June": 1,
+    "2023-July": 1,
+    "2024-March": 4,
+    "2023-March": 1,
+    "2023-April": 1,
+    "2024-April": 1,
+    "2023-October": 3,
+    "2024-February": 5
+  },
+  "📘": {
+    "2023-August": 3
+  },
+  "📙": {
+    "2023-August": 3
+  },
+  "❣️": {
+    "2023-August": 4,
+    "2023-May": 9,
+    "2023-September": 5,
+    "2024-May": 1,
+    "2023-February": 2,
+    "2024-January": 1,
+    "2023-June": 2,
+    "2023-March": 4,
+    "2023-November": 3,
+    "2024-April": 4,
+    "2023-October": 2,
+    "2024-February": 5
+  },
+  "🍬": {
+    "2023-August": 1,
+    "2023-April": 1
+  },
+  "🎼": {
+    "2023-August": 1,
+    "2023-May": 4,
+    "2023-September": 1,
+    "2023-July": 25,
+    "2024-March": 1,
+    "2023-March": 1,
+    "2023-April": 1,
+    "2023-November": 1,
+    "2024-April": 1
+  },
+  "🇦🇪": {
+    "2023-August": 4,
+    "2023-May": 1,
+    "2023-September": 6,
+    "2024-May": 2,
+    "2023-February": 1,
+    "2024-January": 1,
+    "2023-June": 1,
+    "2024-March": 1,
+    "2023-April": 1,
+    "2023-October": 2,
+    "2024-February": 2
+  },
+  "🇪🇬": {
+    "2023-August": 1,
+    "2024-January": 1,
+    "2023-June": 1,
+    "2023-October": 1
+  },
+  "🇳🇱": {
+    "2023-August": 1,
+    "2023-May": 1,
+    "2023-September": 3,
+    "2023-February": 1,
+    "2023-June": 1,
+    "2023-January": 1,
+    "2023-July": 1,
+    "2023-November": 1
+  },
+  "👫": {
+    "2023-August": 1
+  },
+  "💎": {
+    "2023-August": 4,
+    "2023-May": 4,
+    "2023-September": 8,
+    "2023-February": 5,
+    "2023-January": 1,
+    "2023-July": 4,
+    "2024-March": 1,
+    "2023-March": 3,
+    "2023-April": 9,
+    "2023-October": 5,
+    "2024-February": 2
+  },
+  "🎀": {
+    "2023-August": 2,
+    "2024-April": 1
+  },
+  "😙": {
+    "2023-August": 1,
+    "2023-September": 2
+  },
+  "🔹": {
+    "2023-August": 1,
+    "2023-May": 1,
+    "2023-September": 2,
+    "2023-June": 2,
+    "2023-March": 6,
+    "2024-April": 4,
+    "2024-February": 1
+  },
+  "🤤": {
+    "2023-August": 1,
+    "2023-May": 1,
+    "2023-September": 1,
+    "2024-May": 1,
+    "2023-January": 1,
+    "2023-July": 2,
+    "2024-April": 1
+  },
+  "⏬": {
+    "2023-August": 7,
+    "2023-May": 2,
+    "2023-June": 2,
+    "2023-January": 1,
+    "2024-March": 1
+  },
+  "🏾": {
+    "2023-August": 6,
+    "2023-May": 6,
+    "2023-September": 2,
+    "2024-May": 3,
+    "2024-January": 2,
+    "2023-June": 4,
+    "2023-January": 7,
+    "2023-July": 2,
+    "2024-March": 5,
+    "2023-March": 2,
+    "2023-November": 4,
+    "2024-April": 3,
+    "2023-October": 2,
+    "2024-February": 2
+  },
+  "🧟": {
+    "2023-August": 1
+  },
+  "🎈": {
+    "2023-August": 3,
+    "2023-September": 1,
+    "2023-February": 1,
+    "2024-January": 3,
+    "2023-June": 3,
+    "2023-March": 2,
+    "2023-November": 2,
+    "2024-April": 1,
+    "2023-October": 3
+  },
+  "💁‍♂️": {
+    "2023-August": 1,
+    "2023-May": 1
+  },
+  "📈": {
+    "2023-August": 2,
+    "2023-May": 4,
+    "2023-April": 1,
+    "2024-April": 1
+  },
+  "📊": {
+    "2023-August": 1,
+    "2023-March": 1,
+    "2023-April": 1
+  },
+  "📚": {
+    "2023-August": 1,
+    "2023-January": 2,
+    "2024-March": 3
+  },
+  "😚": {
+    "2023-August": 1
+  },
+  "💃": {
+    "2023-August": 2,
+    "2023-May": 1,
+    "2023-September": 3,
+    "2023-June": 1,
+    "2024-March": 1,
+    "2024-April": 3,
+    "2023-October": 1
+  },
+  "🏳️‍🌈": {
+    "2023-August": 2,
+    "2023-May": 4,
+    "2023-September": 4,
+    "2023-February": 4,
+    "2023-June": 16,
+    "2023-January": 6,
+    "2023-July": 4,
+    "2023-March": 5,
+    "2023-April": 1,
+    "2023-November": 2
+  },
+  "🏳️‍⚧️": {
+    "2023-August": 2,
+    "2023-May": 3,
+    "2023-September": 1,
+    "2023-February": 1,
+    "2023-July": 1
+  },
+  "🇸🇦": {
+    "2023-August": 2,
+    "2023-May": 1,
+    "2023-September": 2,
+    "2023-June": 1,
+    "2024-April": 1,
+    "2023-October": 1
+  },
+  "🐎": {
+    "2023-August": 3
+  },
+  "🚉": {
+    "2023-August": 1
+  },
+  "🍋": {
+    "2023-August": 2,
+    "2023-September": 6
+  },
+  "😨": {
+    "2023-August": 1,
+    "2023-May": 2,
+    "2023-September": 1,
+    "2023-February": 2,
+    "2023-June": 9,
+    "2023-April": 1,
+    "2023-October": 1,
+    "2024-February": 1
+  },
+  "🅰️": {
+    "2023-August": 1,
+    "2023-July": 4,
+    "2023-April": 1
+  },
+  "😋": {
+    "2023-August": 1,
+    "2023-May": 1,
+    "2023-September": 2,
+    "2023-February": 1,
+    "2024-January": 1,
+    "2024-March": 1,
+    "2023-March": 1,
+    "2023-November": 6,
+    "2024-April": 1,
+    "2023-October": 2,
+    "2024-February": 4
+  },
+  "🤳": {
+    "2023-August": 1
+  },
+  "😖": {
+    "2023-August": 3,
+    "2024-January": 1,
+    "2023-July": 2,
+    "2023-April": 1,
+    "2023-October": 1
+  },
+  "🍰": {
+    "2023-August": 2,
+    "2023-May": 2,
+    "2023-November": 1,
+    "2022-December": 1
+  },
+  "0️⃣": {
+    "2023-August": 1,
+    "2024-May": 1,
+    "2023-November": 2
+  },
+  "2️⃣": {
+    "2023-August": 1,
+    "2024-May": 1,
+    "2023-February": 4,
+    "2023-June": 3,
+    "2023-July": 2,
+    "2024-March": 2,
+    "2023-April": 2
+  },
+  "🫀": {
+    "2023-August": 3,
+    "2023-September": 1,
+    "2024-January": 1
+  },
+  "🐋": {
+    "2023-August": 1,
+    "2023-June": 1
+  },
+  "🐳": {
+    "2023-August": 1,
+    "2023-February": 1,
+    "2023-July": 2
+  },
+  "🇬🇦": {
+    "2023-August": 1
+  },
+  "🇨🇷": {
+    "2023-August": 1
+  },
+  "🤌": {
+    "2023-August": 6,
+    "2023-September": 8,
+    "2024-May": 1,
+    "2023-February": 3,
+    "2024-January": 1,
+    "2023-July": 9,
+    "2023-November": 5,
+    "2023-October": 2,
+    "2024-February": 4
+  },
+  "🪐": {
+    "2023-August": 1,
+    "2024-May": 1
+  },
+  "1️⃣": {
+    "2023-August": 4,
+    "2023-September": 1,
+    "2024-January": 2,
+    "2023-June": 2,
+    "2024-March": 2,
+    "2023-April": 2
+  },
+  "😛": {
+    "2023-August": 1,
+    "2023-September": 1,
+    "2023-February": 8,
+    "2024-January": 1,
+    "2023-January": 8,
+    "2024-March": 1,
+    "2023-March": 1,
+    "2023-April": 1,
+    "2023-November": 1,
+    "2024-February": 1
+  },
+  "🌄": {
+    "2023-August": 3,
+    "2023-September": 2,
+    "2024-May": 1,
+    "2024-March": 2,
+    "2023-November": 1,
+    "2024-February": 1
+  },
+  "🎤": {
+    "2023-August": 2,
+    "2023-May": 11,
+    "2024-May": 1,
+    "2024-January": 1,
+    "2023-January": 1,
+    "2023-July": 2,
+    "2023-April": 1,
+    "2023-October": 3,
+    "2024-February": 1
+  },
+  "🌙": {
+    "2023-August": 1,
+    "2023-May": 1,
+    "2023-March": 6,
+    "2024-April": 3
+  },
+  "🤎": {
+    "2023-August": 2,
+    "2024-March": 1
+  },
+  "🌴": {
+    "2023-August": 1,
+    "2023-May": 1,
+    "2023-September": 5,
+    "2023-February": 1,
+    "2023-March": 1,
+    "2023-April": 1,
+    "2023-November": 1
+  },
+  "🇺🇦": {
+    "2023-August": 2,
+    "2023-May": 2,
+    "2023-September": 2,
+    "2023-February": 2,
+    "2023-January": 2,
+    "2023-July": 1,
+    "1743-January": 1
+  },
+  "🚍": {
+    "2023-August": 1,
+    "2023-May": 1,
+    "2023-February": 1,
+    "2024-March": 1
+  },
+  "🏇": {
+    "2023-August": 1
+  },
+  "🚲": {
+    "2023-August": 1
+  },
+  "◀️": {
+    "2023-August": 2,
+    "2023-May": 2,
+    "2023-July": 3,
+    "2023-November": 1,
+    "2023-October": 2
+  },
+  "©️": {
+    "2023-August": 2,
+    "2023-September": 1,
+    "2023-March": 1
+  },
+  "💞": {
+    "2023-August": 3,
+    "2024-May": 1,
+    "2023-February": 1,
+    "2023-June": 1,
+    "2023-January": 12,
+    "2023-July": 1,
+    "2023-March": 1,
+    "2023-November": 1,
+    "2024-April": 1,
+    "2024-February": 1,
+    "2022-December": 1
+  },
+  "💝": {
+    "2023-August": 3,
+    "2024-January": 5,
+    "2023-June": 2,
+    "2023-January": 7,
+    "2024-March": 1,
+    "2023-March": 1,
+    "2023-April": 5,
+    "2023-November": 1,
+    "2024-April": 3,
+    "2023-October": 4
+  },
+  "🥵": {
+    "2023-August": 2,
+    "2023-May": 1,
+    "2023-September": 4,
+    "2024-May": 1,
+    "2023-June": 9,
+    "2023-January": 4,
+    "2023-March": 3,
+    "2024-April": 1,
+    "2023-October": 5,
+    "2024-February": 10
+  },
+  "⬆️": {
+    "2023-August": 2,
+    "2024-January": 1,
+    "2023-January": 2,
+    "2023-November": 2,
+    "2024-February": 3
+  },
+  "😷": {
+    "2023-August": 1,
+    "2023-September": 3,
+    "2023-April": 1,
+    "2023-November": 2,
+    "1741-January": 1
+  },
+  "🙀": {
+    "2023-August": 3,
+    "2023-May": 2,
+    "2023-June": 2,
+    "2023-April": 1,
+    "2023-November": 1
+  },
+  "👨‍🍳": {
+    "2023-August": 2
+  },
+  "⚪": {
+    "2023-August": 2,
+    "2023-May": 1,
+    "2023-June": 1,
+    "2023-March": 1
+  },
+  "🏴‍☠️": {
+    "2023-August": 1,
+    "2023-September": 1,
+    "2024-May": 1,
+    "2023-February": 4,
+    "2024-January": 2,
+    "2023-July": 1,
+    "2024-March": 2,
+    "2023-November": 1,
+    "2024-April": 1,
+    "2024-February": 1
+  },
+  "❕": {
+    "2023-August": 4,
+    "2024-January": 3,
+    "2023-July": 4
+  },
+  "🤴": {
+    "2023-August": 2,
+    "2024-April": 1
+  },
+  "🇪🇪": {
+    "2023-August": 1
+  },
+  "🚺": {
+    "2023-August": 1
+  },
+  "🇳🇬": {
+    "2023-August": 1,
+    "2024-March": 1
+  },
+  "🙅": {
+    "2023-August": 1,
+    "2023-October": 1
+  },
+  "🔒": {
+    "2023-August": 3,
+    "2023-March": 1
+  },
+  "👆": {
+    "2023-August": 3,
+    "2023-September": 5,
+    "2024-May": 2,
+    "2024-January": 1,
+    "2023-June": 6,
+    "2023-January": 2,
+    "2023-March": 3,
+    "2023-April": 1,
+    "2023-November": 2,
+    "2024-April": 1,
+    "2023-October": 3
+  },
+  "🐟": {
+    "2023-August": 2,
+    "2023-July": 2
+  },
+  "🙋": {
+    "2023-August": 1,
+    "2023-February": 1,
+    "2023-January": 3,
+    "2023-March": 1
+  },
+  "😩": {
+    "2023-August": 2,
+    "2023-September": 1,
+    "2024-May": 1,
+    "2023-February": 4,
+    "2024-January": 1,
+    "2023-July": 3,
+    "2024-March": 1,
+    "2023-March": 1,
+    "2023-April": 2,
+    "2023-November": 1,
+    "2024-April": 4,
+    "2023-October": 2
+  },
+  "🍹": {
+    "2023-August": 1,
+    "2023-January": 1
+  },
+  "🧵": {
+    "2023-August": 4,
+    "2023-May": 3,
+    "2023-September": 2,
+    "2024-May": 2,
+    "2023-February": 2,
+    "2023-January": 3,
+    "2023-July": 4,
+    "2024-March": 1,
+    "2023-March": 1,
+    "2023-April": 2,
+    "2024-April": 2
+  },
+  "🏙️": {
+    "2023-August": 1
+  },
+  "🛫": {
+    "2023-August": 1
+  },
+  "🍴": {
+    "2023-August": 1
+  },
+  "🇿🇦": {
+    "2023-August": 2,
+    "2024-February": 1
+  },
+  "↙️": {
+    "2023-August": 1
+  },
+  "🇦🇹": {
+    "2023-August": 1,
+    "2023-September": 2,
+    "2023-July": 1,
+    "2023-October": 2
+  },
+  "🇬🇷": {
+    "2023-August": 2,
+    "2023-May": 1,
+    "2023-September": 2,
+    "2023-July": 2,
+    "2023-April": 1,
+    "2024-April": 1
+  },
+  "🇧🇪": {
+    "2023-August": 2,
+    "2023-May": 1,
+    "2023-September": 1,
+    "2023-October": 2
+  },
+  "🇷🇸": {
+    "2023-August": 1,
+    "2023-September": 7
+  },
+  "🇦🇿": {
+    "2023-August": 1,
+    "2023-May": 4,
+    "2023-September": 5,
+    "2024-April": 1
+  },
+  "🇪🇺": {
+    "2023-August": 1,
+    "2023-May": 3,
+    "2024-January": 1,
+    "2023-November": 1
+  },
+  "💸": {
+    "2023-August": 1,
+    "2024-May": 1,
+    "2023-January": 1
+  },
+  "🎒": {
+    "2023-August": 1,
+    "2023-June": 1,
+    "2024-March": 2,
+    "2023-April": 1
+  },
+  "💻": {
+    "2023-August": 1,
+    "2023-July": 4,
+    "2024-March": 1
+  },
+  "🥕": {
+    "2023-August": 1,
+    "2023-September": 1,
+    "2024-May": 1,
+    "2023-January": 1,
+    "2023-October": 4
+  },
+  "👨‍💻": {
+    "2023-August": 1
+  },
+  "👻": {
+    "2023-August": 1,
+    "2024-January": 1,
+    "2024-February": 1
+  },
+  "🦈": {
+    "2023-August": 1,
+    "2024-February": 1
+  },
+  "💍": {
+    "2023-August": 1,
+    "2024-March": 1,
+    "2024-February": 1
+  },
+  "🧿": {
+    "2023-August": 1,
+    "2024-January": 1,
+    "2023-January": 1,
+    "2023-July": 4,
+    "2023-April": 1,
+    "2023-October": 2
+  },
+  "🇮🇳": {
+    "2023-August": 3,
+    "2023-June": 2,
+    "2024-April": 2
+  },
+  "🇧🇷": {
+    "2023-August": 1,
+    "2024-April": 1
+  },
+  "🇷🇺": {
+    "2023-August": 3,
+    "2023-May": 1,
+    "2023-February": 1,
+    "2023-January": 2,
+    "2023-July": 1,
+    "2023-April": 1,
+    "2023-November": 1
+  },
+  "🇨🇳": {
+    "2023-August": 1
+  },
+  "🥑": {
+    "2023-August": 2,
+    "2023-September": 1,
+    "2023-February": 1,
+    "2023-June": 5,
+    "2023-January": 2,
+    "2023-March": 1,
+    "2023-October": 4,
+    "2024-February": 1
+  },
+  "🍇": {
+    "2023-August": 2,
+    "2023-September": 3,
+    "2024-May": 1,
+    "2023-February": 1,
+    "2024-January": 1,
+    "2023-June": 6,
+    "2023-January": 2,
+    "2023-March": 1,
+    "2023-April": 2,
+    "2023-November": 1,
+    "2023-October": 4,
+    "2024-February": 2
+  },
+  "🍉": {
+    "2023-August": 2,
+    "2023-September": 13,
+    "2024-May": 1,
+    "2023-February": 1,
+    "2024-January": 1,
+    "2023-June": 1,
+    "2023-January": 2,
+    "2023-July": 8,
+    "2023-March": 1,
+    "2023-October": 2,
+    "2024-February": 4
+  },
+  "🍐": {
+    "2023-August": 2,
+    "2023-September": 3,
+    "2023-February": 1,
+    "2023-June": 4,
+    "2023-October": 4
+  },
+  "🍎": {
+    "2023-August": 2,
+    "2023-September": 36,
+    "2023-February": 1,
+    "2023-June": 5,
+    "2023-January": 1,
+    "2023-March": 1,
+    "2023-October": 1
+  },
+  "🍅": {
+    "2023-August": 2,
+    "2024-May": 1,
+    "2023-February": 1,
+    "2023-June": 5,
+    "2023-January": 2,
+    "2023-October": 4
+  },
+  "🛠️": {
+    "2023-August": 4,
+    "2024-April": 1
+  },
+  "🐣": {
+    "2023-August": 1,
+    "2023-February": 1
+  },
+  "🐤": {
+    "2023-August": 1
+  },
+  "🐥": {
+    "2023-August": 1
+  },
+  "😯": {
+    "2023-August": 1,
+    "2023-September": 1,
+    "2024-January": 1,
+    "2024-March": 1,
+    "2024-April": 2,
+    "2023-October": 1
+  },
+  "🇬🇪": {
+    "2023-August": 2
+  },
+  "🇦🇱": {
+    "2023-August": 1,
+    "2023-April": 1
+  },
+  "🇵🇹": {
+    "2023-August": 1,
+    "2024-May": 2,
+    "2023-June": 1,
+    "2023-January": 1,
+    "2023-November": 1,
+    "2024-April": 1
+  },
+  "🇵🇱": {
+    "2023-August": 1,
+    "2023-January": 2,
+    "2023-July": 4,
+    "2023-November": 1
+  },
+  "📦": {
+    "2023-August": 1,
+    "2023-March": 1
+  },
+  "📍": {
+    "2023-August": 1,
+    "2023-May": 1,
+    "2023-September": 7,
+    "2024-May": 5,
+    "2023-February": 1,
+    "2024-January": 1,
+    "2023-July": 6,
+    "2024-March": 7,
+    "2023-April": 1,
+    "2023-November": 6,
+    "2024-April": 2,
+    "2024-February": 3
+  },
+  "💢": {
+    "2023-August": 5,
+    "2023-September": 6
+  },
+  "🌍": {
+    "2023-August": 1,
+    "2023-September": 1,
+    "2024-January": 1,
+    "2024-March": 1,
+    "2023-October": 1
+  },
+  "🇩🇿": {
+    "2023-August": 1
+  },
+  "🇮🇷": {
+    "2023-August": 1,
+    "2023-February": 1,
+    "2024-January": 1,
+    "2023-July": 1,
+    "2024-April": 7
+  },
+  "🇸🇾": {
+    "2023-August": 1,
+    "2023-February": 1,
+    "2023-April": 1
+  },
+  "🚃": {
+    "2023-August": 1
+  },
+  "🚎": {
+    "2023-August": 1
+  },
+  "✈️": {
+    "2023-August": 1,
+    "2024-May": 6,
+    "2024-April": 7,
+    "2024-February": 2
+  },
+  "✋": {
+    "2023-May": 1,
+    "2023-September": 1,
+    "2023-February": 1,
+    "2024-January": 2,
+    "2023-January": 4,
+    "2024-February": 1
+  },
+  "🩹": {
+    "2023-May": 2,
+    "2024-May": 1,
+    "2023-July": 12,
+    "2024-March": 1,
+    "2023-November": 2,
+    "2024-April": 2,
+    "2023-October": 1,
+    "2024-February": 1
+  },
+  "💬": {
+    "2023-May": 1,
+    "2023-February": 21,
+    "2023-January": 33,
+    "2024-March": 1,
+    "2023-March": 23,
+    "2023-April": 5
+  },
+  "👄": {
+    "2023-May": 1,
+    "2023-February": 2,
+    "2023-January": 1,
+    "2023-July": 1
+  },
+  "👽": {
+    "2023-May": 1
+  },
+  "💓": {
+    "2023-May": 2,
+    "2024-May": 1,
+    "2023-February": 1,
+    "2024-March": 1,
+    "2024-April": 1
+  },
+  "🌾": {
+    "2023-May": 18,
+    "2023-September": 1,
+    "2024-April": 2,
+    "2024-February": 1
+  },
+  "☠️": {
+    "2023-May": 2,
+    "2023-September": 2,
+    "2024-May": 2,
+    "2024-January": 4,
+    "2023-January": 10,
+    "2023-July": 2,
+    "2023-March": 1,
+    "2023-April": 1,
+    "2023-November": 1,
+    "2023-October": 3
+  },
+  "🚶": {
+    "2023-May": 3,
+    "2024-April": 1
+  },
+  "🙋‍♂️": {
+    "2023-May": 1,
+    "2023-September": 1,
+    "2023-November": 1
+  },
+  "👩‍⚕️": {
+    "2023-May": 1
+  },
+  "😒": {
+    "2023-May": 1,
+    "2023-September": 1,
+    "2023-February": 1,
+    "2024-January": 1,
+    "2023-June": 1,
+    "2023-January": 1,
+    "2024-March": 2,
+    "2023-March": 1,
+    "2023-April": 1,
+    "2023-November": 1
+  },
+  "💯": {
+    "2023-May": 1,
+    "2023-February": 1,
+    "2023-January": 2,
+    "2024-March": 1,
+    "2023-March": 6,
+    "2023-November": 2,
+    "2024-April": 4,
+    "2023-October": 8,
+    "2024-February": 4
+  },
+  "🇱🇺": {
+    "2023-May": 2
+  },
+  "🤙": {
+    "2023-May": 2,
+    "2023-February": 1,
+    "2023-January": 1
+  },
+  "🙉": {
+    "2023-May": 1,
+    "2023-September": 2,
+    "2024-May": 1,
+    "2024-January": 1,
+    "2023-July": 2,
+    "2024-March": 1,
+    "2023-March": 1,
+    "2023-November": 1,
+    "2024-April": 1,
+    "2175-January": 1
+  },
+  "🙊": {
+    "2023-May": 1,
+    "2023-September": 3,
+    "2024-January": 1,
+    "2023-January": 1,
+    "2023-July": 2,
+    "2024-March": 1,
+    "2023-March": 1,
+    "2023-November": 1,
+    "2024-April": 1,
+    "2175-January": 1
+  },
+  "🟧": {
+    "2023-May": 1,
+    "2023-February": 3,
+    "2024-January": 4,
+    "2023-January": 4,
+    "2023-July": 5,
+    "2023-March": 4,
+    "2023-April": 6
+  },
+  "🛡️": {
+    "2023-May": 12
+  },
+  "🇺🇲": {
+    "2023-May": 1,
+    "2023-September": 1,
+    "2024-January": 1,
+    "2024-April": 3,
+    "2023-October": 3
+  },
+  "🪄": {
+    "2023-May": 1,
+    "2023-July": 2,
+    "2024-March": 1,
+    "2023-March": 1
+  },
+  "🧓": {
+    "2023-May": 1
+  },
+  "🟩": {
+    "2023-May": 2,
+    "2023-February": 1,
+    "2024-January": 4,
+    "2024-March": 8,
+    "2024-February": 17
+  },
+  "🌳": {
+    "2023-May": 1,
+    "2023-February": 1,
+    "2024-January": 4,
+    "2023-June": 3,
+    "2024-March": 1
+  },
+  "🔑": {
+    "2023-May": 1,
+    "2023-February": 1,
+    "2024-March": 1
+  },
+  "🆚": {
+    "2023-May": 9,
+    "2023-February": 1,
+    "2023-March": 1
+  },
+  "📡": {
+    "2023-May": 1
+  },
+  "🦴": {
+    "2023-May": 1
+  },
+  "🌚": {
+    "2023-May": 1,
+    "2024-January": 1
+  },
+  "🦄": {
+    "2023-May": 217,
+    "2024-May": 1,
+    "2023-June": 4,
+    "2023-July": 1,
+    "2023-April": 2
+  },
+  "🦅": {
+    "2023-May": 1
+  },
+  "🤚": {
+    "2023-May": 1,
+    "2024-April": 1,
+    "2024-February": 1
+  },
+  "🇵🇰": {
+    "2023-May": 1,
+    "2023-April": 1
+  },
+  "❔": {
+    "2023-May": 4,
+    "2023-June": 1,
+    "2024-March": 1,
+    "2023-March": 1,
+    "2023-November": 3
+  },
+  "📵": {
+    "2023-May": 1
+  },
+  "📶": {
+    "2023-May": 6
+  },
+  "🇰🇪": {
+    "2023-May": 1
+  },
+  "🇭🇺": {
+    "2023-May": 7,
+    "2023-September": 2,
+    "2023-November": 1
+  },
+  "🐷": {
+    "2023-May": 2,
+    "2023-September": 6,
+    "2024-January": 2,
+    "2023-January": 14,
+    "2023-April": 2,
+    "2023-November": 1,
+    "2024-April": 3,
+    "2024-February": 1
+  },
+  "🖐️": {
+    "2023-May": 10,
+    "2024-May": 2,
+    "2023-February": 1,
+    "2023-April": 1
+  },
+  "🐊": {
+    "2023-May": 1,
+    "2023-June": 1
+  },
+  "😧": {
+    "2023-May": 1,
+    "2023-October": 1,
+    "2024-February": 1
+  },
+  "🤞": {
+    "2023-May": 4,
+    "2024-May": 3,
+    "2023-February": 1,
+    "2023-January": 2,
+    "2023-July": 12,
+    "2023-April": 2,
+    "2023-November": 7,
+    "2023-October": 1
+  },
+  "🎊": {
+    "2023-May": 1,
+    "2023-September": 1,
+    "2023-February": 3,
+    "2024-January": 2,
+    "2024-March": 5,
+    "2023-March": 2,
+    "2022-December": 1
+  },
+  "🤕": {
+    "2023-May": 1,
+    "2023-February": 2,
+    "2024-January": 2,
+    "2023-July": 1,
+    "2024-February": 1
+  },
+  "⏪": {
+    "2023-May": 1
+  },
+  "🐰": {
+    "2023-May": 3,
+    "2024-April": 1
+  },
+  "☮️": {
+    "2023-May": 1,
+    "2023-September": 1,
+    "2024-April": 1,
+    "2023-October": 2
+  },
+  "🇸🇰": {
+    "2023-May": 1
+  },
+  "🇨🇮": {
+    "2023-May": 1
+  },
+  "🇳🇴": {
+    "2023-May": 1,
+    "2023-January": 2
+  },
+  "🇫🇮": {
+    "2023-May": 5,
+    "2024-January": 2,
+    "2023-June": 1,
+    "2023-January": 2,
+    "2023-April": 1,
+    "2023-November": 1
+  },
+  "🇸🇪": {
+    "2023-May": 7,
+    "2024-May": 2,
+    "2024-March": 1
+  },
+  "🏺": {
+    "2023-May": 2
+  },
+  "🇮🇹": {
+    "2023-May": 1,
+    "2023-February": 1,
+    "2023-July": 2,
+    "2023-March": 2
+  },
+  "🇸🇮": {
+    "2023-May": 1,
+    "2023-September": 1
+  },
+  "🥉": {
+    "2023-May": 3,
+    "2023-June": 11
+  },
+  "🏅": {
+    "2023-May": 1,
+    "2023-September": 1,
+    "2024-January": 1,
+    "2024-March": 1
+  },
+  "🥈": {
+    "2023-May": 2
+  },
+  "🇭🇷": {
+    "2023-May": 1
+  },
+  "💗": {
+    "2023-May": 2,
+    "2023-September": 10,
+    "2024-January": 3,
+    "2023-January": 1,
+    "2023-July": 4,
+    "2024-March": 1,
+    "2023-March": 1
+  },
+  "🐐": {
+    "2023-May": 1,
+    "2023-September": 3,
+    "2024-May": 2,
+    "2024-March": 2,
+    "2023-November": 1,
+    "2024-April": 1,
+    "2023-October": 1
+  },
+  "😹": {
+    "2023-May": 1,
+    "2023-June": 1,
+    "2023-January": 1,
+    "2023-November": 1,
+    "2023-October": 2
+  },
+  "🕺": {
+    "2023-May": 1,
+    "2023-February": 1,
+    "2023-January": 1,
+    "2023-October": 2
+  },
+  "💅": {
+    "2023-May": 1,
+    "2024-January": 1,
+    "2024-March": 1,
+    "2023-April": 3
+  },
+  "🚀": {
+    "2023-May": 1,
+    "2023-September": 2,
+    "2024-May": 6,
+    "2023-February": 1,
+    "2024-January": 3,
+    "2023-June": 4,
+    "2023-July": 1,
+    "2024-March": 2,
+    "2023-March": 1,
+    "2024-April": 2,
+    "2023-October": 3,
+    "2024-February": 8
+  },
+  "🥛": {
+    "2023-May": 6
+  },
+  "🍯": {
+    "2023-May": 1,
+    "2023-September": 51,
+    "2023-April": 2
+  },
+  "🐄": {
+    "2023-May": 6,
+    "2024-March": 7
+  },
+  "📜": {
+    "2023-May": 2,
+    "2023-February": 1,
+    "2023-January": 1,
+    "2023-March": 1,
+    "2023-October": 1
+  },
+  "🧀": {
+    "2023-May": 1
+  },
+  "🏳️": {
+    "2023-May": 1
+  },
+  "🌶️": {
+    "2023-September": 1,
+    "2024-May": 3,
+    "2024-March": 2,
+    "2023-April": 2,
+    "2023-October": 4,
+    "2024-February": 1
+  },
+  "🐈": {
+    "2023-September": 1
+  },
+  "⚒️": {
+    "2023-September": 1,
+    "2023-June": 2,
+    "2024-March": 1,
+    "2024-April": 1
+  },
+  "📱": {
+    "2023-September": 1
+  },
+  "🦁": {
+    "2023-September": 1,
+    "2024-January": 1,
+    "2024-March": 3,
+    "2023-April": 1,
+    "2023-November": 1,
+    "2024-April": 3
+  },
+  "🐺": {
+    "2023-September": 1
+  },
+  "🦒": {
+    "2023-September": 1
+  },
+  "🦘": {
+    "2023-September": 1
+  },
+  "🐨": {
+    "2023-September": 1
+  },
+  "🔪": {
+    "2023-September": 2
+  },
+  "⏸️": {
+    "2023-September": 1
+  },
+  "🏴󠁧󠁢󠁳󠁣󠁴󠁿": {
+    "2023-September": 1,
+    "2023-July": 1
+  },
+  "💁": {
+    "2023-September": 1
+  },
+  "🥷": {
+    "2023-September": 4,
+    "2024-January": 1,
+    "2023-April": 1,
+    "2024-April": 1
+  },
+  "☘️": {
+    "2023-September": 4,
+    "2023-April": 1
+  },
+  "👨‍👨‍👧‍👦": {
+    "2023-September": 2,
+    "2023-April": 1
+  },
+  "🕥": {
+    "2023-September": 1
+  },
+  "🪣": {
+    "2023-September": 1,
+    "2024-January": 1,
+    "2023-July": 2,
+    "2023-November": 1,
+    "2023-October": 4
+  },
+  "🇲🇦": {
+    "2023-September": 2,
+    "2023-February": 4,
+    "2023-June": 2,
+    "2023-April": 3,
+    "2024-April": 1
+  },
+  "🌽": {
+    "2023-September": 2,
+    "2023-October": 4,
+    "2024-February": 2
+  },
+  "🟦": {
+    "2023-September": 2,
+    "2023-February": 4,
+    "2024-January": 4,
+    "2023-January": 12,
+    "2023-July": 4,
+    "2024-March": 12,
+    "2024-February": 12
+  },
+  "✍️": {
+    "2023-September": 4,
+    "2024-January": 1,
+    "2023-June": 1,
+    "2023-March": 1,
+    "2024-April": 1
+  },
+  "🐪": {
+    "2023-September": 2,
+    "2023-July": 2,
+    "2024-March": 1
+  },
+  "🇳🇮": {
+    "2023-September": 6,
+    "2023-June": 3,
+    "2023-January": 2,
+    "2023-April": 3,
+    "2023-October": 2
+  },
+  "🕞": {
+    "2023-September": 2
+  },
+  "👞": {
+    "2023-September": 2
+  },
+  "👩‍🦰": {
+    "2023-September": 2
+  },
+  "💋": {
+    "2023-September": 2,
+    "2023-February": 1,
+    "2024-January": 1,
+    "2024-March": 2,
+    "2023-March": 1,
+    "2023-November": 1,
+    "2024-February": 1
+  },
+  "📳": {
+    "2023-September": 2
+  },
+  "🥦": {
+    "2023-September": 2,
+    "2023-October": 4,
+    "2024-February": 2
+  },
+  "🪞": {
+    "2023-September": 2,
+    "2024-May": 1,
+    "2023-July": 2,
+    "2023-March": 2
+  },
+  "😐": {
+    "2023-September": 2,
+    "2024-May": 20,
+    "2023-February": 1,
+    "2023-July": 1,
+    "2023-March": 1,
+    "2023-April": 1,
+    "2023-November": 1
+  },
+  "🕶️": {
+    "2023-September": 2
+  },
+  "🚫": {
+    "2023-September": 2,
+    "2024-January": 1,
+    "2023-March": 1,
+    "2023-October": 1
+  },
+  "🤘": {
+    "2023-September": 2,
+    "2024-May": 1,
+    "2023-June": 4,
+    "2023-July": 4,
+    "2024-March": 1,
+    "2023-March": 2,
+    "2023-November": 1,
+    "1743-January": 1
+  },
+  "🖊️": {
+    "2023-September": 2
+  },
+  "🍽️": {
+    "2023-September": 2,
+    "2023-April": 1
+  },
+  "♨️": {
+    "2023-September": 2
+  },
+  "🕑": {
+    "2023-September": 2
+  },
+  "🤐": {
+    "2023-September": 1,
+    "2023-February": 5,
+    "2024-January": 1,
+    "2023-June": 1,
+    "2023-July": 3,
+    "2023-November": 1,
+    "2023-October": 8
+  },
+  "🪢": {
+    "2023-September": 1
+  },
+  "👒": {
+    "2023-September": 1
+  },
+  "💊": {
+    "2023-September": 1,
+    "2023-February": 2,
+    "2024-January": 1,
+    "2023-June": 5,
+    "2023-July": 1,
+    "2023-November": 3
+  },
+  "🌂": {
+    "2023-September": 1
+  },
+  "⛺": {
+    "2023-September": 3
+  },
+  "💭": {
+    "2023-September": 1
+  },
+  "🍳": {
+    "2023-September": 1,
+    "2023-June": 2,
+    "2023-July": 1
+  },
+  "®️": {
+    "2023-September": 1
+  },
+  "♓": {
+    "2023-September": 1
+  },
+  "💘": {
+    "2023-September": 1,
+    "2024-May": 2,
+    "2023-February": 1
+  },
+  "🌐": {
+    "2023-September": 1,
+    "2023-July": 2,
+    "2023-November": 1
+  },
+  "🎟️": {
+    "2023-September": 1,
+    "2024-January": 1
+  },
+  "🟨": {
+    "2023-September": 1,
+    "2023-February": 1,
+    "2024-January": 4,
+    "2024-March": 11,
+    "2023-October": 2,
+    "2024-February": 4
+  },
+  "🇹🇲": {
+    "2023-September": 1,
+    "2023-April": 1
+  },
+  "🎃": {
+    "2023-September": 1,
+    "2024-March": 6
+  },
+  "🫒": {
+    "2023-September": 1,
+    "2023-October": 2
+  },
+  "🌀": {
+    "2023-September": 1,
+    "2024-May": 3,
+    "2024-January": 1
+  },
+  "🍒": {
+    "2023-September": 1,
+    "2023-February": 4,
+    "2024-January": 1,
+    "2023-October": 4
+  },
+  "✝️": {
+    "2023-September": 1
+  },
+  "🐝": {
+    "2023-September": 1,
+    "2023-April": 1
+  },
+  "🐑": {
+    "2023-September": 1,
+    "2023-July": 5,
+    "2024-March": 1
+  },
+  "🐬": {
+    "2023-September": 1,
+    "2024-May": 1
+  },
+  "🌊": {
+    "2023-September": 1,
+    "2023-February": 2,
+    "2023-July": 2,
+    "2023-October": 1,
+    "2024-February": 2
+  },
+  "📝": {
+    "2023-September": 2
+  },
+  "🇺🇳": {
+    "2024-May": 1,
+    "2023-February": 2,
+    "2023-October": 2
+  },
+  "💁‍♀️": {
+    "2024-May": 1,
+    "2023-February": 1
+  },
+  "🔊": {
+    "2024-May": 2,
+    "2024-January": 3,
+    "2023-July": 1,
+    "2024-March": 4,
+    "2023-April": 3,
+    "2023-November": 3,
+    "2024-April": 3
+  },
+  "👨‍🔧": {
+    "2024-May": 1
+  },
+  "💵": {
+    "2024-May": 2,
+    "2024-January": 1,
+    "2023-October": 2
+  },
+  "💷": {
+    "2024-May": 1
+  },
+  "💶": {
+    "2024-May": 1,
+    "2023-February": 1
+  },
+  "📺": {
+    "2024-May": 1,
+    "2023-July": 2,
+    "2024-March": 2,
+    "2024-April": 1,
+    "2024-February": 1
+  },
+  "📲": {
+    "2024-May": 1,
+    "2023-February": 1,
+    "2024-January": 1,
+    "2024-March": 1
+  },
+  "🎥": {
+    "2024-May": 1,
+    "2023-January": 3,
+    "2024-March": 1,
+    "2023-March": 2,
+    "2023-October": 6,
+    "2024-February": 1
+  },
+  "🔖": {
+    "2024-May": 1
+  },
+  "🍄": {
+    "2024-May": 5,
+    "2024-March": 1
+  },
+  "◾": {
+    "2024-May": 2,
+    "2023-January": 1
+  },
+  "🐌": {
+    "2024-May": 3
+  },
+  "🎁": {
+    "2024-May": 1,
+    "2023-February": 1,
+    "2024-January": 2,
+    "2023-November": 2,
+    "2024-April": 1
+  },
+  "🤲": {
+    "2024-May": 1,
+    "2024-April": 1
+  },
+  "👐": {
+    "2024-May": 1,
+    "2023-February": 1,
+    "2023-January": 1,
+    "2023-July": 2
+  },
+  "😼": {
+    "2024-May": 1
+  },
+  "🗳️": {
+    "2024-May": 1,
+    "2023-March": 1,
+    "2024-February": 2
+  },
+  "😺": {
+    "2024-May": 1
+  },
+  "🏗️": {
+    "2024-May": 1
+  },
+  "🪦": {
+    "2024-May": 1,
+    "2024-January": 1
+  },
+  "📛": {
+    "2024-May": 1
+  },
+  "🗡️": {
+    "2024-May": 1
+  },
+  "🔄": {
+    "2024-May": 1,
+    "2023-February": 1,
+    "2023-July": 1
+  },
+  "🍮": {
+    "2024-May": 1
+  },
+  "🔨": {
+    "2024-May": 1,
+    "2023-June": 1
+  },
+  "🏈": {
+    "2024-May": 1,
+    "2023-March": 1
+  },
+  "*️⃣": {
+    "2024-May": 1,
+    "2024-March": 1
+  },
+  "8️⃣": {
+    "2024-May": 1
+  },
+  "6️⃣": {
+    "2024-May": 1,
+    "2023-April": 1
+  },
+  "👂": {
+    "2024-May": 1,
+    "2023-February": 1,
+    "2023-October": 4
+  },
+  "🫑": {
+    "2024-May": 1,
+    "2023-February": 1,
+    "2023-January": 3,
+    "2023-March": 1
+  },
+  "🥒": {
+    "2024-May": 1,
+    "2023-January": 2,
+    "2023-March": 1,
+    "2023-October": 4,
+    "2024-February": 2
+  },
+  "🌲": {
+    "2024-May": 1,
+    "2023-February": 1
+  },
+  "🏊": {
+    "2024-May": 1,
+    "2023-June": 1
+  },
+  "🕊️": {
+    "2024-May": 1,
+    "2024-January": 1,
+    "2023-April": 1,
+    "2024-April": 1
+  },
+  "🚁": {
+    "2024-May": 1,
+    "2023-October": 4
+  },
+  "🌪️": {
+    "2024-May": 11,
+    "2023-February": 1,
+    "2024-April": 1
+  },
+  "😽": {
+    "2023-February": 1,
+    "2024-January": 1
+  },
+  "🟪": {
+    "2023-February": 4,
+    "2024-January": 4,
+    "2023-January": 8,
+    "2024-March": 15,
+    "2023-March": 1,
+    "2024-February": 7
+  },
+  "🐁": {
+    "2023-February": 1
+  },
+  "🌎": {
+    "2023-February": 1,
+    "2023-June": 2
+  },
+  "🏟️": {
+    "2023-February": 1,
+    "2024-January": 1,
+    "2024-March": 1,
+    "2024-February": 1
+  },
+  "😑": {
+    "2023-February": 3,
+    "2024-March": 1,
+    "2023-March": 1
+  },
+  "🇦🇺": {
+    "2023-February": 1,
+    "2024-January": 1,
+    "2023-October": 1
+  },
+  "🇹🇭": {
+    "2023-February": 1
+  },
+  "🇨🇭": {
+    "2023-February": 2,
+    "2023-July": 1,
+    "2023-March": 1
+  },
+  "🥤": {
+    "2023-February": 1,
+    "2024-March": 2
+  },
+  "🍆": {
+    "2023-February": 1,
+    "2023-March": 1
+  },
+  "🎄": {
+    "2023-February": 1,
+    "2022-December": 1
+  },
+  "🌈": {
+    "2023-February": 2,
+    "2023-June": 6,
+    "2023-January": 1,
+    "2023-April": 1,
+    "2024-April": 2
+  },
+  "🇨🇦": {
+    "2023-February": 1,
+    "2023-June": 1,
+    "2023-July": 1,
+    "2023-November": 1,
+    "2023-October": 1
+  },
+  "👟": {
+    "2023-February": 2,
+    "2023-March": 2
+  },
+  "☢️": {
+    "2023-February": 1,
+    "2023-July": 1,
+    "2024-February": 1
+  },
+  "💲": {
+    "2023-February": 8,
+    "2023-July": 20,
+    "2023-March": 1
+  },
+  "🏁": {
+    "2023-February": 1
+  },
+  "🚜": {
+    "2023-February": 1
+  },
+  "🍼": {
+    "2023-February": 1,
+    "2023-June": 1
+  },
+  "🧭": {
+    "2023-February": 1,
+    "2023-November": 1
+  },
+  "🦉": {
+    "2023-February": 1,
+    "2023-July": 2
+  },
+  "🚩": {
+    "2023-February": 4,
+    "2024-January": 1,
+    "2023-January": 4,
+    "2023-July": 2,
+    "2023-March": 2,
+    "2024-April": 4,
+    "2024-February": 3
+  },
+  "🧨": {
+    "2023-February": 2,
+    "2024-January": 3
+  },
+  "📞": {
+    "2023-February": 2
+  },
+  "🫖": {
+    "2023-February": 1
+  },
+  "🌡️": {
+    "2023-February": 1
+  },
+  "🏬": {
+    "2023-February": 1
+  },
+  "🚌": {
+    "2023-February": 1
+  },
+  "🐦": {
+    "2023-February": 3,
+    "2023-January": 3,
+    "2023-March": 9,
+    "2024-February": 1
+  },
+  "⛄": {
+    "2023-February": 1
+  },
+  "🙅‍♀️": {
+    "2023-February": 1
+  },
+  "🍵": {
+    "2023-February": 1
+  },
+  "💤": {
+    "2023-February": 3
+  },
+  "🇨🇴": {
+    "2023-February": 2,
+    "2023-January": 1
+  },
+  "👩‍❤️‍👨": {
+    "2023-February": 1
+  },
+  "☔": {
+    "2023-February": 1
+  },
+  "🇨🇱": {
+    "2023-February": 1
+  },
+  "🐶": {
+    "2024-January": 4,
+    "2023-July": 3,
+    "2023-March": 2,
+    "2023-November": 2
+  },
+  "3️⃣": {
+    "2024-January": 3,
+    "2023-June": 2,
+    "2023-April": 1,
+    "2023-November": 1
+  },
+  "👨‍🦰": {
+    "2024-January": 1
+  },
+  "🧑‍🎤": {
+    "2024-January": 1
+  },
+  "🃏": {
+    "2024-January": 1,
+    "2023-January": 1,
+    "2024-February": 1
+  },
+  "🗣️": {
+    "2024-January": 1,
+    "2023-March": 1
+  },
+  "🔻": {
+    "2024-January": 1,
+    "2024-March": 3,
+    "2023-March": 1
+  },
+  "😫": {
+    "2024-January": 1,
+    "2023-July": 2,
+    "2023-March": 1,
+    "2023-November": 1,
+    "2024-April": 4,
+    "2023-October": 2,
+    "2024-February": 1
+  },
+  "🐽": {
+    "2024-January": 1
+  },
+  "🧄": {
+    "2024-January": 1,
+    "2024-March": 1,
+    "2023-March": 1
+  },
+  "🧅": {
+    "2024-January": 1,
+    "2023-March": 1,
+    "2023-October": 4,
+    "2024-February": 1
+  },
+  "🎹": {
+    "2024-January": 1
+  },
+  "🇾🇪": {
+    "2024-January": 1,
+    "2023-April": 1
+  },
+  "◼️": {
+    "2024-January": 1
+  },
+  "🦋": {
+    "2024-January": 1,
+    "2024-April": 1
+  },
+  "🧃": {
+    "2024-January": 1
+  },
+  "🏛️": {
+    "2024-January": 2,
+    "2023-November": 1,
+    "2024-February": 1
+  },
+  "👭": {
+    "2024-January": 1,
+    "2023-March": 1
+  },
+  "🐇": {
+    "2024-January": 1,
+    "2023-March": 1
+  },
+  "🇨🇩": {
+    "2024-January": 2
+  },
+  "🏋️‍♂️": {
+    "2024-January": 1
+  },
+  "🥗": {
+    "2024-January": 1
+  },
+  "💧": {
+    "2024-January": 1
+  },
+  "🏥": {
+    "2024-January": 1
+  },
+  "🧬": {
+    "2024-January": 1,
+    "2024-March": 1
+  },
+  "⛓️": {
+    "2024-January": 1
+  },
+  "🪓": {
+    "2024-January": 1,
+    "2024-April": 1
+  },
+  "🇮🇩": {
+    "2024-January": 1,
+    "2023-July": 2,
+    "2023-April": 1
+  },
+  "🇹🇯": {
+    "2024-January": 1
+  },
+  "🇬🇶": {
+    "2024-January": 1
+  },
+  "🇬🇳": {
+    "2024-January": 1
+  },
+  "🍈": {
+    "2024-January": 1
+  },
+  "4️⃣": {
+    "2024-January": 1,
+    "2023-April": 1
+  },
+  "🕰️": {
+    "2024-January": 1
+  },
+  "🏦": {
+    "2024-January": 1
+  },
+  "🏊‍♂️": {
+    "2024-January": 2
+  },
+  "🛌": {
+    "2024-January": 1
+  },
+  "⛳": {
+    "2024-January": 1
+  },
+  "🇯🇵": {
+    "2024-January": 1,
+    "2024-March": 1,
+    "2023-October": 2,
+    "2024-February": 2
+  },
+  "🌞": {
+    "2023-June": 1,
+    "2023-January": 1,
+    "2023-July": 1,
+    "2023-April": 2,
+    "2024-April": 2
+  },
+  "🖖": {
+    "2023-June": 2,
+    "2023-July": 2,
+    "2024-March": 1,
+    "2023-April": 2,
+    "2024-April": 2,
+    "2023-October": 1
+  },
+  "🥡": {
+    "2023-June": 3
+  },
+  "🌃": {
+    "2023-June": 1
+  },
+  "🎸": {
+    "2023-June": 4
+  },
+  "🌔": {
+    "2023-June": 1,
+    "2023-March": 1
+  },
+  "🪴": {
+    "2023-June": 1
+  },
+  "👨": {
+    "2023-June": 2,
+    "2023-July": 2
+  },
+  "🐸": {
+    "2023-June": 1
+  },
+  "👢": {
+    "2023-June": 1
+  },
+  "🦗": {
+    "2023-June": 3,
+    "2023-March": 1
+  },
+  "🚢": {
+    "2023-June": 1
+  },
+  "🛬": {
+    "2023-June": 1
+  },
+  "👿": {
+    "2023-June": 1,
+    "2023-January": 1,
+    "2023-July": 2,
+    "2023-November": 1,
+    "2023-October": 2,
+    "2024-February": 2
+  },
+  "🍌": {
+    "2023-June": 6,
+    "2024-March": 1
+  },
+  "🐛": {
+    "2023-June": 1,
+    "2023-November": 1
+  },
+  "🐜": {
+    "2023-June": 1,
+    "2023-March": 1
+  },
+  "🌅": {
+    "2023-June": 2,
+    "2024-February": 1
+  },
+  "🍃": {
+    "2023-June": 2,
+    "2024-March": 2,
+    "1743-January": 1
+  },
+  "🏄‍♀️": {
+    "2023-June": 1
+  },
+  "❇️": {
+    "2023-June": 3
+  },
+  "🕷️": {
+    "2023-June": 1,
+    "2023-July": 2
+  },
+  "⛴️": {
+    "2023-June": 1,
+    "2023-July": 2
+  },
+  "🧜": {
+    "2023-June": 1
+  },
+  "🩱": {
+    "2023-June": 1
+  },
+  "👙": {
+    "2023-June": 1
+  },
+  "♐": {
+    "2023-June": 3
+  },
+  "♌": {
+    "2023-June": 1
+  },
+  "🆔": {
+    "2023-June": 1
+  },
+  "♍": {
+    "2023-June": 1
+  },
+  "🪀": {
+    "2023-June": 2
+  },
+  "🏠": {
+    "2023-June": 1,
+    "2023-March": 1,
+    "2023-April": 2,
+    "2023-October": 30
+  },
+  "🏚️": {
+    "2023-June": 1,
+    "2023-July": 4
+  },
+  "🧚‍♀️": {
+    "2023-June": 1
+  },
+  "🔙": {
+    "2023-June": 1
+  },
+  "🎭": {
+    "2023-June": 2,
+    "2024-March": 5,
+    "2023-March": 3,
+    "2023-April": 1
+  },
+  "🏴󠁧󠁢󠁥󠁮󠁧󠁿": {
+    "2023-January": 1
+  },
+  "🎩": {
+    "2023-January": 3,
+    "2023-March": 6,
+    "2024-April": 1,
+    "2024-February": 1
+  },
+  "🐉": {
+    "2023-January": 1
+  },
+  "🇪🇨": {
+    "2023-January": 1
+  },
+  "☎️": {
+    "2023-January": 1,
+    "2023-July": 2
+  },
+  "🧑‍🔬": {
+    "2023-January": 1
+  },
+  "➕": {
+    "2023-January": 2,
+    "2023-July": 2,
+    "2024-March": 1,
+    "2024-February": 1
+  },
+  "🐠": {
+    "2023-January": 1
+  },
+  "🌫️": {
+    "2023-January": 1,
+    "2024-April": 1
+  },
+  "🇨🇿": {
+    "2023-January": 2,
+    "2023-November": 1
+  },
+  "⬛": {
+    "2023-January": 2,
+    "2023-October": 2
+  },
+  "🚔": {
+    "2023-January": 1
+  },
+  "🥥": {
+    "2023-January": 1
+  },
+  "🥭": {
+    "2023-January": 1
+  },
+  "🏨": {
+    "2023-January": 1,
+    "2023-March": 1
+  },
+  "🧉": {
+    "2023-January": 1
+  },
+  "🦏": {
+    "2023-January": 1
+  },
+  "👅": {
+    "2023-January": 5,
+    "2023-April": 1
+  },
+  "🐖": {
+    "2023-January": 1
+  },
+  "👨‍⚕️": {
+    "2023-January": 1
+  },
+  "👩": {
+    "2023-January": 1,
+    "2023-July": 4,
+    "2023-March": 2
+  },
+  "🐴": {
+    "2023-January": 1
+  },
+  "😾": {
+    "2023-January": 3
+  },
+  "⏰": {
+    "2023-January": 1,
+    "2024-March": 4,
+    "2023-October": 4,
+    "2024-February": 3
+  },
+  "🤼‍♂️": {
+    "2023-January": 2
+  },
+  "🍺": {
+    "2023-January": 1
+  },
+  "😸": {
+    "2023-January": 1,
+    "2023-March": 2
+  },
+  "✒️": {
+    "2023-January": 1
+  },
+  "5️⃣": {
+    "2023-January": 1,
+    "2023-July": 1
+  },
+  "🆙": {
+    "2023-January": 3,
+    "2023-March": 3
+  },
+  "🚪": {
+    "2023-January": 1
+  },
+  "🏢": {
+    "2023-January": 1
+  },
+  "🪙": {
+    "2023-January": 1,
+    "2023-March": 1
+  },
+  "🆒": {
+    "2023-January": 1
+  },
+  "🌑": {
+    "2023-January": 3,
+    "2023-March": 1
+  },
+  "🪕": {
+    "2023-July": 2
+  },
+  "🚂": {
+    "2023-July": 1
+  },
+  "👤": {
+    "2023-July": 1,
+    "2023-March": 1
+  },
+  "🧪": {
+    "2023-July": 1
+  },
+  "🚗": {
+    "2023-July": 3,
+    "2023-March": 1,
+    "2023-November": 3
+  },
+  "😟": {
+    "2023-July": 1
+  },
+  "🐩": {
+    "2023-July": 1
+  },
+  "🐕‍🦺": {
+    "2023-July": 1
+  },
+  "🦮": {
+    "2023-July": 1
+  },
+  "🐕": {
+    "2023-July": 1,
+    "2024-March": 1,
+    "2023-March": 7
+  },
+  "📪": {
+    "2023-July": 1
+  },
+  "🦜": {
+    "2023-July": 1,
+    "2024-March": 3
+  },
+  "👨‍👩‍👧‍👦": {
+    "2023-July": 1
+  },
+  "🚶‍♀️": {
+    "2023-July": 1,
+    "2024-April": 1
+  },
+  "🛏️": {
+    "2023-July": 1
+  },
+  "🧽": {
+    "2023-July": 1,
+    "2023-October": 2
+  },
+  "🌘": {
+    "2023-July": 1
+  },
+  "🥖": {
+    "2023-July": 1,
+    "2023-April": 1
+  },
+  "🕍": {
+    "2023-July": 10,
+    "2023-October": 3
+  },
+  "🥐": {
+    "2023-July": 2
+  },
+  "🧏‍♀️": {
+    "2023-July": 2
+  },
+  "🏫": {
+    "2023-July": 2
+  },
+  "🍞": {
+    "2023-July": 2,
+    "2023-April": 1
+  },
+  "🥚": {
+    "2023-July": 4,
+    "2024-March": 2,
+    "2023-March": 3,
+    "2023-October": 4
+  },
+  "🆘": {
+    "2023-July": 10,
+    "2024-March": 2,
+    "2023-March": 26,
+    "2023-October": 2,
+    "2024-February": 2
+  },
+  "👕": {
+    "2023-July": 1
+  },
+  "🔘": {
+    "2024-March": 1
+  },
+  "🏖️": {
+    "2024-March": 1
+  },
+  "🐗": {
+    "2024-March": 2
+  },
+  "🏍️": {
+    "2024-March": 3
+  },
+  "🇱🇧": {
+    "2024-March": 1,
+    "2023-October": 1,
+    "2024-February": 1
+  },
+  "🚬": {
+    "2024-March": 1,
+    "2023-November": 1,
+    "2023-October": 2
+  },
+  "🧳": {
+    "2024-March": 1
+  },
+  "🎨": {
+    "2024-March": 3,
+    "2023-April": 1,
+    "2024-February": 1
+  },
+  "🔬": {
+    "2024-March": 1
+  },
+  "🔷": {
+    "2024-March": 2,
+    "2023-March": 1,
+    "2024-February": 1
+  },
+  "🔚": {
+    "2024-March": 1
+  },
+  "🪚": {
+    "2024-March": 12
+  },
+  "🔁": {
+    "2024-March": 1,
+    "2023-March": 1
+  },
+  "🐓": {
+    "2024-March": 1,
+    "2023-March": 5
+  },
+  "🧙‍♂️": {
+    "2024-March": 1
+  },
+  "🎾": {
+    "2024-March": 1
+  },
+  "📄": {
+    "2024-March": 1
+  },
+  "⚓": {
+    "2024-March": 1,
+    "2023-March": 1,
+    "2023-April": 1,
+    "2023-October": 1
+  },
+  "🚽": {
+    "2024-March": 2,
+    "2023-November": 1
+  },
+  "🛻": {
+    "2024-March": 3
+  },
+  "👩‍🔬": {
+    "2024-March": 1
+  },
+  "👩‍🏫": {
+    "2024-March": 1
+  },
+  "📅": {
+    "2024-March": 1
+  },
+  "⏲️": {
+    "2024-March": 1
+  },
+  "🇲🇽": {
+    "2024-March": 1
+  },
+  "🎻": {
+    "2024-March": 1,
+    "2023-April": 1
+  },
+  "🔳": {
+    "2024-March": 2
+  },
+  "🤹": {
+    "2024-March": 1
+  },
+  "💱": {
+    "2023-March": 1
+  },
+  "👠": {
+    "2023-March": 2
+  },
+  "👖": {
+    "2023-March": 1
+  },
+  "🔜": {
+    "2023-March": 1,
+    "2024-February": 1
+  },
+  "🦌": {
+    "2023-March": 2
+  },
+  "🧑": {
+    "2023-March": 1,
+    "2024-February": 5
+  },
+  "👳‍♂️": {
+    "2023-March": 1
+  },
+  "♈": {
+    "2023-March": 1
+  },
+  "↕️": {
+    "2023-March": 1
+  },
+  "🎓": {
+    "2023-March": 2,
+    "2023-November": 2,
+    "2024-April": 1,
+    "2023-October": 8,
+    "2024-February": 1
+  },
+  "🛍️": {
+    "2023-March": 1
+  },
+  "🦀": {
+    "2023-March": 1
+  },
+  "🪲": {
+    "2023-March": 1
+  },
+  "〽️": {
+    "2023-March": 1,
+    "2023-April": 1
+  },
+  "🐻": {
+    "2023-March": 1
+  },
+  "🪑": {
+    "2023-March": 1
+  },
+  "🪅": {
+    "2023-March": 1
+  },
+  "🇦🇫": {
+    "2023-April": 2
+  },
+  "💟": {
+    "2023-April": 1,
+    "2023-October": 3,
+    "2024-February": 2
+  },
+  "🧑‍🎓": {
+    "2023-April": 1
+  },
+  "🇺🇿": {
+    "2023-April": 1
+  },
+  "🇰🇿": {
+    "2023-April": 1
+  },
+  "🇰🇬": {
+    "2023-April": 1
+  },
+  "🪰": {
+    "2023-April": 3
+  },
+  "🍊": {
+    "2023-April": 3
+  },
+  "™️": {
+    "2023-April": 4
+  },
+  "📽️": {
+    "2023-April": 1
+  },
+  "🧑‍🍳": {
+    "2023-April": 1
+  },
+  "🎇": {
+    "2023-April": 1
+  },
+  "🌠": {
+    "2023-April": 1
+  },
+  "🇸🇩": {
+    "2023-April": 1
+  },
+  "🐔": {
+    "2023-April": 1
+  },
+  "⛱️": {
+    "2023-April": 1
+  },
+  "📉": {
+    "2023-April": 1,
+    "2023-October": 3
+  },
+  "🌏": {
+    "2023-April": 1
+  },
+  "👔": {
+    "2023-April": 1
+  },
+  "👷‍♀️": {
+    "2023-November": 1
+  },
+  "🍤": {
+    "2023-November": 1
+  },
+  "🇮🇪": {
+    "2023-November": 3
+  },
+  "🔋": {
+    "2023-November": 1
+  },
+  "🍗": {
+    "2023-November": 1,
+    "2024-February": 1
+  },
+  "🇰🇵": {
+    "2023-November": 1
+  },
+  "💒": {
+    "2023-November": 1
+  },
+  "🧻": {
+    "2023-November": 1
+  },
+  "🧴": {
+    "2023-November": 1
+  },
+  "🥯": {
+    "2023-November": 1
+  },
+  "🤺": {
+    "2023-November": 1
+  },
+  "🦧": {
+    "2024-April": 1
+  },
+  "🥝": {
+    "2024-April": 1
+  },
+  "👨‍🚒": {
+    "2024-April": 1
+  },
+  "🍡": {
+    "2024-April": 1
+  },
+  "🇦🇲": {
+    "2024-April": 1
+  },
+  "👶": {
+    "2024-April": 1
+  },
+  "🦑": {
+    "2024-April": 1
+  },
+  "☄️": {
+    "2024-April": 5
+  },
+  "🇯🇴": {
+    "2024-April": 3
+  },
+  "🕌": {
+    "2024-April": 1,
+    "2024-February": 1
+  },
+  "⚙️": {
+    "2024-April": 1
+  },
+  "🔧": {
+    "2024-April": 1
+  },
+  "🔆": {
+    "2024-April": 1
+  },
+  "🐞": {
+    "2023-October": 3
+  },
+  "🇨🇾": {
+    "2023-October": 2
+  },
+  "🇱🇷": {
+    "2023-October": 2
+  },
+  "💄": {
+    "2023-October": 2
+  },
+  "♟️": {
+    "2023-October": 4,
+    "2024-February": 1
+  },
+  "👯": {
+    "2023-October": 1
+  },
+  "😦": {
+    "2023-October": 2
+  },
+  "🥪": {
+    "2023-October": 2
+  },
+  "⛽": {
+    "2023-October": 4
+  },
+  "🌜": {
+    "2024-February": 1
+  },
+  "🗝️": {
+    "2024-February": 3
+  },
+  "⚜️": {
+    "2024-February": 5
+  },
+  "🦡": {
+    "2024-February": 1
+  },
+  "🐱": {
+    "2024-February": 1
+  },
+  "👳‍♀️": {
+    "2024-February": 1
+  },
+  "🐮": {
+    "2024-February": 1
+  },
+  "👨‍🚀": {
+    "2024-February": 1
+  },
+  "🍸": {
+    "2022-December": 1
+  }
+}

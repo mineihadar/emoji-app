@@ -33,7 +33,7 @@
   transform: rotate(0deg); /* Rotate icon to point left */
 }
 
-.info-frame {
+.info-frame-event {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

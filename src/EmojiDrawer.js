@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import "./EmojiDrawer.css"; // Add your styles here
 import allEmojis from "./data/all_emojis.json";
+import CurveGraph from "./CurveGraph";
+import arrow from "./images/white_arrow.png";
 
 const EmojiDrawer = ({ open, onClose, details }) => {
   const emojiPictures = {
@@ -34,10 +36,19 @@ const EmojiDrawer = ({ open, onClose, details }) => {
 
   return (
     <div className={`emoji-drawer ${open ? "open" : ""}`} onClick={onClose}>
+      <div className='icon-frame'>
+        <img
+          style={{
+            position: "absolute",
+            width: "20px",
+            left: "40px",
+            top: "30px",
+            transform: "rotate(180deg)",
+          }}
+          src={arrow}
+        />
+      </div>
       <div className='info-frame'>
-        <div className='icon-frame' onClick={onClose}>
-          <span className='close-icon'>&rarr;</span>
-        </div>
         <div className='emoji-title'>
           <div className='emoji-container'>{renderEmoji(details.emoji)}</div>
           <div className='emoji-id'>
@@ -55,6 +66,13 @@ const EmojiDrawer = ({ open, onClose, details }) => {
           <div className='category'>
             <p className='info-category'>{details.details[0].category}</p>
             <p className='explain-category'>{details.details[0].text}</p>
+          </div>
+        </div>
+        <div className='emoji-info'>
+          <CurveGraph emoji={details.emoji} />
+          <div className='category'>
+            <p className='info-category'>גרף שימוש</p>
+            <p className='explain-category'>לפי חודשים</p>
           </div>
         </div>
 

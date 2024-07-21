@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./EmojiIndex.css";
 import data from "./data/all_emojis_translate.json"; // Import the JSON data
 import EmojiDrawer from "./EmojiDrawer";
-import emojiDetails from "./data/emojiDetails.json";
+import { findEmojiInData } from "./helpers/findEmojisData";
 
 const EmojiIndex = () => {
   const [hoverStates, setHoverStates] = useState([]);
@@ -43,7 +43,8 @@ const EmojiIndex = () => {
     };
   }, []);
 
-  const handleEmojiClick = (emojiDetails) => {
+  const handleEmojiClick = (emoji) => {
+    const emojiDetails = findEmojiInData(emoji.emoji); // Lookup emoji details
     if (drawerOpen) {
       setDrawerOpen(false);
       setTimeout(() => {
@@ -76,7 +77,7 @@ const EmojiIndex = () => {
         <EmojiDrawer
           open={drawerOpen}
           onClose={handleCloseDrawer}
-          details={emojiDetails}
+          details={selectedEmojiDetails}
         />
       )}
     </div>
