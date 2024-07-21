@@ -4,7 +4,7 @@ import EmojiGrid from "./EmojiGrid";
 import EmojiImage from "./EmojiImage";
 import "./App.css";
 import logo from "./images/emoji_logo_static.png";
-import logoHover from "./images/emoji_logo.gif"; // Add your hover logo image here
+import logoHover from "./images/reverse_logo.gif"; // Add your hover logo image here
 import weeks from "./data/weeks.json";
 import About from "./About";
 import EmojiIndex from "./EmojiIndex";
@@ -19,7 +19,7 @@ function App() {
       setIsGif(true);
       const gifTimeout = setTimeout(() => {
         setIsGif(false);
-      }, 2500); // Duration to show the GIF (2 seconds)
+      }, 6000); // Duration to show the GIF (2 seconds)
 
       return () => clearTimeout(gifTimeout); // Clean up the timeout on component unmount
     }, 10000); // Toggle every 20 seconds
