@@ -10,7 +10,7 @@ import EmojiGrid from "./EmojiGrid";
 import EmojiImage from "./EmojiImage";
 import "./App.css";
 import logo from "./images/emoji_logo_static.png";
-import logoHover from "./images/reverse_logo.gif";
+import logoHover from "./images/emoji_logo.gif";
 import weeks from "./data/weeks.json";
 import About from "./About";
 import EmojiIndex from "./EmojiIndex";
@@ -26,7 +26,7 @@ function App() {
       setIsGif(true);
       const gifTimeout = setTimeout(() => {
         setIsGif(false);
-      }, 6000);
+      }, 3000);
 
       return () => clearTimeout(gifTimeout);
     }, 10000);
