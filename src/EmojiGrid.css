@@ -232,7 +232,7 @@
 
 .emoji.clickable:hover {
   transform: translateY(-5px); /* Smooth movement upwards */
-  transform: scale(120%);
+  transform: scale(130%);
 }
 
 .emoji:not(.clickable) {

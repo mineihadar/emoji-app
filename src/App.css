@@ -58,14 +58,11 @@ img {
   z-index: 200; /* Ensure this is higher than the canvas */
 }
 
-/* .logo-div {
-  left: auto;
-} */
-
 .logo-div {
   height: 100%;
   width: auto;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .header {
@@ -78,10 +75,6 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 0px 0px 0px 0px;
-  /* background-color: #2d2d2d; */
-  /* border-bottom: #7e7e7e 1px solid; */
-  /* box-shadow: 0px 0px 5px 0px #1d1d1d; */
-  /* backdrop-filter: blur(1px); */
 }
 
 .header h1 {
@@ -100,11 +93,6 @@ img {
   top: 0;
   height: 42vh;
 }
-
-/* .two {
-  height: 6vh;
-  z-index: 2;
-} */
 
 .bottom {
   bottom: 0;
@@ -127,20 +115,43 @@ img {
 }
 
 .menu-options a {
+  position: relative;
   text-decoration: none;
   font-size: 17.2px;
   color: #e7e7e7;
   margin-left: 20px;
   cursor: pointer;
   font-family: "Narkis-Regular";
-  /* transition: color 0.5s; */
+  transition: color 0.3s ease;
+}
+
+.menu-options a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 0.5px;
+  background-color: rgba(255, 214, 0, 1); /* Adjust color to fit your design */
+  transition: width 0.5s ease-in-out;
 }
 
 .menu-options a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 4px;
-  text-underline-offset: 8px;
   color: #ffd600;
+}
+
+.menu-options a:hover::after {
+  width: 100%;
+  right: 0;
+  left: auto;
+}
+
+.menu-options .active {
+  color: rgba(255, 214, 0, 1);
+}
+
+.menu-options .active::after {
+  width: 100%;
 }
 
 .footer {
