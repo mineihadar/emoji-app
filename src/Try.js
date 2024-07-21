@@ -33,6 +33,7 @@ const Try = () => {
   const sketchRef = useRef();
   const emojiRef = useRef(emojis[0]);
   const drawnEmojis = useRef([]);
+  const lastMousePosition = useRef({ x: null, y: null });
 
   useEffect(() => {
     const sketch = (p) => {
@@ -48,7 +49,7 @@ const Try = () => {
 
         // Remove emojis older than 10 seconds
         drawnEmojis.current = drawnEmojis.current.filter(
-          (emoji) => now - emoji.timestamp < 500
+          (emoji) => now - emoji.timestamp < 200
         );
 
         // Draw all the emojis
@@ -56,9 +57,25 @@ const Try = () => {
           p.fill(255); // Set the fill color to white
           p.text(emoji.char, emoji.x, emoji.y);
         });
+
+        // Draw the current emoji at the last mouse position
+        if (
+          lastMousePosition.current.x !== null &&
+          lastMousePosition.current.y !== null
+        ) {
+          p.fill(255);
+          p.text(
+            emojiRef.current,
+            lastMousePosition.current.x,
+            lastMousePosition.current.y
+          );
+        }
       };
 
       p.mouseMoved = () => {
+        // Update the last mouse position
+        lastMousePosition.current = { x: p.mouseX, y: p.mouseY };
+
         // Add the current emoji to the array
         drawnEmojis.current.push({
           char: emojiRef.current,
@@ -90,7 +107,7 @@ const Try = () => {
       const currentIndex = emojis.indexOf(emojiRef.current);
       const nextIndex = (currentIndex + 1) % emojis.length;
       emojiRef.current = emojis[nextIndex];
-    }, 2000); // Change every 5 seconds
+    }, 3000); // Change every 10 seconds
 
     return () => clearInterval(interval);
   }, []);
