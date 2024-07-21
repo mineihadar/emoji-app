@@ -18,6 +18,28 @@ const EventDrawer = ({ open, onClose, details }) => {
           <p className='event-about'>{details.id.about}</p>
         </div>
 
+        {/* Sentiment */}
+        <div className='emoji-info'>
+          <div style={{ display: "flex", gap: "0.8vw" }}>
+            {Object.entries(details.sentiment).map(([key, value], subIndex) => (
+              <div
+                style={{
+                  display: "flex",
+                  gap: "0.2vw",
+                  alignItems: "flex-end",
+                }}
+                key={subIndex}>
+                <p className='info-value-number'>{value}%</p>
+                <p className='info-value'>{key}</p>
+              </div>
+            ))}
+          </div>
+          <div className='event-category'>
+            <p className='info-category'>סנטימנט</p>
+            <p className='explain-category'>הקשר רגשי נלווה לפוסטים</p>
+          </div>
+        </div>
+
         {/* Common Hashtags */}
         {details.common_hashtags.length !== 0 && (
           <div className='section-info'>
@@ -56,9 +78,8 @@ const EventDrawer = ({ open, onClose, details }) => {
           <div
             style={{
               display: "flex",
-              gap: "2vw",
+              gap: "1vw",
               flexWrap: "wrap",
-              marginBottom: "10px",
             }}>
             {Object.entries(details.common_emojis).map(
               ([emoji, percentage], subIndex) => (
@@ -67,6 +88,7 @@ const EventDrawer = ({ open, onClose, details }) => {
                     display: "flex",
                     gap: "0.2vw",
                     alignItems: "flex-end",
+                    marginBottom: "20px",
                   }}
                   key={subIndex}>
                   <p className='info-value-emoji'>{emoji}</p>
@@ -83,32 +105,11 @@ const EventDrawer = ({ open, onClose, details }) => {
         <div
           style={{
             position: "absolute",
-            bottom: "0",
+            bottom: "-40px",
             left: "0",
           }}>
           <NavigationButton address={`/timeline`} value={"חזור לציר הזמן"} />
         </div>
-        {/* Weekly Usage */}
-        {/* <div className='emoji-info'>
-          <div style={{ display: "flex", gap: "0.8vw" }}>
-            {details.details[4].value.map((item, subIndex) => (
-              <div
-                style={{
-                  display: "flex",
-                  gap: "0.2vw",
-                  alignItems: "flex-end",
-                }}
-                key={subIndex}>
-                <p className='info-value-number'>{item[Object.keys(item)]}</p>
-                <p className='info-value-event'>{Object.keys(item)}</p>
-              </div>
-            ))}
-          </div>
-          <div className='event-category'>
-            <p className='info-category'>{details.details[4].category}</p>
-            <p className='explain-category'>{details.details[4].text}</p>
-          </div>
-        </div> */}
       </div>
     </div>
   );

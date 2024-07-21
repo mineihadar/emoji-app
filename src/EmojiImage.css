@@ -1,5 +1,5 @@
 #emoji-container {
-  font-size: 1rem; /* Adjust font size as needed */
+  font-size: 1.2rem; /* Adjust font size as needed */
   line-height: 0.968rem; /* Adjust line height to provide enough spacing between rows */
   white-space: pre; /* Ensure white space is preserved */
   max-height: calc(
