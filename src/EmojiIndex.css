@@ -5,7 +5,7 @@
   padding: 10px;
 }
 
-.emoji-grid-container::-webkit-scrollbar {
+.grid-container::-webkit-scrollbar {
   display: none;
 }
 
