@@ -4,6 +4,7 @@ import {
   Route,
   Routes,
   NavLink,
+  useLocation,
   useNavigate,
 } from "react-router-dom";
 import EmojiGrid from "./EmojiGrid";
@@ -20,6 +21,7 @@ import OpenScreen from "./OpenScreen";
 function App() {
   const [isGif, setIsGif] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -78,10 +80,11 @@ function App() {
           <Route path='/emojis' element={<EmojiIndex />} />
           <Route path='/about' element={<About />} />
           <Route path='/' element={<EmojiGrid weeks={weeks} />} />{" "}
-          {/* Default route for opening screen */}
+          {/* Default route */}
         </Routes>
       </div>
-      <OpenScreen /> {/* Position OpenScreen on top of the content */}
+      {location.pathname === "/" && <OpenScreen />}{" "}
+      {/* Render OpenScreen only at the main address */}
     </div>
   );
 }
