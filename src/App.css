@@ -22,6 +22,21 @@
   font-family: "Narkis-Medium";
   src: url("./fonts/NarkissBlockTRIAL-Medium.woff") format("woff");
 }
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  /* this makes sure the padding and the border is included in the box sizing */
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+
+html body {
+  padding: 0;
+  margin: 0;
+  overflow-y: inherit;
+}
 
 body {
   background-color: #2d2d2d;
@@ -103,6 +118,7 @@ img {
 #p5-canvas {
   z-index: 100; /* Ensure the canvas is behind the other elements */
 }
+
 
 .menu-options {
   display: flex;
