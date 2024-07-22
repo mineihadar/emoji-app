@@ -14,9 +14,15 @@ function NavigationButton({ address, value, isBackground = false, onClick }) {
   };
 
   return (
-    <div className='button-container' onClick={handleClick}>
+    <div
+      className={`button-container ${isBackground ? "background-button" : ""}`}
+      onClick={handleClick}>
       <p>{value}</p>
-      <img className='arrow' src={arrow} alt='arrow' />
+      <img
+        className={`arrow ${isBackground ? "background-arrow" : ""}`}
+        src={arrow}
+        alt='arrow'
+      />
     </div>
   );
 }

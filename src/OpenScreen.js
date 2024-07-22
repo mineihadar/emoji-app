@@ -104,6 +104,7 @@ const OpenScreen = () => {
           address='/timeline'
           value='התחלה'
           onClick={handleButtonClick}
+          isBackground={true}
         />
       </div>
     </div>
