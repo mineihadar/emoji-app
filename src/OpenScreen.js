@@ -3,11 +3,13 @@ import { gsap } from "https://cdn.skypack.dev/gsap@3.11.4";
 import SplitType from "https://cdn.skypack.dev/split-type@0.3.3";
 import "./OpenScreen.css";
 import Try from "./Try";
+import NavigationButton from "./NavigationButton";
 
 const OpenScreen = () => {
   const textRef = useRef(null);
   const aboutTextRef = useRef(null);
   const openContainerRef = useRef(null);
+  const buttonRef = useRef(null);
 
   useEffect(() => {
     // Animate the main text
@@ -46,21 +48,38 @@ const OpenScreen = () => {
         },
         {
           y: 0, // Animate to its final position
-          duration: 1,
+          duration: 2,
           ease: "power4.out",
           stagger: 0.2, // Stagger each line animation
           onComplete: () => {
-            // Slide up and disappear after the about-text animation completes
-            gsap.to(openContainerRef.current, {
-              y: "-100vh",
-              duration: 1,
-              ease: "power4.in",
-            });
+            // Animate button appearance
+            gsap.fromTo(
+              buttonRef.current,
+              {
+                opacity: 0,
+                y: 20, // Start below the final position
+              },
+              {
+                opacity: 1,
+                y: 0, // Animate to its final position
+                duration: 1,
+                ease: "power4.out",
+              }
+            );
           },
         }
       );
     };
   }, []);
+
+  const handleButtonClick = () => {
+    // Slide up and disappear when the button is clicked
+    gsap.to(openContainerRef.current, {
+      y: "-100vh",
+      duration: 1,
+      ease: "power4.in",
+    });
+  };
 
   return (
     <div ref={openContainerRef} className='open-container'>
@@ -80,6 +99,13 @@ const OpenScreen = () => {
       <p ref={textRef} className='our-text'>
         ישראמוג׳י
       </p>
+      <div ref={buttonRef} className='button-wrapper'>
+        <NavigationButton
+          address='/timeline'
+          value='התחלה'
+          onClick={handleButtonClick}
+        />
+      </div>
     </div>
   );
 };

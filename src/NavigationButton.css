@@ -10,6 +10,7 @@
   color: rgba(255, 214, 0, 1);
   font-family: "Narkis-Medium";
   font-size: 23.5px;
+  z-index: 5;
 }
 
 .events:hover {

@@ -56,3 +56,11 @@
   left: 0;
   z-index: 0; /* Ensure it is below the other content */
 }
+
+.button-wrapper {
+  position: absolute;
+  bottom: 20px; /* Control how far it is from the bottom */
+  left: 20px; /* Position it on the left-hand side */
+  z-index: 5;
+  opacity: 0; /* Start with opacity 0 for the animation */
+}
