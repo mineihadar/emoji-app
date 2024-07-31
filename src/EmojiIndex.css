@@ -12,13 +12,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-right: 14vw;
-  margin-left: 14vw;
+  margin-right: 7vw;
+  margin-left: 7vw;
 }
 
 .cell {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   padding: 25px;
   display: flex;
   flex-direction: column;
