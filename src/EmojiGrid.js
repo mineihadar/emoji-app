@@ -154,57 +154,62 @@ const EmojiGrid = forwardRef(({ weeks }, ref) => {
     return [];
   };
 
-  const renderColumn = (weekData, week, index) => (
-    <div
-      className={`week-column ${index === visibleColumnIndex ? "visible" : ""}`}
-      key={index}>
+  const renderColumn = (weekData, week, index) => {
+    const year = index < 52 ? 2023 : 2024;
+    return (
       <div
-        className={`week-emoji-container ${
-          index === visibleColumnIndex ? "highlighted" : ""
-        }`}>
-        <div className='emoji-row' onClick={() => handleRowClick(index)}>
-          {weekData.toReversed().map((emoji, idx) => (
-            <div
-              className={`emoji ${
-                index === visibleColumnIndex ? "clickable" : ""
-              }`}
-              key={idx}
-              onClick={(e) => {
-                e.stopPropagation(); // Prevent row click from triggering
-                index === visibleColumnIndex && handleClickEmoji(emoji);
-              }}>
-              {!(emoji in emojiPictures) ? (
-                emoji
-              ) : (
-                <img src={emojiPictures[emoji]} alt='emoji' />
-              )}
-            </div>
-          ))}
-        </div>
-        {week && (
-          <div
-            className={`week-info ${
-              index === visibleColumnIndex ? "visible" : ""
-            }`}>
-            <div className='additional-text top'>
-              <p className='year'>2023</p>
-            </div>
-            <p className='week'>{week.text}</p>
-            <div className='additional-text bottom'>
-              <div className='events-window'>
-                <p className='title'>אירועים שקרו בשבוע זה</p>
-                <div className='events'>{returnWeekEvents(week.text)}</div>
+        className={`week-column ${
+          index === visibleColumnIndex ? "visible" : ""
+        }`}
+        key={index}>
+        <div
+          className={`week-emoji-container ${
+            index === visibleColumnIndex ? "highlighted" : ""
+          }`}>
+          <div className='emoji-row' onClick={() => handleRowClick(index)}>
+            {weekData.toReversed().map((emoji, idx) => (
+              <div
+                className={`emoji ${
+                  index === visibleColumnIndex ? "clickable" : ""
+                }`}
+                key={idx}
+                onClick={(e) => {
+                  e.stopPropagation(); // Prevent row click from triggering
+                  index === visibleColumnIndex && handleClickEmoji(emoji);
+                }}>
+                {!(emoji in emojiPictures) ? (
+                  emoji
+                ) : (
+                  <img src={emojiPictures[emoji]} alt='emoji' />
+                )}
               </div>
-              <div className='trends-window'>
-                <p className='title'>מילים שחזרו בשבוע זה</p>
-                <div className='trends'>{returnWeekTrend(week.text)}</div>
-              </div>
-            </div>
+            ))}
           </div>
-        )}
+          {week && (
+            <div
+              className={`week-info ${
+                index === visibleColumnIndex ? "visible" : ""
+              }`}>
+              <div className='additional-text top'>
+                <p className='year'>{year}</p>
+              </div>
+              <p className='week'>{week.text}</p>
+              <div className='additional-text bottom'>
+                <div className='events-window'>
+                  <p className='title'>אירועים שקרו בשבוע זה</p>
+                  <div className='events'>{returnWeekEvents(week.text)}</div>
+                </div>
+                <div className='trends-window'>
+                  <p className='title'>מילים שחזרו בשבוע זה</p>
+                  <div className='trends'>{returnWeekTrend(week.text)}</div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
       </div>
-    </div>
-  );
+    );
+  };
 
   return (
     <>
