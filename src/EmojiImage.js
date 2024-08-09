@@ -53,7 +53,7 @@ const EmojiImage = () => {
   const renderEmoji = (emoji) => {
     const imagePath = emojiPictures[emoji];
     if (imagePath) {
-      return <img style={{ width: "19px" }} src={imagePath} alt='emoji' />;
+      return <img style={{ width: "16px" }} src={imagePath} alt='emoji' />;
     }
     return emoji;
   };

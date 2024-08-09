@@ -1,8 +1,8 @@
 .event-drawer {
   position: fixed;
   top: 0;
-  left: -26vw;
-  width: 27.7vw;
+  left: -31vw;
+  width: 32.7vw;
   height: 100%;
   color: #e7e7e7;
   transition: left 0.3s ease;
@@ -14,7 +14,7 @@
 }
 
 .event-drawer:hover {
-  left: -21.3vw;
+  left: -27.3vw;
 }
 
 .event-drawer.open {

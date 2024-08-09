@@ -63,7 +63,7 @@ const CurveGraph = ({ emoji }) => {
   const endDate = new Date(2024, 4, 1); // May 2024
   const parsedData = getCompleteData(data, startDate, endDate);
 
-  const width = window.innerWidth * 0.22;
+  const width = window.innerWidth * 0.26;
   const height = 150;
   const margin = { top: 20, right: 20, bottom: 40, left: 50 };
 
