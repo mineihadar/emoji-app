@@ -4,6 +4,12 @@ import data from "./data/all_emojis_translate.json"; // Import the JSON data
 import EmojiDrawer from "./EmojiDrawer";
 import { findEmojiInData } from "./helpers/findEmojisData";
 
+const emojiPictures = {
+  "⁉️": "./images/exclamation-question-mark.png",
+  "‼️": "./images/double-exclamation-mark.png",
+  "♥️": "./images/heart_suit.png",
+};
+
 const EmojiIndex = () => {
   const [hoverStates, setHoverStates] = useState([]);
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -64,7 +70,13 @@ const EmojiIndex = () => {
   const cells = data.map((item, index) => (
     <div className='cell' key={index} onClick={() => handleEmojiClick(item)}>
       <div className={`emoji-text-field ${hoverStates[index] ? "rotate" : ""}`}>
-        {item.emoji}
+        {!(item.emoji in emojiPictures) ? (
+          item.emoji
+        ) : (
+          <div style={{ width: "40px" }}>
+            <img src={emojiPictures[item.emoji]} alt='emoji' />
+          </div>
+        )}
       </div>
       <div className='name-text-field'>{item.name}</div>
     </div>
